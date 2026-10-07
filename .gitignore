@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+uploads/
+reports/
+build/
+dist/
+*.zip
+*.new
+*.tmp
+*.log

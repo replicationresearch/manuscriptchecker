@@ -1,0 +1,64 @@
+# MüCOS Manuscript Checker
+
+A portable Windows desktop app (plus a small web app) that turns a manuscript
+(PDF / DOCX / DOC / HTML) into a formatted meta-scientific quality report.
+
+It converts the document to TEI XML with **GROBID**, then runs one or more check
+engines:
+
+| Engine | What it does |
+|--------|--------------|
+| **metacheck (R)** | The original set of manuscript checks, via the R `metacheck` package. |
+| **ChetaMeck (Python)** | An independent reimplementation of the metacheck checks, plus forensic metascience (GRIM/GRIMMER/DEBIT…), effect-size & CI consistency (EffectCheck port) and R2 editorial checks. |
+| **Plagiarism Check** | Licence-free text-overlap detection: exact-phrase retrieval in open full texts (Europe PMC, OpenAlex) plus shingle-based verification against downloaded full texts and any local files. |
+
+You can select several engines at once — each one produces its own report.
+
+## Getting started (desktop)
+
+1. Run `setup.bat` once (installs the R `metacheck` package if missing).
+2. Double-click **`ManuscriptChecker.exe`** (or `Start Metacheck.bat`).
+3. Pick a manuscript, choose the GROBID server (defaults to a public TUE
+   instance), select the engine(s) and checks, then press **Run check**.
+4. Each report opens in your browser automatically.
+
+## Copying to another PC (portable)
+
+Copy the whole folder, then on the target PC:
+
+1. Run `setup.bat` once.
+2. Double-click `ManuscriptChecker.exe`.
+
+The target PC still needs **R** (+ the `metacheck` package), and **LibreOffice**
+if you want to convert DOCX/HTML (PDFs work without it). GROBID is reached over
+the internet by default.
+
+## Web app
+
+`run.bat` starts a local server (FastAPI) with an upload page; the same
+pipeline and engines are used.
+
+## Auto-update
+
+The app checks this repository's `update/latest_version.json` on startup and via
+the **Check for updates** button in the *About* tab. When a newer version is
+published, the new `ManuscriptChecker.exe` is downloaded and installed
+automatically on the next launch. To publish a release:
+
+1. Bump `config.py` → `DESKTOP_APP_VERSION`.
+2. Rebuild the exe (`python -m PyInstaller metacheck.spec --noconfirm`).
+3. Copy `dist\ManuscriptChecker.exe` to the repo root.
+4. Update `update/latest_version.json` to match.
+5. Commit and push.
+
+## Building yourself
+
+```bat
+.venv\Scripts\python -m pip install -r requirements.txt
+.venv\Scripts\python -m PyInstaller metacheck.spec --noconfirm
+```
+
+## License / attribution
+
+Not affiliated with the official metacheck app. For private use only.
+Coded by DeepSeek V4 Flash · Prompted by Lukas Röseler.
