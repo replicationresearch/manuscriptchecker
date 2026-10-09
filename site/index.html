@@ -51,8 +51,8 @@
         <div class="cards">
           <div class="card">
             <span class="tag">metacheck</span>
-            <h3>Metacheck (R)</h3>
-            <p>The original set of manuscript checks, via the R <code>metacheck</code> package.</p>
+            <h3><a href="https://www.scienceverse.org/metacheck/articles/metacheck.html">Metacheck (R)</a></h3>
+            <p>The original set of manuscript checks, via the R <code>metacheck</code> package. <a href="https://www.scienceverse.org/metacheck/articles/metacheck.html">Learn more</a>.</p>
           </div>
           <div class="card">
             <span class="tag">ChetaMeck</span>
@@ -116,7 +116,6 @@
         const url = asset ? asset.browser_download_url
                           : `https://github.com/${REPO}/releases/latest/download/${EXE}`;
         document.getElementById("dl-btn").href = url;
-        document.getElementById("nav-dl").href = url;
         document.getElementById("version").textContent = ver ? "Latest release: v" + ver : "Latest release";
         document.getElementById("dl-size").textContent = asset ? " · " + fmt(asset.size) : "";
       } catch (e) { /* keep the static latest/download fallback link */ }
