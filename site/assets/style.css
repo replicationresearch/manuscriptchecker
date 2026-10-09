@@ -53,7 +53,7 @@ a:hover { color: var(--accent-deep-dark); }
   max-width: 1040px;
   margin: 0 auto;
 }
-.brand { display: flex; align-items: center; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
 .brand img { height: 40px; width: auto; display: block; }
 .brand span { font-weight: 700; font-size: 1.05rem; color: var(--ink); }
 
@@ -75,7 +75,9 @@ a:hover { color: var(--accent-deep-dark); }
   transition: background .15s ease, transform .1s ease;
 }
 .btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:link, .btn-primary:visited { color: #fff; }
 .btn-primary:hover { background: var(--accent-dark); color: #fff; }
+.btn-primary:active { color: #fff; }
 .btn-ghost { background: transparent; color: var(--accent-deep); border-color: var(--rule); }
 .btn-ghost:hover { background: var(--accent-soft); border-color: var(--accent-soft); }
 .btn-sm { padding: 7px 14px; font-size: 0.85rem; }

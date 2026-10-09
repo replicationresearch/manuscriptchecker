@@ -10,16 +10,15 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header" id="top">
     <div class="header-inner">
-      <div class="brand">
+      <a class="brand" href="#top" title="Back to top">
         <img src="assets/logo.png" alt="MüCOS logo">
         <span>MüCOS Manuscript Checker</span>
-      </div>
+      </a>
       <nav class="nav">
         <a href="#overview">Overview</a>
         <a href="#install">Install</a>
-        <a href="#webapp">Web app</a>
         <a class="btn btn-primary btn-sm" id="nav-dl" href="https://github.com/replicationresearch/manuscriptchecker/releases/latest/download/ManuscriptChecker.exe">Download</a>
       </nav>
     </div>
@@ -89,20 +88,6 @@
           <strong>LibreOffice</strong> if you want to convert DOCX/HTML. GROBID is reached over the
           internet by default.
         </p>
-      </div>
-    </section>
-
-    <section class="section" id="webapp">
-      <div class="container">
-        <h2>Can there also be a web app?</h2>
-        <p class="lead">
-          Yes — the same pipeline also runs as a small local web app. Run <code>run.bat</code> to
-          start a FastAPI server with an upload page; the same engines and checks are used.
-        </p>
-        <div class="callout">
-          <strong>Note:</strong> the web app is a local, single-user server on your machine —
-          it is <em>not</em> a hosted public website.
-        </div>
       </div>
     </section>
   </main>
