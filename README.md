@@ -43,14 +43,17 @@ pipeline and engines are used.
 The app checks the GitHub repo's latest release (via the GitHub Releases API)
 on startup and via the **Check for updates** button in the *About* tab. When a
 newer version is published, the new `ManuscriptChecker.exe` release asset is
-downloaded and installed automatically on the next launch. To publish a
-release:
+downloaded and installed automatically on the next launch.
+
+Releases are built and published automatically by the
+`.github/workflows/release.yml` workflow. To publish:
 
 1. Bump `config.py` → `DESKTOP_APP_VERSION`.
-2. Rebuild the exe (`python -m PyInstaller metacheck.spec --noconfirm`).
-3. Create a GitHub release tagged `v<version>` (e.g. `v0.7.0`) and upload
-   `dist\ManuscriptChecker.exe` as a release asset named `ManuscriptChecker.exe`.
-4. Optionally add release notes — these are shown to users as the update notes.
+2. Commit the change and push a tag matching the version (e.g. `v0.7.0`):
+   `git tag v0.7.0 && git push origin v0.7.0`. You can also trigger it manually
+   from the **Actions** tab (the version is then read from `config.py`).
+3. The release notes are generated from the commit history — edit them on the
+   release page if you want custom notes.
 
 ## Building yourself
 
