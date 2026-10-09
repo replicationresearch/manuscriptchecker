@@ -19,7 +19,7 @@ from PIL import ImageGrab
 
 ROOT = Path(__file__).resolve().parent.parent
 TITLE = "MüCOS Manuscript Checker"
-OUT = ROOT / "site" / "assets" / "screenshot.png"
+OUT = ROOT / "site" / "assets" / "mmc.png"
 
 
 def find_window():
