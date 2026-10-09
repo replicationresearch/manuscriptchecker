@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MüCOS Manuscript Checker</title>
+  <meta name="description" content="Automated meta-scientific quality checks for manuscripts.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="MüCOS logo">
+        <span>MüCOS Manuscript Checker</span>
+      </div>
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#install">Install</a>
+        <a href="#webapp">Web app</a>
+        <a class="btn btn-primary btn-sm" id="nav-dl" href="https://github.com/replicationresearch/manuscriptchecker/releases/latest/download/ManuscriptChecker.exe">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="badge">Work in progress</div>
+        <h1>MüCOS Manuscript Checker</h1>
+        <p class="tagline">Automated meta-scientific quality checks for your manuscript.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="dl-btn" href="https://github.com/replicationresearch/manuscriptchecker/releases/latest/download/ManuscriptChecker.exe">Download latest release</a>
+          <a class="btn btn-ghost" href="#install">How to install</a>
+        </div>
+        <p class="hero-meta">
+          <span id="version">Latest release</span>
+          <span id="dl-size"></span>
+        </p>
+
+        <div class="screenshot-wrap">
+          <img src="assets/screenshot.png" alt="Screenshot of the MüCOS Manuscript Checker desktop app">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container">
+        <h2>What it does</h2>
+        <p class="lead">
+          Turn a manuscript (PDF, DOCX, DOC or HTML) into a formatted meta-scientific
+          quality report. The app converts your document with GROBID and runs one or
+          more check engines — currently:
+        </p>
+        <div class="cards">
+          <div class="card">
+            <span class="tag">metacheck</span>
+            <h3>Metacheck (R)</h3>
+            <p>The original set of manuscript checks, via the R <code>metacheck</code> package.</p>
+          </div>
+          <div class="card">
+            <span class="tag">ChetaMeck</span>
+            <h3>ChetaMeck (Python)</h3>
+            <p>An independent reimplementation plus forensic metascience (GRIM, GRIMMER, DEBIT…), effect-size &amp; CI consistency, and R2 editorial checks.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Plagiarism Check</span>
+            <h3>Plagiarism Check</h3>
+            <p>Licence-free text-overlap detection against open full texts and your own local files.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="install">
+      <div class="container">
+        <h2>Install</h2>
+        <p class="lead">Portable Windows desktop app — download, run the setup once, then double-click the exe.</p>
+        <div class="steps">
+          <div class="step"><div>Download the latest <code>ManuscriptChecker.exe</code>.</div></div>
+          <div class="step"><div>Run <code>setup.bat</code> once (installs the R <code>metacheck</code> package if missing).</div></div>
+          <div class="step"><div>Double-click <code>ManuscriptChecker.exe</code> (or <code>Start Metacheck.bat</code>).</div></div>
+          <div class="step"><div>Pick a manuscript, choose a GROBID server, select the engine(s) and checks, then press <strong>Run check</strong>.</div></div>
+        </div>
+        <p class="lead" style="margin-top:22px;">
+          The target PC still needs <strong>R</strong> (plus the <code>metacheck</code> package) and
+          <strong>LibreOffice</strong> if you want to convert DOCX/HTML. GROBID is reached over the
+          internet by default.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="webapp">
+      <div class="container">
+        <h2>Can there also be a web app?</h2>
+        <p class="lead">
+          Yes — the same pipeline also runs as a small local web app. Run <code>run.bat</code> to
+          start a FastAPI server with an upload page; the same engines and checks are used.
+        </p>
+        <div class="callout">
+          <strong>Note:</strong> the web app is a local, single-user server on your machine —
+          it is <em>not</em> a hosted public website.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>MüCOS Manuscript Checker — work in progress.</div>
+      <div>
+        <a href="https://github.com/replicationresearch/manuscriptchecker">GitHub repository</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const REPO = "replicationresearch/manuscriptchecker";
+    const EXE = "ManuscriptChecker.exe";
+    function fmt(b) {
+      if (!b) return "";
+      const u = ["B", "KB", "MB", "GB"];
+      let i = 0;
+      while (b >= 1024 && i < u.length - 1) { b /= 1024; i++; }
+      return b.toFixed(1) + " " + u[i];
+    }
+    async function refresh() {
+      try {
+        const r = await fetch(`https://api.github.com/repos/${REPO}/releases/latest`);
+        if (!r.ok) return;
+        const rel = await r.json();
+        const ver = (rel.tag_name || "").replace(/^v/, "");
+        const asset = (rel.assets || []).find(a => a.name === EXE);
+        const url = asset ? asset.browser_download_url
+                          : `https://github.com/${REPO}/releases/latest/download/${EXE}`;
+        document.getElementById("dl-btn").href = url;
+        document.getElementById("nav-dl").href = url;
+        document.getElementById("version").textContent = ver ? "Latest release: v" + ver : "Latest release";
+        document.getElementById("dl-size").textContent = asset ? " · " + fmt(asset.size) : "";
+      } catch (e) { /* keep the static latest/download fallback link */ }
+    }
+    refresh();
+  </script>
+</body>
+</html>
