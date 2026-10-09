@@ -1,6 +1,0 @@
-{
-  "version": "0.6.0",
-  "exe": "ManuscriptChecker.exe",
-  "exe_url": "https://zivgitlab.uni-muenster.de/lroesele/mc/-/raw/main/ManuscriptChecker.exe",
-  "notes": "Select multiple check engines at once (metacheck, ChetaMeck, Plagiarism Check) and automatic updates from this repository."
-}

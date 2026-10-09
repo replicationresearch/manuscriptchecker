@@ -1004,7 +1004,7 @@ class App(tk.Tk):
 
     # -------------------------------------------------------------- updates
     def check_updates(self, manual=True):
-        """Check the GitLab repo for a newer build; download+stage it if found.
+        """Check the GitHub repo for a newer release; download+stage it if found.
 
         ``manual`` (button press) prompts before downloading; the startup check
         (``manual=False``) downloads automatically and only reports the result.

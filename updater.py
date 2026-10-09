@@ -1,14 +1,11 @@
-"""Self-update: check the GitLab repo for a newer build and install it.
+"""Self-update: check the GitHub repo for a newer release and install it.
 
-The app publishes a ``update/latest_version.json`` manifest in the repo::
-
-    {"version": "0.6.0", "exe": "ManuscriptChecker.exe",
-     "exe_url": "https://.../ManuscriptChecker.exe", "notes": "..."}
-
-On startup (and via the "Check for updates" button) we compare the remote
-version against the local ``config.DESKTOP_APP_VERSION``. When a newer version
-exists we download the new exe to ``<exe>.new`` and launch a small batch file
-that waits for the running app to exit, swaps the new exe in and relaunches it.
+The app queries the GitHub Releases API (``config.RELEASES_API_URL``) for the
+latest release and its ``ManuscriptChecker.exe`` asset. On startup (and via the
+"Check for updates" button) we compare the remote version against the local
+``config.DESKTOP_APP_VERSION``. When a newer version exists we download the new
+exe to ``<exe>.new`` and launch a small batch file that waits for the running
+app to exit, swaps the new exe in and relaunches it.
 """
 
 import json
@@ -58,29 +55,49 @@ def exe_path():
     return None
 
 
+def _parse_release_version(tag):
+    """Extract a comparable version from a release tag like ``v0.6.0``."""
+    return _parse_version(str(tag).lstrip("v"))
+
+
 def check_for_update(timeout=15):
     """Return a dict describing an available update, or None.
 
-    Returns ``{"available": False, ...}`` when up to date and
+    Queries the GitHub Releases API for the latest release. Returns
+    ``{"available": False, ...}`` when up to date and
     ``{"available": True, "latest_version", "exe_url", "exe", "notes"}`` when a
-    newer build is published. Returns None if the manifest can't be reached.
+    newer build is published. Returns None if the API can't be reached or no
+    release exists yet.
     """
     try:
-        req = urllib.request.Request(
-            config.UPDATE_MANIFEST_URL,
-            headers={"User-Agent": USER_AGENT})
+        headers = {"User-Agent": USER_AGENT,
+                   "Accept": "application/vnd.github+json"}
+        if config.GITHUB_TOKEN:
+            headers["Authorization"] = "Bearer " + config.GITHUB_TOKEN
+        req = urllib.request.Request(config.RELEASES_API_URL, headers=headers)
         with urllib.request.urlopen(req, timeout=timeout) as r:
             data = json.loads(r.read().decode("utf-8"))
-        latest = str(data.get("version", ""))
-        if not latest:
+        tag = data.get("tag_name", "")
+        if not tag:
             return None
-        if _parse_version(latest) > _parse_version(current_version()):
+        latest = _parse_release_version(tag)
+        latest_str = str(tag).lstrip("v")
+        # Find the exe asset attached to the release.
+        exe_url = ""
+        exe_name = "ManuscriptChecker.exe"
+        for asset in data.get("assets", []):
+            if asset.get("name") == exe_name:
+                exe_url = asset.get("browser_download_url", "")
+                break
+        if not exe_url:
+            return None
+        if latest > _parse_version(current_version()):
             return {"available": True,
-                    "latest_version": latest,
-                    "exe": data.get("exe", "ManuscriptChecker.exe"),
-                    "exe_url": data.get("exe_url", ""),
-                    "notes": data.get("notes", "")}
-        return {"available": False, "latest_version": latest}
+                    "latest_version": latest_str,
+                    "exe": exe_name,
+                    "exe_url": exe_url,
+                    "notes": data.get("body", "")}
+        return {"available": False, "latest_version": latest_str}
     except Exception:  # noqa: BLE001
         return None
 
@@ -107,7 +124,7 @@ def install_update(url, on_log=None):
     if not exe:
         raise RuntimeError("Cannot self-update: not running as a frozen exe.")
     if not url:
-        raise RuntimeError("Update manifest did not provide an exe URL.")
+        raise RuntimeError("Update release did not provide an exe URL.")
     if on_log:
         on_log(f"Downloading update from {url} ...")
     new = exe.with_name(exe.name + ".new")

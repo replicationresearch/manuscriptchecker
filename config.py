@@ -145,18 +145,24 @@ RSCRIPT = find_rscript()
 SOFFICE = find_soffice()
 
 # ---------------------------------------------------------------------------
-# App version + self-update (checks the GitLab repo for a newer build).
+# App version + self-update (checks the GitHub repo for a newer release).
 # ---------------------------------------------------------------------------
 # Single source of truth for the app's version. Bump the third number for
 # bugfix releases; bump the first/second for feature releases.
 DESKTOP_APP_VERSION = "0.6.0"
 
-# GitLab repo that hosts the release exe and an update manifest. The manifest
-# (update/latest_version.json) is checked for a newer version; when found, the
-# new exe is downloaded from ``exe_url`` and installed on the next launch.
-UPDATE_MANIFEST_URL = os.environ.get(
-    "UPDATE_MANIFEST_URL",
-    "https://zivgitlab.uni-muenster.de/lroesele/mc/-/raw/main/update/latest_version.json",
+# GitHub repo that hosts the app releases. The app queries the GitHub Releases
+# API for the latest release; when a newer version exists, the new exe is
+# downloaded from the release asset and installed on the next launch.
+GITHUB_REPO = os.environ.get(
+    "GITHUB_REPO",
+    "replicationresearch/manuscriptchecker",
 )
-# Where the update manifest lives in the repo (used when publishing).
-UPDATE_REPO_BRANCH = os.environ.get("UPDATE_REPO_BRANCH", "main")
+# GitHub Releases API endpoint that returns the latest release.
+RELEASES_API_URL = os.environ.get(
+    "RELEASES_API_URL",
+    f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest",
+)
+# Optional personal access token: used to avoid API rate limits and to allow
+# the app to read releases from a private repo. Leave empty for public repos.
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")

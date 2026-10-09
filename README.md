@@ -40,16 +40,17 @@ pipeline and engines are used.
 
 ## Auto-update
 
-The app checks this repository's `update/latest_version.json` on startup and via
-the **Check for updates** button in the *About* tab. When a newer version is
-published, the new `ManuscriptChecker.exe` is downloaded and installed
-automatically on the next launch. To publish a release:
+The app checks the GitHub repo's latest release (via the GitHub Releases API)
+on startup and via the **Check for updates** button in the *About* tab. When a
+newer version is published, the new `ManuscriptChecker.exe` release asset is
+downloaded and installed automatically on the next launch. To publish a
+release:
 
 1. Bump `config.py` → `DESKTOP_APP_VERSION`.
 2. Rebuild the exe (`python -m PyInstaller metacheck.spec --noconfirm`).
-3. Copy `dist\ManuscriptChecker.exe` to the repo root.
-4. Update `update/latest_version.json` to match.
-5. Commit and push.
+3. Create a GitHub release tagged `v<version>` (e.g. `v0.7.0`) and upload
+   `dist\ManuscriptChecker.exe` as a release asset named `ManuscriptChecker.exe`.
+4. Optionally add release notes — these are shown to users as the update notes.
 
 ## Building yourself
 
