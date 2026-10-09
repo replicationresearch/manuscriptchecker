@@ -149,7 +149,7 @@ SOFFICE = find_soffice()
 # ---------------------------------------------------------------------------
 # Single source of truth for the app's version. Bump the third number for
 # bugfix releases; bump the first/second for feature releases.
-DESKTOP_APP_VERSION = "0.6.0"
+DESKTOP_APP_VERSION = "0.6.1"
 
 # GitHub repo that hosts the app releases. The app queries the GitHub Releases
 # API for the latest release; when a newer version exists, the new exe is

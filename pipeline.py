@@ -191,6 +191,29 @@ def update_metacheck(on_log=None):
     return get_metacheck_version()
 
 
+def install_metacheck(on_log=None):
+    """Install the metacheck R package if it is not already installed.
+
+    Runs the bundled ``setup_r.R`` (installs only when the package is missing),
+    so a fresh install only needs the exe + R. Returns the installed version.
+    """
+    if not config.RSCRIPT:
+        raise RuntimeError("Rscript not found. Install R first.")
+    script = config.SCRIPTS_DIR / "setup_r.R"
+    cmd = [config.RSCRIPT, str(script)]
+    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=1200)
+    if on_log:
+        if proc.stdout.strip():
+            on_log(proc.stdout.strip())
+        if proc.stderr.strip():
+            on_log(proc.stderr.strip())
+    if proc.returncode != 0:
+        raise RuntimeError(
+            "metacheck install failed:\n" + (proc.stderr or proc.stdout)[-1500:]
+        )
+    return get_metacheck_version()
+
+
 def convert_to_pdf(soffice, src, outdir):
     """Convert DOCX/HTML to PDF with LibreOffice. Returns the PDF path."""
     cmd = [soffice, "--headless", "--convert-to", "pdf",

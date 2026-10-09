@@ -184,7 +184,7 @@ class App(tk.Tk):
         self.xml_path = None
         self.pdf_path = None
         self.outdir = None
-        self.engine_vars = {e: tk.BooleanVar(value=(e == "chetameck"))
+        self.engine_vars = {e: tk.BooleanVar(value=True)
                             for e in pipeline.ENGINES}
         try:
             from chetameck.catalog import all_modules
@@ -203,6 +203,7 @@ class App(tk.Tk):
         self._icon()
         self._build()
         self._refresh_status()
+        self.after(1200, self._startup_ensure_metacheck)
         self.after(2500, self._startup_update_check)
 
     # ------------------------------------------------------------- styling
@@ -440,13 +441,21 @@ class App(tk.Tk):
         self.status_lbl = ttk.Label(run_row, style="Muted.TLabel", text="")
         self.status_lbl.pack(side="left", padx=10)
 
-        # version row + update button
+        # version row + the two update buttons (metacheck R package / the app)
         ver_row = ttk.Frame(panel)
         ver_row.pack(fill="x", pady=(0, 8))
         self.ver_lbl = ttk.Label(ver_row, style="Muted.TLabel", text="metacheck pkg: …")
         self.ver_lbl.pack(side="left")
-        ModernButton(ver_row, text="Update metacheck", style="Ghost.TButton",
-                   command=self.update_metacheck).pack(side="left", padx=8)
+        self.update_metacheck_btn = ModernButton(
+            ver_row, text="Update metacheck (R)", style="Ghost.TButton",
+            command=self.update_metacheck)
+        self.update_metacheck_btn.pack(side="left", padx=8)
+        self.update_btn = ModernButton(
+            ver_row, text="Update program (app)", style="Ghost.TButton",
+            command=lambda: self.check_updates(manual=True))
+        self.update_btn.pack(side="left", padx=8)
+        self.update_lbl = ttk.Label(ver_row, style="Muted.TLabel", text="")
+        self.update_lbl.pack(side="left", padx=8)
 
         ttk.Separator(panel).pack(fill="x", pady=(0, 8))
 
@@ -760,7 +769,7 @@ class App(tk.Tk):
         self.modules_count_lbl.config(
             text=f"{len(sel)} of {len(order)} selected")
 
-    def _load_engine_logos(self):
+    def _load_engine_logos(self, size=72):
         imgs = {}
         for key, fname in (("metacheck", "metacheck_logo_small.png"),
                            ("chetameck", "chetameck_logo_small.png"),
@@ -770,12 +779,18 @@ class App(tk.Tk):
                 p = config.BASE_DIR / "muecos_small.png"
             if p.exists():
                 try:
-                    im = tk.PhotoImage(file=str(p))
-                    if im.width() > 100:
-                        im = im.subsample(max(1, round(im.width() / 88)))
-                    imgs[key] = im
-                except tk.TclError:
-                    pass
+                    from PIL import Image, ImageTk
+                    im = Image.open(str(p)).convert("RGBA")
+                    im = im.resize((size, size), Image.LANCZOS)
+                    imgs[key] = ImageTk.PhotoImage(im)
+                except Exception:
+                    try:
+                        im = tk.PhotoImage(file=str(p))
+                        if im.width() > size:
+                            im = im.subsample(max(1, round(im.width() / size)))
+                        imgs[key] = im
+                    except tk.TclError:
+                        pass
         self._engine_logo_imgs = imgs
         return imgs
 
@@ -803,15 +818,6 @@ class App(tk.Tk):
         ttk.Label(panel, text="Not affiliated with the official metacheck app · "
                               "For private use only",
                   style="Muted.TLabel").pack(anchor="w")
-        ttk.Separator(panel).pack(fill="x", pady=(0, 12))
-        upd_row = ttk.Frame(panel)
-        upd_row.pack(fill="x")
-        self.update_btn = ModernButton(upd_row, text="Check for updates",
-                                       style="Ghost.TButton",
-                                       command=lambda: self.check_updates(manual=True))
-        self.update_btn.pack(side="left")
-        self.update_lbl = ttk.Label(upd_row, style="Muted.TLabel", text="")
-        self.update_lbl.pack(side="left", padx=10)
 
     # -------------------------------------------------------------- helpers
     def _append(self, text):
@@ -885,6 +891,32 @@ class App(tk.Tk):
                 self._ui(self._append, f"metacheck updated to {ver}.")
             except Exception as e:  # noqa: BLE001
                 self._ui(self._append, f"Update failed: {e}")
+            finally:
+                self._ui(self._refresh_status)
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _startup_ensure_metacheck(self):
+        """Install the metacheck R package automatically if it is missing.
+
+        This lets the packaged exe work with just R installed - the metacheck
+        package is fetched and installed from R-universe on first run.
+        """
+        if not config.RSCRIPT:
+            self._append("R not found - install R to run the metacheck engine.")
+            return
+        if pipeline.get_metacheck_version():
+            return
+        self._append("metacheck package not installed - installing from R-universe…")
+        self._append("This may take a minute.")
+
+        def worker():
+            try:
+                ver = pipeline.install_metacheck(
+                    on_log=lambda t: self._ui(self._append, t))
+                self._ui(self._append, f"metacheck installed (v{ver}).")
+            except Exception as e:  # noqa: BLE001
+                self._ui(self._append, f"metacheck install failed: {e}")
             finally:
                 self._ui(self._refresh_status)
 

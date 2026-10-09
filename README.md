@@ -16,8 +16,10 @@ You can select several engines at once — each one produces its own report.
 
 ## Getting started (desktop)
 
-1. Run `setup.bat` once (installs the R `metacheck` package if missing).
-2. Double-click **`ManuscriptChecker.exe`** (or `Start Metacheck.bat`).
+1. Double-click **`ManuscriptChecker.exe`** (or `Start Metacheck.bat`).
+2. On first run the app automatically installs the R `metacheck` package if it
+   is missing (you still need **R** installed). You can also run `setup.bat`
+   once yourself.
 3. Pick a manuscript, choose the GROBID server (defaults to a public TUE
    instance), select the engine(s) and checks, then press **Run check**.
 4. Each report opens in your browser automatically.
@@ -26,8 +28,8 @@ You can select several engines at once — each one produces its own report.
 
 Copy the whole folder, then on the target PC:
 
-1. Run `setup.bat` once.
-2. Double-click `ManuscriptChecker.exe`.
+1. Double-click `ManuscriptChecker.exe` — the metacheck package is installed
+   automatically on first run if it is missing.
 
 The target PC still needs **R** (+ the `metacheck` package), and **LibreOffice**
 if you want to convert DOCX/HTML (PDFs work without it). GROBID is reached over
