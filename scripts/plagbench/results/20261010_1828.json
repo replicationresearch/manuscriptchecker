@@ -1,0 +1,2128 @@
+{
+ "provenance": {
+  "utc": "2026-10-10T18:28Z",
+  "valid": true,
+  "evaluator_version": 2,
+  "corpus_sha256": "b93181a57d65aa0112ceba0aaacae2264b79011fdc0cc6683f846e525a5b4129",
+  "corpus_version": 2,
+  "engine_version": "0.3.0",
+  "engine_commit": "196ba8fcb8ae34755d2b9ebfd4e0996ad95120c7",
+  "engine_dirty": true,
+  "code_sha256": "81e237dbe3abf01012af8efd47c48a379d2ec00d8935f3c1f3970d6ee2ad7510",
+  "python": "3.14.7",
+  "requests": "2.34.2",
+  "options": {
+   "max_passages": 0,
+   "words_per_probe": 60,
+   "max_sources": 20,
+   "online": true,
+   "extra_files": [],
+   "library_dir": null,
+   "seed": 11,
+   "skip_used": false,
+   "openalex_key": null,
+   "backends": [
+    "europepmc",
+    "openalex",
+    "wikipedia"
+   ],
+   "wiki_lang": "en",
+   "phrase_log": false
+  },
+  "detected_at": 0.5,
+  "searches": {
+   "europepmc": {
+    "ok": 1145,
+    "failed": 0,
+    "quota": 0,
+    "requests": 1145
+   },
+   "openalex": {
+    "ok": 1145,
+    "failed": 0,
+    "quota": 0,
+    "requests": 359
+   },
+   "wikipedia": {
+    "ok": 1145,
+    "failed": 0,
+    "quota": 0,
+    "requests": 1145
+   }
+  }
+ },
+ "cases": [
+  {
+   "case_id": "syn01:pmc-13",
+   "host": "syn01",
+   "class": "pmc",
+   "type": "sentence_in_para",
+   "words": 15,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn01:oa_nonpmc-01",
+   "host": "syn01",
+   "class": "oa_nonpmc",
+   "type": "paragraph",
+   "words": 139,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn01:wikipedia-01",
+   "host": "syn01",
+   "class": "wikipedia",
+   "type": "paragraph",
+   "words": 93,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn01:oa_nonpmc-07",
+   "host": "syn01",
+   "class": "oa_nonpmc",
+   "type": "sentences3_in_para",
+   "words": 54,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn01:pmc-07",
+   "host": "syn01",
+   "class": "pmc",
+   "type": "sentences3_in_para",
+   "words": 114,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn01:oa_nonpmc-02",
+   "host": "syn01",
+   "class": "oa_nonpmc",
+   "type": "paragraph",
+   "words": 134,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn02:wikipedia-07",
+   "host": "syn02",
+   "class": "wikipedia",
+   "type": "sentences3_in_para",
+   "words": 78,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn02:psyarxiv-07",
+   "host": "syn02",
+   "class": "psyarxiv",
+   "type": "sentences3_in_para",
+   "words": 121,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn02:pmc-01",
+   "host": "syn02",
+   "class": "pmc",
+   "type": "paragraph",
+   "words": 145,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn02:psyarxiv-01",
+   "host": "syn02",
+   "class": "psyarxiv",
+   "type": "paragraph",
+   "words": 165,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.055,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn02:psyarxiv-08",
+   "host": "syn02",
+   "class": "psyarxiv",
+   "type": "sentences3_in_para",
+   "words": 85,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn02:oa_nonpmc-08",
+   "host": "syn02",
+   "class": "oa_nonpmc",
+   "type": "sentences3_in_para",
+   "words": 71,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn03:oa_nonpmc-13",
+   "host": "syn03",
+   "class": "oa_nonpmc",
+   "type": "sentence_in_para",
+   "words": 13,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn03:wikipedia-13",
+   "host": "syn03",
+   "class": "wikipedia",
+   "type": "sentence_in_para",
+   "words": 20,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn03:wikipedia-02",
+   "host": "syn03",
+   "class": "wikipedia",
+   "type": "paragraph",
+   "words": 97,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn03:oa_nonpmc-03",
+   "host": "syn03",
+   "class": "oa_nonpmc",
+   "type": "paragraph",
+   "words": 119,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn03:psyarxiv-13",
+   "host": "syn03",
+   "class": "psyarxiv",
+   "type": "sentence_in_para",
+   "words": 31,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn03:wikipedia-08",
+   "host": "syn03",
+   "class": "wikipedia",
+   "type": "sentences3_in_para",
+   "words": 43,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn04:psyarxiv-02",
+   "host": "syn04",
+   "class": "psyarxiv",
+   "type": "paragraph",
+   "words": 133,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn04:wikipedia-14",
+   "host": "syn04",
+   "class": "wikipedia",
+   "type": "sentence_in_para",
+   "words": 19,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn04:psyarxiv-09",
+   "host": "syn04",
+   "class": "psyarxiv",
+   "type": "sentences3_in_para",
+   "words": 75,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn04:psyarxiv-03",
+   "host": "syn04",
+   "class": "psyarxiv",
+   "type": "paragraph",
+   "words": 134,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn04:oa_nonpmc-14",
+   "host": "syn04",
+   "class": "oa_nonpmc",
+   "type": "sentence_in_para",
+   "words": 42,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn04:wikipedia-15",
+   "host": "syn04",
+   "class": "wikipedia",
+   "type": "sentence_in_para",
+   "words": 37,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn05:pmc-02",
+   "host": "syn05",
+   "class": "pmc",
+   "type": "paragraph",
+   "words": 109,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn05:pmc-08",
+   "host": "syn05",
+   "class": "pmc",
+   "type": "sentences3_in_para",
+   "words": 66,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn05:psyarxiv-14",
+   "host": "syn05",
+   "class": "psyarxiv",
+   "type": "sentence_in_para",
+   "words": 29,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn05:oa_nonpmc-09",
+   "host": "syn05",
+   "class": "oa_nonpmc",
+   "type": "sentences3_in_para",
+   "words": 71,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn05:pmc-14",
+   "host": "syn05",
+   "class": "pmc",
+   "type": "sentence_in_para",
+   "words": 47,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn05:psyarxiv-15",
+   "host": "syn05",
+   "class": "psyarxiv",
+   "type": "sentence_in_para",
+   "words": 45,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn06:pmc-15",
+   "host": "syn06",
+   "class": "pmc",
+   "type": "sentence_in_para",
+   "words": 28,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn06:pmc-03",
+   "host": "syn06",
+   "class": "pmc",
+   "type": "paragraph",
+   "words": 137,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn06:pmc-09",
+   "host": "syn06",
+   "class": "pmc",
+   "type": "sentences3_in_para",
+   "words": 119,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn06:wikipedia-09",
+   "host": "syn06",
+   "class": "wikipedia",
+   "type": "sentences3_in_para",
+   "words": 56,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn06:wikipedia-03",
+   "host": "syn06",
+   "class": "wikipedia",
+   "type": "paragraph",
+   "words": 148,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "syn06:oa_nonpmc-15",
+   "host": "syn06",
+   "class": "oa_nonpmc",
+   "type": "sentence_in_para",
+   "words": 24,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "synthetic"
+  },
+  {
+   "case_id": "real01:oa_nonpmc-16",
+   "host": "real01",
+   "class": "oa_nonpmc",
+   "type": "sentence_in_para",
+   "words": 39,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real01:wikipedia-10",
+   "host": "real01",
+   "class": "wikipedia",
+   "type": "sentences3_in_para",
+   "words": 114,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real01:wikipedia-04",
+   "host": "real01",
+   "class": "wikipedia",
+   "type": "paragraph",
+   "words": 136,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real01:pmc-16",
+   "host": "real01",
+   "class": "pmc",
+   "type": "sentence_in_para",
+   "words": 30,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real01:pmc-10",
+   "host": "real01",
+   "class": "pmc",
+   "type": "sentences3_in_para",
+   "words": 82,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real01:psyarxiv-04",
+   "host": "real01",
+   "class": "psyarxiv",
+   "type": "paragraph",
+   "words": 99,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real02:wikipedia-05",
+   "host": "real02",
+   "class": "wikipedia",
+   "type": "paragraph",
+   "words": 99,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real02:psyarxiv-10",
+   "host": "real02",
+   "class": "psyarxiv",
+   "type": "sentences3_in_para",
+   "words": 77,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real02:wikipedia-16",
+   "host": "real02",
+   "class": "wikipedia",
+   "type": "sentence_in_para",
+   "words": 36,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real02:wikipedia-06",
+   "host": "real02",
+   "class": "wikipedia",
+   "type": "paragraph",
+   "words": 149,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real02:pmc-17",
+   "host": "real02",
+   "class": "pmc",
+   "type": "sentence_in_para",
+   "words": 37,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real02:pmc-04",
+   "host": "real02",
+   "class": "pmc",
+   "type": "paragraph",
+   "words": 127,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real03:wikipedia-17",
+   "host": "real03",
+   "class": "wikipedia",
+   "type": "sentence_in_para",
+   "words": 52,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 0.942,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real03:pmc-05",
+   "host": "real03",
+   "class": "pmc",
+   "type": "paragraph",
+   "words": 157,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real03:oa_nonpmc-17",
+   "host": "real03",
+   "class": "oa_nonpmc",
+   "type": "sentence_in_para",
+   "words": 18,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real03:psyarxiv-05",
+   "host": "real03",
+   "class": "psyarxiv",
+   "type": "paragraph",
+   "words": 87,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real03:pmc-06",
+   "host": "real03",
+   "class": "pmc",
+   "type": "paragraph",
+   "words": 155,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real03:oa_nonpmc-10",
+   "host": "real03",
+   "class": "oa_nonpmc",
+   "type": "sentences3_in_para",
+   "words": 72,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real04:psyarxiv-11",
+   "host": "real04",
+   "class": "psyarxiv",
+   "type": "sentences3_in_para",
+   "words": 89,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real04:psyarxiv-12",
+   "host": "real04",
+   "class": "psyarxiv",
+   "type": "sentences3_in_para",
+   "words": 54,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real04:oa_nonpmc-11",
+   "host": "real04",
+   "class": "oa_nonpmc",
+   "type": "sentences3_in_para",
+   "words": 93,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real04:psyarxiv-16",
+   "host": "real04",
+   "class": "psyarxiv",
+   "type": "sentence_in_para",
+   "words": 22,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real04:wikipedia-11",
+   "host": "real04",
+   "class": "wikipedia",
+   "type": "sentences3_in_para",
+   "words": 123,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real04:oa_nonpmc-18",
+   "host": "real04",
+   "class": "oa_nonpmc",
+   "type": "sentence_in_para",
+   "words": 37,
+   "probed": true,
+   "found": true,
+   "verified": false,
+   "coverage": 0.432,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real05:oa_nonpmc-04",
+   "host": "real05",
+   "class": "oa_nonpmc",
+   "type": "paragraph",
+   "words": 103,
+   "probed": true,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real05:wikipedia-12",
+   "host": "real05",
+   "class": "wikipedia",
+   "type": "sentences3_in_para",
+   "words": 67,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real05:oa_nonpmc-12",
+   "host": "real05",
+   "class": "oa_nonpmc",
+   "type": "sentences3_in_para",
+   "words": 55,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real05:psyarxiv-17",
+   "host": "real05",
+   "class": "psyarxiv",
+   "type": "sentence_in_para",
+   "words": 21,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real05:psyarxiv-18",
+   "host": "real05",
+   "class": "psyarxiv",
+   "type": "sentence_in_para",
+   "words": 26,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real05:oa_nonpmc-05",
+   "host": "real05",
+   "class": "oa_nonpmc",
+   "type": "paragraph",
+   "words": 92,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real06:oa_nonpmc-06",
+   "host": "real06",
+   "class": "oa_nonpmc",
+   "type": "paragraph",
+   "words": 106,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real06:wikipedia-18",
+   "host": "real06",
+   "class": "wikipedia",
+   "type": "sentence_in_para",
+   "words": 42,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real06:pmc-18",
+   "host": "real06",
+   "class": "pmc",
+   "type": "sentence_in_para",
+   "words": 21,
+   "probed": false,
+   "found": false,
+   "verified": false,
+   "coverage": 0.0,
+   "detected": false,
+   "track": "real"
+  },
+  {
+   "case_id": "real06:pmc-11",
+   "host": "real06",
+   "class": "pmc",
+   "type": "sentences3_in_para",
+   "words": 61,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real06:psyarxiv-06",
+   "host": "real06",
+   "class": "psyarxiv",
+   "type": "paragraph",
+   "words": 126,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  },
+  {
+   "case_id": "real06:pmc-12",
+   "host": "real06",
+   "class": "pmc",
+   "type": "sentences3_in_para",
+   "words": 130,
+   "probed": true,
+   "found": true,
+   "verified": true,
+   "coverage": 1.0,
+   "detected": true,
+   "track": "real"
+  }
+ ],
+ "hosts": [
+  {
+   "host": "syn01",
+   "track": "synthetic",
+   "phrases": 46,
+   "score": 0.1933,
+   "sources_verified": 8,
+   "candidates_not_fetched": 1,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 46
+    },
+    "openalex": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 23
+    },
+    "wikipedia": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 46
+    }
+   },
+   "words_outside": 2271,
+   "flagged_outside": 11,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 11,
+   "sources_outside": [
+    {
+     "title": "Dermatology patient-derived health utility of facial angiofibroma associated with tuberous sclerosis complex.",
+     "doi": "10.1007/s11136-026-04362-1",
+     "words": 10,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Loneliness",
+     "doi": "",
+     "words": 1,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Social isolation",
+     "doi": "",
+     "words": 1,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "The default network of the human brain is associated with perceived social isolation",
+     "doi": "10.1038/s41467-020-20039-w",
+     "words": 1,
+     "own_work": false,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "syn01",
+   "track": "control",
+   "phrases": 37,
+   "score": 0.0,
+   "sources_verified": 0,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 37
+    },
+    "openalex": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 4
+    },
+    "wikipedia": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 37
+    }
+   },
+   "words_outside": 2271,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn02",
+   "track": "synthetic",
+   "phrases": 46,
+   "score": 0.1219,
+   "sources_verified": 4,
+   "candidates_not_fetched": 1,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 46
+    },
+    "openalex": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 13
+    },
+    "wikipedia": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 46
+    }
+   },
+   "words_outside": 2173,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn02",
+   "track": "control",
+   "phrases": 35,
+   "score": 0.0,
+   "sources_verified": 0,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 35,
+     "failed": 0,
+     "quota": 0,
+     "requests": 35
+    },
+    "openalex": {
+     "ok": 35,
+     "failed": 0,
+     "quota": 0,
+     "requests": 4
+    },
+    "wikipedia": {
+     "ok": 35,
+     "failed": 0,
+     "quota": 0,
+     "requests": 35
+    }
+   },
+   "words_outside": 2173,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn03",
+   "track": "synthetic",
+   "phrases": 42,
+   "score": 0.0545,
+   "sources_verified": 3,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 42,
+     "failed": 0,
+     "quota": 0,
+     "requests": 42
+    },
+    "openalex": {
+     "ok": 42,
+     "failed": 0,
+     "quota": 0,
+     "requests": 5
+    },
+    "wikipedia": {
+     "ok": 42,
+     "failed": 0,
+     "quota": 0,
+     "requests": 42
+    }
+   },
+   "words_outside": 2247,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn03",
+   "track": "control",
+   "phrases": 36,
+   "score": 0.0,
+   "sources_verified": 0,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 36,
+     "failed": 0,
+     "quota": 0,
+     "requests": 36
+    },
+    "openalex": {
+     "ok": 36,
+     "failed": 0,
+     "quota": 0,
+     "requests": 4
+    },
+    "wikipedia": {
+     "ok": 36,
+     "failed": 0,
+     "quota": 0,
+     "requests": 36
+    }
+   },
+   "words_outside": 2247,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn04",
+   "track": "synthetic",
+   "phrases": 46,
+   "score": 0.1006,
+   "sources_verified": 4,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 46
+    },
+    "openalex": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 5
+    },
+    "wikipedia": {
+     "ok": 46,
+     "failed": 0,
+     "quota": 0,
+     "requests": 46
+    }
+   },
+   "words_outside": 2223,
+   "flagged_outside": 1,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 1,
+   "sources_outside": [
+    {
+     "title": "The dynamics of interpersonal emotion regulation: How sharers elicit desired (but not necessarily helpful) support.",
+     "doi": "10.1037/emo0001382",
+     "words": 1,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "The Dynamics of Interpersonal Emotion Regulation: How Sharers Elicit Desired (But Not Necessarily Helpful) Support",
+     "doi": "10.31234/osf.io/v43zf",
+     "words": 1,
+     "own_work": false,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "syn04",
+   "track": "control",
+   "phrases": 38,
+   "score": 0.0,
+   "sources_verified": 0,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 38,
+     "failed": 0,
+     "quota": 0,
+     "requests": 38
+    },
+    "openalex": {
+     "ok": 38,
+     "failed": 0,
+     "quota": 0,
+     "requests": 4
+    },
+    "wikipedia": {
+     "ok": 38,
+     "failed": 0,
+     "quota": 0,
+     "requests": 38
+    }
+   },
+   "words_outside": 2223,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn05",
+   "track": "synthetic",
+   "phrases": 43,
+   "score": 0.1119,
+   "sources_verified": 4,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 43,
+     "failed": 0,
+     "quota": 0,
+     "requests": 43
+    },
+    "openalex": {
+     "ok": 43,
+     "failed": 0,
+     "quota": 0,
+     "requests": 5
+    },
+    "wikipedia": {
+     "ok": 43,
+     "failed": 0,
+     "quota": 0,
+     "requests": 43
+    }
+   },
+   "words_outside": 2252,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn05",
+   "track": "control",
+   "phrases": 37,
+   "score": 0.0,
+   "sources_verified": 0,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 37
+    },
+    "openalex": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 4
+    },
+    "wikipedia": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 37
+    }
+   },
+   "words_outside": 2252,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn06",
+   "track": "synthetic",
+   "phrases": 43,
+   "score": 0.174,
+   "sources_verified": 6,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 43,
+     "failed": 0,
+     "quota": 0,
+     "requests": 43
+    },
+    "openalex": {
+     "ok": 43,
+     "failed": 0,
+     "quota": 0,
+     "requests": 13
+    },
+    "wikipedia": {
+     "ok": 43,
+     "failed": 0,
+     "quota": 0,
+     "requests": 43
+    }
+   },
+   "words_outside": 2270,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "syn06",
+   "track": "control",
+   "phrases": 36,
+   "score": 0.0,
+   "sources_verified": 0,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 0,
+   "search_stats": {
+    "europepmc": {
+     "ok": 36,
+     "failed": 0,
+     "quota": 0,
+     "requests": 36
+    },
+    "openalex": {
+     "ok": 36,
+     "failed": 0,
+     "quota": 0,
+     "requests": 4
+    },
+    "wikipedia": {
+     "ok": 36,
+     "failed": 0,
+     "quota": 0,
+     "requests": 36
+    }
+   },
+   "words_outside": 2270,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "real01",
+   "track": "real",
+   "phrases": 59,
+   "score": 0.1418,
+   "sources_verified": 6,
+   "candidates_not_fetched": 2,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 59,
+     "failed": 0,
+     "quota": 0,
+     "requests": 59
+    },
+    "openalex": {
+     "ok": 59,
+     "failed": 0,
+     "quota": 0,
+     "requests": 35
+    },
+    "wikipedia": {
+     "ok": 59,
+     "failed": 0,
+     "quota": 0,
+     "requests": 59
+    }
+   },
+   "words_outside": 2752,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "real01",
+   "track": "control",
+   "phrases": 50,
+   "score": 0.004,
+   "sources_verified": 1,
+   "candidates_not_fetched": 1,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 50,
+     "failed": 0,
+     "quota": 0,
+     "requests": 50
+    },
+    "openalex": {
+     "ok": 50,
+     "failed": 0,
+     "quota": 0,
+     "requests": 22
+    },
+    "wikipedia": {
+     "ok": 50,
+     "failed": 0,
+     "quota": 0,
+     "requests": 50
+    }
+   },
+   "words_outside": 2752,
+   "flagged_outside": 11,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 11,
+   "sources_outside": [
+    {
+     "title": "Cost-effectiveness and epidemiological impact of gender-neutral vaccination against human papillomavirus in economically",
+     "doi": "10.1080/21645515.2025.2557092",
+     "words": 11,
+     "own_work": false,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "real02",
+   "track": "real",
+   "phrases": 64,
+   "score": 0.0761,
+   "sources_verified": 6,
+   "candidates_not_fetched": 1,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 64,
+     "failed": 0,
+     "quota": 0,
+     "requests": 64
+    },
+    "openalex": {
+     "ok": 64,
+     "failed": 0,
+     "quota": 0,
+     "requests": 26
+    },
+    "wikipedia": {
+     "ok": 64,
+     "failed": 0,
+     "quota": 0,
+     "requests": 64
+    }
+   },
+   "words_outside": 3247,
+   "flagged_outside": 39,
+   "flagged_outside_own_work": 9,
+   "flagged_outside_other": 30,
+   "sources_outside": [
+    {
+     "title": "Prevalence of low muscle mass and associated factors in community-dwelling older adults in Singapore.",
+     "doi": "10.1038/s41598-021-02274-3",
+     "words": 23,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Validation of the Arabic Version of the Transition Planning Inventory (TPI-AR).",
+     "doi": "10.3390/ijerph20021135",
+     "words": 15,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Differential epithelial and stromal protein profiles in cone and non-cone regions of keratoconus corneas.",
+     "doi": "10.1038/s41598-019-39182-6",
+     "words": 10,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Development, feasibility testing and evaluation of a family-oriented mobile application to promote healthy lifestyle in ",
+     "doi": "10.3389/fdgth.2026.1869210",
+     "words": 9,
+     "own_work": true,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "real02",
+   "track": "control",
+   "phrases": 54,
+   "score": 0.012,
+   "sources_verified": 4,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 54,
+     "failed": 0,
+     "quota": 0,
+     "requests": 54
+    },
+    "openalex": {
+     "ok": 54,
+     "failed": 0,
+     "quota": 0,
+     "requests": 10
+    },
+    "wikipedia": {
+     "ok": 54,
+     "failed": 0,
+     "quota": 0,
+     "requests": 54
+    }
+   },
+   "words_outside": 3247,
+   "flagged_outside": 39,
+   "flagged_outside_own_work": 9,
+   "flagged_outside_other": 30,
+   "sources_outside": [
+    {
+     "title": "Prevalence of low muscle mass and associated factors in community-dwelling older adults in Singapore.",
+     "doi": "10.1038/s41598-021-02274-3",
+     "words": 23,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Validation of the Arabic Version of the Transition Planning Inventory (TPI-AR).",
+     "doi": "10.3390/ijerph20021135",
+     "words": 15,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Differential epithelial and stromal protein profiles in cone and non-cone regions of keratoconus corneas.",
+     "doi": "10.1038/s41598-019-39182-6",
+     "words": 10,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Development, feasibility testing and evaluation of a family-oriented mobile application to promote healthy lifestyle in ",
+     "doi": "10.3389/fdgth.2026.1869210",
+     "words": 9,
+     "own_work": true,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "real03",
+   "track": "real",
+   "phrases": 65,
+   "score": 0.2761,
+   "sources_verified": 14,
+   "candidates_not_fetched": 1,
+   "same_work_dropped": 2,
+   "search_stats": {
+    "europepmc": {
+     "ok": 65,
+     "failed": 0,
+     "quota": 0,
+     "requests": 65
+    },
+    "openalex": {
+     "ok": 65,
+     "failed": 0,
+     "quota": 0,
+     "requests": 31
+    },
+    "wikipedia": {
+     "ok": 65,
+     "failed": 0,
+     "quota": 0,
+     "requests": 65
+    }
+   },
+   "words_outside": 2939,
+   "flagged_outside": 600,
+   "flagged_outside_own_work": 600,
+   "flagged_outside_other": 0,
+   "sources_outside": [
+    {
+     "title": "It needs more than a myocardial infarction to start exercising: the CoLaus|PsyCoLaus prospective study.",
+     "doi": "10.1186/s12872-024-03755-9",
+     "words": 377,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Association between Mediterranean Diet and Type 2 Diabetes: Multiple Cross-Sectional Analyses",
+     "doi": "10.3390/nu15133025",
+     "words": 190,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Associations Between Physical Activity Patterns and Cardiovascular Events and Risk Factors: Cross-Sectional and Prospect",
+     "doi": "10.1016/j.jacadv.2024.101324",
+     "words": 189,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Vitamin D Levels Are Associated with Cardiovascular Disease Events but Not with Cardiovascular Disease or Overall Mortal",
+     "doi": "10.3390/nu15184046",
+     "words": 178,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Blood pressure status, trajectories and cardiovascular disease: the CoLaus|PsyCoLaus prospective study.",
+     "doi": "10.1136/openhrt-2023-002556",
+     "words": 150,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Association of clinical and genetic risk factors with management of dyslipidaemia: analysis of repeated cross-sectional ",
+     "doi": "10.1136/bmjopen-2022-065409",
+     "words": 143,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "No Association between Vitamin D and Weight Gain: A Prospective, Population-Based Study.",
+     "doi": "10.3390/nu14153185",
+     "words": 137,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Association between anthropometric markers of adiposity, adipokines and vitamin D levels.",
+     "doi": "10.1038/s41598-022-19409-9",
+     "words": 125,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Vitamin D and Weight Change: A Mendelian Randomization, Prospective Study",
+     "doi": "10.3390/ijms231911100",
+     "words": 102,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Estimating the risk of developing type 2 diabetes: a comparison of several risk scores: the Cohorte Lausannoise study.",
+     "doi": "10.2337/dc11-0206",
+     "words": 81,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Does sleep affect weight gain? Assessing subjective sleep and polysomnography measures in a population-based cohort stud",
+     "doi": "10.1093/sleep/zsz077",
+     "words": 30,
+     "own_work": true,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "real03",
+   "track": "control",
+   "phrases": 55,
+   "score": 0.1912,
+   "sources_verified": 9,
+   "candidates_not_fetched": 1,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 55,
+     "failed": 0,
+     "quota": 0,
+     "requests": 55
+    },
+    "openalex": {
+     "ok": 55,
+     "failed": 0,
+     "quota": 0,
+     "requests": 36
+    },
+    "wikipedia": {
+     "ok": 55,
+     "failed": 0,
+     "quota": 0,
+     "requests": 55
+    }
+   },
+   "words_outside": 2939,
+   "flagged_outside": 562,
+   "flagged_outside_own_work": 562,
+   "flagged_outside_other": 0,
+   "sources_outside": [
+    {
+     "title": "It needs more than a myocardial infarction to start exercising: the CoLaus|PsyCoLaus prospective study.",
+     "doi": "10.1186/s12872-024-03755-9",
+     "words": 377,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Association between Mediterranean Diet and Type 2 Diabetes: Multiple Cross-Sectional Analyses",
+     "doi": "10.3390/nu15133025",
+     "words": 190,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Associations Between Physical Activity Patterns and Cardiovascular Events and Risk Factors: Cross-Sectional and Prospect",
+     "doi": "10.1016/j.jacadv.2024.101324",
+     "words": 189,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Vitamin D Levels Are Associated with Cardiovascular Disease Events but Not with Cardiovascular Disease or Overall Mortal",
+     "doi": "10.3390/nu15184046",
+     "words": 178,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "No Association between Vitamin D and Weight Gain: A Prospective, Population-Based Study.",
+     "doi": "10.3390/nu14153185",
+     "words": 137,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Association between anthropometric markers of adiposity, adipokines and vitamin D levels.",
+     "doi": "10.1038/s41598-022-19409-9",
+     "words": 125,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Vitamin D and Weight Change: A Mendelian Randomization, Prospective Study",
+     "doi": "10.3390/ijms231911100",
+     "words": 102,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Estimating the risk of developing type 2 diabetes: a comparison of several risk scores: the Cohorte Lausannoise study.",
+     "doi": "10.2337/dc11-0206",
+     "words": 81,
+     "own_work": true,
+     "cited": false
+    },
+    {
+     "title": "Does sleep affect weight gain? Assessing subjective sleep and polysomnography measures in a population-based cohort stud",
+     "doi": "10.1093/sleep/zsz077",
+     "words": 30,
+     "own_work": true,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "real04",
+   "track": "real",
+   "phrases": 85,
+   "score": 0.0493,
+   "sources_verified": 3,
+   "candidates_not_fetched": 1,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 85,
+     "failed": 0,
+     "quota": 0,
+     "requests": 85
+    },
+    "openalex": {
+     "ok": 85,
+     "failed": 0,
+     "quota": 0,
+     "requests": 17
+    },
+    "wikipedia": {
+     "ok": 85,
+     "failed": 0,
+     "quota": 0,
+     "requests": 85
+    }
+   },
+   "words_outside": 4286,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "real04",
+   "track": "control",
+   "phrases": 77,
+   "score": 0.0,
+   "sources_verified": 0,
+   "candidates_not_fetched": 1,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 77,
+     "failed": 0,
+     "quota": 0,
+     "requests": 77
+    },
+    "openalex": {
+     "ok": 77,
+     "failed": 0,
+     "quota": 0,
+     "requests": 16
+    },
+    "wikipedia": {
+     "ok": 77,
+     "failed": 0,
+     "quota": 0,
+     "requests": 77
+    }
+   },
+   "words_outside": 4286,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "real05",
+   "track": "real",
+   "phrases": 38,
+   "score": 0.0876,
+   "sources_verified": 5,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 38,
+     "failed": 0,
+     "quota": 0,
+     "requests": 38
+    },
+    "openalex": {
+     "ok": 38,
+     "failed": 0,
+     "quota": 0,
+     "requests": 22
+    },
+    "wikipedia": {
+     "ok": 38,
+     "failed": 0,
+     "quota": 0,
+     "requests": 38
+    }
+   },
+   "words_outside": 1862,
+   "flagged_outside": 36,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 36,
+   "sources_outside": [
+    {
+     "title": "Factors Influencing Employment and Employability for Persons with Disability: Insights from a City in South India.",
+     "doi": "10.4103/ijoem.ijoem_44_16",
+     "words": 36,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "How Did Governments Address the Needs of People With Disabilities During the COVID-19 Pandemic? An Analysis of 14 Countr",
+     "doi": "10.34172/ijhpm.2023.7111",
+     "words": 10,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Ethical Challenges Faced by Individuals with Disabilities in Accessing Healthcare: A Systematic Review of Barriers, Disc",
+     "doi": "",
+     "words": 9,
+     "own_work": false,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "real05",
+   "track": "control",
+   "phrases": 31,
+   "score": 0.0,
+   "sources_verified": 0,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 31,
+     "failed": 0,
+     "quota": 0,
+     "requests": 31
+    },
+    "openalex": {
+     "ok": 31,
+     "failed": 0,
+     "quota": 0,
+     "requests": 13
+    },
+    "wikipedia": {
+     "ok": 31,
+     "failed": 0,
+     "quota": 0,
+     "requests": 31
+    }
+   },
+   "words_outside": 1862,
+   "flagged_outside": 0,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 0,
+   "sources_outside": []
+  },
+  {
+   "host": "real06",
+   "track": "real",
+   "phrases": 45,
+   "score": 0.1659,
+   "sources_verified": 8,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 45,
+     "failed": 0,
+     "quota": 0,
+     "requests": 45
+    },
+    "openalex": {
+     "ok": 45,
+     "failed": 0,
+     "quota": 0,
+     "requests": 21
+    },
+    "wikipedia": {
+     "ok": 45,
+     "failed": 0,
+     "quota": 0,
+     "requests": 45
+    }
+   },
+   "words_outside": 2232,
+   "flagged_outside": 28,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 28,
+   "sources_outside": [
+    {
+     "title": "The association between oxidative balance score and sleep duration: a mediation analysis of a cross-sectional study",
+     "doi": "10.3389/fnut.2024.1423424",
+     "words": 18,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "The association between computed tomography-based intrapancreatic fat deposition and renal function.",
+     "doi": "10.1186/s12882-025-04642-x",
+     "words": 10,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Metastatic lymph nodes and prognosis assessed by the number of retrieved lymph nodes in gastric cancer.",
+     "doi": "10.4240/wjgs.v14.i11.1230",
+     "words": 10,
+     "own_work": false,
+     "cited": false
+    }
+   ]
+  },
+  {
+   "host": "real06",
+   "track": "control",
+   "phrases": 37,
+   "score": 0.0125,
+   "sources_verified": 3,
+   "candidates_not_fetched": 0,
+   "same_work_dropped": 1,
+   "search_stats": {
+    "europepmc": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 37
+    },
+    "openalex": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 22
+    },
+    "wikipedia": {
+     "ok": 37,
+     "failed": 0,
+     "quota": 0,
+     "requests": 37
+    }
+   },
+   "words_outside": 2232,
+   "flagged_outside": 28,
+   "flagged_outside_own_work": 0,
+   "flagged_outside_other": 28,
+   "sources_outside": [
+    {
+     "title": "The association between oxidative balance score and sleep duration: a mediation analysis of a cross-sectional study",
+     "doi": "10.3389/fnut.2024.1423424",
+     "words": 18,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "The association between computed tomography-based intrapancreatic fat deposition and renal function.",
+     "doi": "10.1186/s12882-025-04642-x",
+     "words": 10,
+     "own_work": false,
+     "cited": false
+    },
+    {
+     "title": "Metastatic lymph nodes and prognosis assessed by the number of retrieved lymph nodes in gastric cancer.",
+     "doi": "10.4240/wjgs.v14.i11.1230",
+     "words": 10,
+     "own_work": false,
+     "cited": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+# Online benchmark - 2026-10-10T18:28Z
+
+Run VALID; corpus b93181a57d65 (v2); engine 0.3.0 @ 196ba8fc + uncommitted changes (code 81e237dbe3ab); one run per manuscript, seed 11, one phrase per 60 words.
+
+Phrases answered / failed / refused for quota (requests sent):
+  europepmc: 1145 / 0 / 0 (1145)
+  openalex: 1145 / 0 / 0 (359)
+  wikipedia: 1145 / 0 / 0 (1145)
+
+Counts are cases (injected passages). Intervals are Wilson 95% intervals that treat cases as independent; cases share hosts, so read them as descriptive. This is a pilot-sized corpus.
+
+## Synthetic hosts
+
+class                  n   probed    found  verified  detected  95% interval (detected)
+pmc                    9     7/9      7/9       7/9       7/9    78% [45%-94%]
+oa_nonpmc              9     7/9      6/9       6/9       6/9    67% [35%-88%]
+wikipedia              9     6/9      5/9       5/9       5/9    56% [27%-81%]
+psyarxiv               9     5/9      3/9       3/9       3/9    33% [12%-65%]
+ALL                   36    25/36    21/36     21/36     21/36   58% [42%-73%]
+
+type                   n   probed    found  verified  detected  95% interval (detected)
+sentence_in_para      12     2/12     2/12      2/12      2/12   17% [5%-45%]
+paragraph             12    12/12    10/12     10/12     10/12   83% [55%-95%]
+sentences3_in_para    12    11/12     9/12      9/12      9/12   75% [47%-91%]
+ALL                   36    25/36    21/36     21/36     21/36   58% [42%-73%]
+
+## Real hosts
+
+class                  n   probed    found  verified  detected  95% interval (detected)
+oa_nonpmc              9     6/9      4/9       3/9       3/9    33% [12%-65%]
+wikipedia              9     7/9      7/9       7/9       7/9    78% [45%-94%]
+pmc                    9     7/9      6/9       6/9       6/9    67% [35%-88%]
+psyarxiv               9     5/9      2/9       2/9       2/9    22% [6%-55%]
+ALL                   36    25/36    19/36     18/36     18/36   50% [34%-66%]
+
+type                   n   probed    found  verified  detected  95% interval (detected)
+sentence_in_para      12     3/12     3/12      2/12      2/12   17% [5%-45%]
+sentences3_in_para    12    10/12     7/12      7/12      7/12   58% [32%-81%]
+paragraph             12    12/12     9/12      9/12      9/12   75% [47%-91%]
+ALL                   36    25/36    19/36     18/36     18/36   50% [34%-66%]
+
+## Both tracks
+
+class                  n   probed    found  verified  detected  95% interval (detected)
+pmc                   18    14/18    13/18     13/18     13/18   72% [49%-88%]
+oa_nonpmc             18    13/18    10/18      9/18      9/18   50% [29%-71%]
+wikipedia             18    13/18    12/18     12/18     12/18   67% [44%-84%]
+psyarxiv              18    10/18     5/18      5/18      5/18   28% [12%-51%]
+ALL                   72    50/72    40/72     39/72     39/72   54% [43%-65%]
+
+type                   n   probed    found  verified  detected  95% interval (detected)
+sentence_in_para      24     5/24     5/24      4/24      4/24   17% [7%-36%]
+paragraph             24    24/24    19/24     19/24     19/24   79% [60%-91%]
+sentences3_in_para    24    21/24    16/24     16/24     16/24   67% [47%-82%]
+ALL                   72    50/72    40/72     39/72     39/72   54% [43%-65%]
+
+## Overlap outside the injections
+
+synthetic hosts with injections (candidate false positives): 12/13436 words (0.09%); of these 0 from the authors' own prior work, 12 from other sources
+    syn01:   10 words - Dermatology patient-derived health utility of facial angiofibroma associated wit
+    syn01:    1 words - Loneliness
+    syn01:    1 words - Social isolation
+    syn01:    1 words - The default network of the human brain is associated with perceived social isola
+    syn04:    1 words - The dynamics of interpersonal emotion regulation: How sharers elicit desired (bu
+    syn04:    1 words - The Dynamics of Interpersonal Emotion Regulation: How Sharers Elicit Desired (Bu
+real hosts with injections (background overlap): 703/17318 words (4.06%); of these 609 from the authors' own prior work, 94 from other sources
+    real02:   23 words - Prevalence of low muscle mass and associated factors in community-dwelling older
+    real02:   15 words - Validation of the Arabic Version of the Transition Planning Inventory (TPI-AR).
+    real02:   10 words - Differential epithelial and stromal protein profiles in cone and non-cone region
+    real02:    9 words - [own work] Development, feasibility testing and evaluation of a family-oriented mobile appl
+    real03:  377 words - [own work] It needs more than a myocardial infarction to start exercising: the CoLaus|PsyCo
+    real03:  190 words - [own work] Association between Mediterranean Diet and Type 2 Diabetes: Multiple Cross-Secti
+    real03:  189 words - [own work] Associations Between Physical Activity Patterns and Cardiovascular Events and Ri
+    real03:  178 words - [own work] Vitamin D Levels Are Associated with Cardiovascular Disease Events but Not with 
+    real03:  150 words - [own work] Blood pressure status, trajectories and cardiovascular disease: the CoLaus|PsyCo
+    real03:  143 words - [own work] Association of clinical and genetic risk factors with management of dyslipidaemi
+    real05:   36 words - Factors Influencing Employment and Employability for Persons with Disability: In
+    real05:   10 words - How Did Governments Address the Needs of People With Disabilities During the COV
+    real05:    9 words - Ethical Challenges Faced by Individuals with Disabilities in Accessing Healthcar
+    real06:   18 words - The association between oxidative balance score and sleep duration: a mediation 
+    real06:   10 words - The association between computed tomography-based intrapancreatic fat deposition
+    real06:   10 words - Metastatic lymph nodes and prognosis assessed by the number of retrieved lymph n
+controls, synthetic (candidate false positives): 0/13436 words (0.00%); of these 0 from the authors' own prior work, 0 from other sources
+controls, real (background overlap): 640/17318 words (3.70%); of these 571 from the authors' own prior work, 69 from other sources
+    real01:   11 words - Cost-effectiveness and epidemiological impact of gender-neutral vaccination agai
+    real02:   23 words - Prevalence of low muscle mass and associated factors in community-dwelling older
+    real02:   15 words - Validation of the Arabic Version of the Transition Planning Inventory (TPI-AR).
+    real02:   10 words - Differential epithelial and stromal protein profiles in cone and non-cone region
+    real02:    9 words - [own work] Development, feasibility testing and evaluation of a family-oriented mobile appl
+    real03:  377 words - [own work] It needs more than a myocardial infarction to start exercising: the CoLaus|PsyCo
+    real03:  190 words - [own work] Association between Mediterranean Diet and Type 2 Diabetes: Multiple Cross-Secti
+    real03:  189 words - [own work] Associations Between Physical Activity Patterns and Cardiovascular Events and Ri
+    real03:  178 words - [own work] Vitamin D Levels Are Associated with Cardiovascular Disease Events but Not with 
+    real03:  137 words - [own work] No Association between Vitamin D and Weight Gain: A Prospective, Population-Base
+    real03:  125 words - [own work] Association between anthropometric markers of adiposity, adipokines and vitamin 
+    real06:   18 words - The association between oxidative balance score and sleep duration: a mediation 
+    real06:   10 words - The association between computed tomography-based intrapancreatic fat deposition
+    real06:   10 words - Metastatic lymph nodes and prognosis assessed by the number of retrieved lymph n
+
+Candidates whose full text was not compared (download failed or beyond the per-run limit): 10

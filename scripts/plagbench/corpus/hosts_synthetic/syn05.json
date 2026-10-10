@@ -1,0 +1,116 @@
+{
+ "id": "syn05",
+ "kind": "synthetic",
+ "title": "The Kitchen Confidence Scale: Development and Validation of a Short Measure of Self-Efficacy for Cooking from Raw Ingredients",
+ "authors": [
+  {
+   "family": "Ravenscroft-Adeyemi",
+   "given": "Philippa"
+  },
+  {
+   "family": "Dziedzic",
+   "given": "Anselm"
+  },
+  {
+   "family": "Moorcroft-Tavakoli",
+   "given": "Jasmine"
+  },
+  {
+   "family": "Linthwaite",
+   "given": "Eberhard"
+  }
+ ],
+ "license": "CC0-1.0",
+ "language": "en",
+ "spelling": "british",
+ "rows": [
+  {
+   "header": "Introduction",
+   "text": "A pan of onions that catches and burns is a small disaster, but it is also a diagnostic event. For people who cook rarely, such a mishap can confirm a private belief that they are simply not the sort of person who can make a meal from scratch. That belief, rather than a lack of recipes or equipment, may be what keeps many adults dependent on ready meals and takeaways. Public health programmes that run cooking classes often assume that skills transfer will improve diet, but they seldom measure the confidence that underlies skill use. Where confidence is measured, researchers tend to rely on ad hoc questions or on instruments designed for particular classes, which makes comparisons across studies difficult and leaves programme evaluators without a dependable yardstick."
+  },
+  {
+   "header": "Introduction",
+   "text": "Self-efficacy, or the belief that one can carry out a specified course of action, has a long record as a predictor of whether people start and persist with new behaviours (Thornquist & Abara-Lindgren, 2014). In the kitchen, it should be domain specific. A person might be confident about boiling pasta but anxious about handling raw chicken, and a single global item would blur such differences. Existing cooking self-efficacy measures typically bundle several things together: preparing food, following recipes, planning meals, and improvising with whatever is in the fridge. A few were developed with students or with parents of young children, and most have been validated with a single sample. Evidence of dimensionality, of stability across groups, and of sensitivity to change is generally missing or fragmentary."
+  },
+  {
+   "header": "Introduction",
+   "text": "This paper reports the development and validation of the Kitchen Confidence Scale, a short instrument for adults. We set three goals. The first was to generate a pool of items from the language that home cooks actually use and to reduce it to a brief form with sound structure. The second was to establish reliability, convergent and discriminant validity, and invariance across gender and age groups. The third was to test whether the scale predicts the frequency of cooking from raw ingredients over the following month, beyond what is predicted by general self-efficacy and by past cooking habits. Our working model had three correlated facets: confidence with basic techniques, confidence in planning and organising, and confidence in adapting when things go wrong."
+  },
+  {
+   "header": "Participants",
+   "text": "Three samples were used. Sample A (N = 312) took part in item reduction and exploratory analysis. It was recruited from community notice boards, a university staff mailing list, and a health charity newsletter, and had a mean age of 43.2 years (SD = 16.4), with 68% women. Sample B (N = 540) was a quota sample from an online panel, matched to UK census margins for age, gender and region, and was used for confirmatory analysis and invariance testing. Its mean age was 46.9 (SD = 17.1) and 51% were women. Sample C (N = 158) came from enrollees in six adult cooking courses run by local authorities, and completed the scale before the first and after the last session, thereby offering a test of sensitivity to change."
+  },
+  {
+   "header": "Participants",
+   "text": "Eligibility for samples A and B required age 18 or over and residence in the United Kingdom, and sample C had the additional requirement of not having attended a course of this type before. Across samples, 14% described themselves as cooking from raw ingredients on six or more days per week, 41% on three to five days, and 45% on two days or fewer. A subset of sample B (n = 203) agreed to be recontacted and completed the scale a second time two weeks later, and this group yielded the test-retest figures. Participants in A and B received a small online voucher, and sample C participants were offered a prize draw for a set of kitchen knives."
+  },
+  {
+   "header": "Procedure",
+   "text": "Item generation began with eleven short group discussions, each with five to seven adults of varying cooking experience, held in community centres and libraries. Facilitators asked participants to describe moments when they had felt capable in the kitchen and moments when they had felt hopeless. Transcripts were scanned for statements about ability, and two researchers drafted 64 candidate items in the first person, each beginning with the stem \"I feel able to\". A panel of five reviewers, including two dietitians and a cookery teacher, rated each item for clarity and relevance, and items with weak agreement were revised or dropped, leaving 38 items. Cognitive interviews with twelve adults then led us to reword nine items that were interpreted in several different ways."
+  },
+  {
+   "header": "Procedure",
+   "text": "The 38 items were administered to sample A online in randomised order. After the exploratory analysis reduced the pool to 18 items, the shorter version went to sample B along with the validation measures, which appeared in a fixed order after the scale. Sample C filled in paper copies on the first and last evening of the course. A follow-up message was sent to sample B four weeks after the initial session, asking participants to estimate on how many days in the previous four weeks they had prepared an evening meal mainly from raw ingredients, rather than with prepared sauces or ready meals. Response options for all confidence items ran from 0, labelled \"cannot do at all\", to 100, labelled \"certain I can do it\", in steps of ten."
+  },
+  {
+   "header": "Measures",
+   "text": "Convergent measures included a general self-efficacy questionnaire (ten items, alpha = .90 in sample B), a self-rated cooking skills item on a five-point scale, and a food-preparation frequency index. Discriminant validity was examined against a social desirability short form, as well as an item on enjoyment of food, which we expected to correlate weakly with confidence. A measure of healthy eating self-efficacy, concerning resistance to snacks and attention to portions, was included because it overlaps with, but is conceptually distinct from, confidence in the kitchen. Participants additionally reported their age, gender, household composition, whether they were primarily responsible for household meals, and years of cooking experience."
+  },
+  {
+   "header": "Measures",
+   "text": "The final instrument, after selection, contained twelve items across three subscales of four items each. Technique items covered tasks such as chopping vegetables safely, cooking meat until it is safe to eat, and making a sauce without lumps. Planning items covered deciding what to cook from what is on hand, shopping for a week of dinners, and timing several dishes so that they arrive together. Adaptation items referred to rescuing a dish that is too salty, changing a recipe when an ingredient is missing, and cooking for guests with dietary restrictions. We computed subscale scores as means, and a total score as the mean of all twelve items."
+  },
+  {
+   "header": "Analysis",
+   "text": "Sample A was analysed with parallel analysis and exploratory factor analysis using maximum likelihood estimation and an oblique rotation. Items were eliminated if their primary loading was below .45, if cross-loadings exceeded .30, or if the item showed redundancy with a close neighbour as judged by residual correlations and by content. Confirmatory analysis in sample B compared a one-factor model, a model with three correlated factors, and a bifactor model with a general factor and three specific factors. Fit was evaluated using the comparative fit index, Tucker-Lewis index, root mean square error of approximation and standardised root mean square residual, with the usual caution about cut-offs. Because the response format was close to continuous, we used maximum likelihood with robust corrections."
+  },
+  {
+   "header": "Analysis",
+   "text": "Reliability was assessed using omega coefficients, with alpha reported for comparison, and test-retest reliability used intraclass correlations on the 203 participants who responded twice. Measurement invariance across gender and across age groups (18 to 39, 40 to 59, and 60 and older) was tested through configural, metric and scalar models, treating a decline in comparative fit index greater than .01 as evidence against invariance. Convergent and discriminant validity were assessed through correlations, and predictive validity through a negative binomial regression of cooking days on the scale score, adjusting for baseline cooking frequency, general self-efficacy, gender, age and household composition. For sample C, change from before to after the course was analysed with a paired test and a standardised mean change that used the pooled standard deviation."
+  },
+  {
+   "header": "Results",
+   "text": "In sample A, parallel analysis suggested three factors, which together accounted for 61% of the variance. After pruning 20 items against the criteria above, the pattern matrix showed 18 items loading cleanly on three factors with primary loadings from .52 to .84 and no cross-loading above .27. A further reduction to twelve items, retaining the four best items for each subscale, was made on the basis of loadings and content coverage. In sample B, the three-factor model fitted well (CFI = .973, TLI = .964, RMSEA = .057, 90% CI [.046, .068], SRMR = .036), and was clearly better than the one-factor alternative (CFI = .871, RMSEA = .121). The bifactor model fitted slightly better still (CFI = .987), but the general factor explained 72% of common variance, which supports reporting a total score alongside subscales."
+  },
+  {
+   "header": "Results",
+   "text": "Reliability was strong. Omega for the total scale was .93 in sample B, and for the technique, planning and adaptation subscales it was .87, .85 and .83. Alpha values were nearly identical. In the retest subgroup, intraclass correlations over two weeks were .86 for the total (95% CI [.82, .90]) and between .78 and .83 for the subscales. Invariance held across gender (change in CFI from configural to scalar = .004) and across age groups (.007), so mean differences can be interpreted at face value. Women scored slightly lower than men on technique (d = 0.14) but higher on planning (d = 0.21), and older adults scored higher on planning and adaptation than younger adults, with the oldest group's mean adaptation score 0.38 standard deviations above the youngest."
+  },
+  {
+   "header": "Results",
+   "text": "The total score correlated at r = .58 with general self-efficacy (95% CI [.52, .63]), r = .71 with self-rated cooking skill (95% CI [.67, .75]), and r = .64 with the preparation frequency index, in line with expectations for convergent measures. Correlations with social desirability (r = .09) and food enjoyment (r = .22) were small, and the correlation with healthy eating self-efficacy was moderate (r = .41), indicating that the scale taps something distinct. In the negative binomial model, each standard deviation increase in the total score predicted 17% more raw-ingredient cooking days in the following four weeks (incidence rate ratio = 1.17, 95% CI [1.09, 1.26], p < .001), after adjusting for baseline frequency and general self-efficacy. In sample C, the mean total score rose from 41.3 (SD = 17.9) to 62.8 (SD = 15.2), t(157) = 15.84, p < .001, standardised change = 1.30."
+  },
+  {
+   "header": "Discussion",
+   "text": "The Kitchen Confidence Scale performed as intended. It has a clear three-part structure, high reliability in both internal and temporal terms, and consistent meaning across gender and age. Importantly, it predicts what people go on to do in the kitchen above and beyond a general belief in one's ability to act, which supports the premise that domain-specific confidence deserves its own measure (Thornquist & Abara-Lindgren, 2014). Its large sensitivity to change in the cooking course sample is encouraging for evaluators, though we caution that a pre-post design without a control group cannot show that the course caused the improvement. A controlled study would show whether the standardised change we saw is attributable to the programmes."
+  },
+  {
+   "header": "Discussion",
+   "text": "The subscale findings carry some interest of their own. The advantage of older adults in planning and adapting, coupled with comparable technique scores, suggests that accumulated experience supplies improvisational confidence even when it does not make people better at knife work. Younger adults, by contrast, appeared to treat each recipe as a fixed script, a pattern several of our focus group participants had described in their own words. Practitioners might use the profile to tailor teaching: a learner low on adaptation may benefit from exercises in substituting ingredients and rescuing dishes, whereas one low on technique may need supervised practice with basic tasks. The three-subscale structure also offers a way to identify which part of a course is changing confidence, which a global score cannot do."
+  },
+  {
+   "header": "Discussion",
+   "text": "We also note what the scale does not do. It measures confidence, not competence, and the two can diverge. Some overconfident cooks will undercook chicken, and some skilled cooks, particularly after a bad experience, will underrate themselves. Pairing the scale with a short practical assessment would help clarify how well confidence tracks ability in different groups, and would also tell us whether the groups who gain the most confidence in courses are those whose skills were most deficient."
+  },
+  {
+   "header": "Limitations",
+   "text": "The panel sample, although matched to census margins, was self-selected and online, and it may under-represent people with very limited cooking experience or low digital access. The validation samples were all from the United Kingdom, and item content may not translate directly to cultures with different food preparation traditions. Self-reported cooking frequency is subject to recall error, and a four-week follow-up is a short window. Sample C was small and lacked a comparison group. We did not test the scale among adolescents or in people with physical disabilities that affect kitchen tasks. Finally, invariance was examined only across gender and age, and we cannot say whether the structure holds across ethnic groups or income levels."
+  },
+  {
+   "header": "Conclusion",
+   "text": "The twelve-item Kitchen Confidence Scale offers a reliable, valid and sensitive measure of what adults believe they can do with raw ingredients, divided into technique, planning and adaptation. It predicts future cooking above what general self-efficacy and past habits can, and it registers change after a short course. Researchers and programme evaluators can use it to understand why some people cook and others do not, and to judge whether cookery interventions move the beliefs that matter. Further work should extend it to other populations and languages, and test it in controlled evaluations."
+  },
+  {
+   "header": "Funding",
+   "text": "This research was funded by the Hartley Moor Foundation for Public Nutrition (grant HMF-PN-2021-08). The foundation did not take part in designing the scale, analysing the data or drafting the paper."
+  },
+  {
+   "header": "Ethics statement",
+   "text": "Ethical approval was granted by the School of Health and Society Research Ethics Committee at Westerhythe University (approval SHS-REC-21-204). All participants gave informed consent before taking part."
+  },
+  {
+   "header": "Data availability",
+   "text": "The item pool, final scale with scoring instructions, anonymised data from all three samples, and analysis scripts are openly available under a CC0 licence."
+  }
+ ]
+}

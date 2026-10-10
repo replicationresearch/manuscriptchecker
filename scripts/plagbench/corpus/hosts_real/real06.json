@@ -1,0 +1,172 @@
+{
+ "id": "real06",
+ "kind": "real",
+ "title": "Correlation between lipid accumulation product and epigenetic age acceleration in American adults: a cross-sectional analysis using NHANES data",
+ "doi": "10.1186/s40001-024-02174-y",
+ "pmcid": "PMC11613462",
+ "authors": [
+  {
+   "family": "Li",
+   "given": "Qiqiang"
+  }
+ ],
+ "language": "en",
+ "source_url": "https://europepmc.org/article/PMC/11613462",
+ "creators": "Qiqiang Li",
+ "retrieved": "2026-10-10",
+ "change_notice": "Body paragraphs unchanged; tables, figures and the reference list removed.",
+ "rows": [
+  {
+   "header": "Introduction",
+   "text": "Epigenetic age acceleration (EAA) is a phenomenon in which an individual’s biological age exceeds their chronological age [1–7]. This concept is based on the epigenetic clock, which uses the methylation pattern of genes to estimate biological age, common biological clocks include HorvathAge, PhenoAge, GrimAgeMort, and others; for teenagers, the phenotype of HorvathAge is particularly prominent, with an accuracy of up to 98% [2, 3, 5, 7, 8]. It predicts an individual’s biological age by analyzing DNA methylation patterns, and epigenetic age often diverges from chronological age [1–9]. EAA has close and complex associations with cardiovascular diseases, neurodegenerative diseases, and others; factors such as sex, obesity, smoking, lack of exercise, dietary habits, and environmental exposure are closely related to EAA [9–28]. Studies have shown a strong correlation between obesity and EAA [14, 15, 28–31]; obesity and aging involve shared pathological mechanisms, including insulin resistance, with obesity capable of accelerating the aging process [14, 28], obesity is closely related to aging [27–29], with obesity being an independent influence on EAA [27–31]."
+  },
+  {
+   "header": "Introduction",
+   "text": "LAP is a simple and easy-to-use index for assessing obesity. It combines triglycerides with waist circumference [32–36]; Compared to BMI and waist circumference, LAP shows better correlation in populations with visceral obesity [33, 34]; increased visceral fat is closely associated with cardiovascular and metabolic diseases, making LAP a more reliable index for evaluating visceral obesity in these contexts [33–35]."
+  },
+  {
+   "header": "Introduction",
+   "text": "Previous studies have analyzed the relationship between obesity and EAA, previous studies used BMI as the measure of obesity, which evaluates overall obesity without distinguishing between subcutaneous and visceral fat obesity [27–31, 37]. However, research on visceral obesity and EAA is currently lacking. Therefore, this study utilized extensive data from the National Health and Nutrition Examination Survey (NHANES) to investigate the association between LAP and EAA."
+  },
+  {
+   "header": "Survey description and study population",
+   "text": "The research utilizes data from NHANES, a nationwide study by the National Center for Health Statistics (NCHS) that evaluates the nutritional and health status of U.S. adults and children. The NCHS Research Ethics Review Board approved all NHANES research protocols, ensuring that written informed consent was secured from all participants. Therefore, the NHANES database is freely available to researchers worldwide, and related studies do not require ethical approval or informed consent from participants. All details of the NHANES study design and data are publicly accessible at www.cdc.gov/nchs/NHANES/. This research followed the STROBE guidelines."
+  },
+  {
+   "header": "Survey description and study population",
+   "text": "Data from the NHANES 1999–2002 dataset were utilized in this study. Our analysis included participants with complete data on LAP and phenotypic age acceleration. The original sample included 21,004 participants. We excluded participants lacking data on phenotypic age acceleration diagnosis (n = 18,472) and those missing covariates such as hypertension diagnosis (n = 736), leaving a final sample of 1796 eligible participants (Fig. 1)."
+  },
+  {
+   "header": "Definition of epigenetic age acceleration and measurement of LAP",
+   "text": "This study selected epigenetic age acceleration (EAA) as the outcome variable, where EAA is defined as the phenotypic age exceeding the chronological age. Specifically, participants were classified as EAA if their HorvathAge exceeded their chronological age, the relevant data are derived from the “DNA Methylation-Epigenetic Biomarkers (1999–2002)” file in the NHANES database."
+  },
+  {
+   "header": "Definition of epigenetic age acceleration and measurement of LAP",
+   "text": "LAP was selected as the exposure variable, calculated as LAP=WC-65×TGformalesandLAP=WC-58×TGforfemales."
+  },
+  {
+   "header": "Other clinical characteristics",
+   "text": "To further evaluate the relationship between LAP and EAA, this study adjusted for 11 relevant covariates: age stratification, gender, hypertension, diabetes, smoking, alcohol consumption, race classification, marital status, exercise, education level, and family poverty ratio. All covariates are derived from the NHANES database and were referenced from the corresponding project descriptions [38–40]."
+  },
+  {
+   "header": "Statistical analysis",
+   "text": "Data description and statistical analysis are based on the characteristics of the included sample. Continuous variables are usually expressed as mean (standard deviation, SD) or median (interquartile range, IQR), and categorical variables are indicated as counts (percentages), Differences between groups were compared using t-tests, Mann–Whitney U tests, and Chi-square tests. This study used logistic regression analysis to examine the risk relationship between LAP and EAA, constructing three logistic regression models with adjustments for different confounding factors. Model 1: no adjustment for confounding factors; Model 2: adjusted for age stratification, sex, and race; Model 3: further adjusted for age stratification, sex, alcohol consumption, race, education level, marital status, household income, hypertension, smoking status, diabetes, and active exercise. The VIF for the regression model was < 5, indicating that the conditions for applying logistic regression were met."
+  },
+  {
+   "header": "Statistical analysis",
+   "text": "Finally, all analyses in this study were conducted using R version 4.3.3 (http://www.r-project.org). Robustness analysis was performed using stratified multivariable logistic regression models for subgroup analysis, with interaction analysis, stratified by factors such as age stratification, sex, smoking status, and marital status; propensity score matching was utilized to evaluate the sensitivity of the findings. Curve fitting was used to observe whether the relationship between LAP and epigenetic age acceleration was linear; if nonlinear, threshold analysis was conducted. Missing data were handled by direct deletion. Statistical significance was evaluated using two-sided values with P < 0.05. In statistical analysis, a p-value of less than 0.05 was considered to indicate a significant statistical association."
+  },
+  {
+   "header": "Baseline characteristics",
+   "text": "In the final analysis, a total of 1796 participants were included, with 1055 identified as having EAA. Table 1 provides the relevant baseline data. Notably, compared to the non-EAA group, the EAA group had a significantly lower age (62.3 vs. 70.4), higher LAP (73.8 vs. 65.2), and relatively higher proportions of smoking and diabetes (Table 1)."
+  },
+  {
+   "header": "Multivariable analysis including LAP",
+   "text": "In the multivariable analysis adjusted for relevant covariates, we created logistic regression models. This study observed that, compared with the first quartile (Q1) of LAP, participants in the fourth quartile (Q4) of LAP had an increased likelihood of EAA (OR = 1.77; 95% CI 1.31–2.39; P < 0.001). After including all covariates, the AUC for Model 3 was 0.706, indicating that Model 3 had good discrimination (Table 2)."
+  },
+  {
+   "header": "Optimization of the full covariate model and subgroup analyses and sensitivity analyses",
+   "text": "For regression analysis with all covariates, we used the Change-in-Estimate method and Least Absolute Shrinkage and Selection Operator (LASSO) method to screen meaningful influencing factors. When an influencing factor was removed from the model and the effect value of the target factor changed by more than 10%, the factor was included. The selected multiple factors were: age stratification, sex, smoking, and marital status. The optimized regression model included five factors: age stratification, sex, smoking status, marital status, and LAP stratification. The results showed an AUC of 0.704 for the optimized model, and the Hosmer–Lemeshow test had a P > 0.05, indicating that the optimized model has good discrimination and calibration."
+  },
+  {
+   "header": "Optimization of the full covariate model and subgroup analyses and sensitivity analyses",
+   "text": "In terms of robustness analysis, to evaluate the association between LAP and epigenetic age acceleration, we performed a stratified subgroup analysis. In subgroup analysis, after adjusting for relevant covariates, LAP remained closely associated with epigenetic age acceleration across different age stratification, sex, and smoking groups. Refer to Fig. 2 for specific details."
+  },
+  {
+   "header": "Optimization of the full covariate model and subgroup analyses and sensitivity analyses",
+   "text": "After adjusting for covariates, there was no mediating effect between age stratification, gender, smoking, marital status, and LAP."
+  },
+  {
+   "header": "Optimization of the full covariate model and subgroup analyses and sensitivity analyses",
+   "text": "In sensitivity analysis, we also used the propensity score matching method. After matching for ten covariates, including age stratification, sex, and race, a sample of 1276 was obtained, with 638 participants each in the EAA and non-EAA groups. The matched plot is shown in Fig. 3. The t-test was used to examine LAP between the two groups, with P < 0.001. This indicates a significant statistical difference in LAP between the two groups and confirms that the association between LAP and EAA is robust."
+  },
+  {
+   "header": "Curve fitting and threshold effects",
+   "text": "Restricted cubic splines were used to analyze the relationship between LAP and EAA. After adjusting for relevant covariates, the relationship between the two is shown in Fig. 4 of supplementary materials. The figure shows nonlinear relationship (P = 0.034), and threshold effect analysis can be seen in Table 3."
+  },
+  {
+   "header": "Discussion",
+   "text": "In this cross-sectional study involving 1796 samples, we found a significant positive correlation between LAP and EAA. Importantly, there is a nonlinear relationship between LAP and EAA (P = 0.034); the LAP inflection point is 41.12, with an OR of 0.96 before the inflection point and an OR of 1.11 after, showing a 15.6% increase in OR after the inflection point. After adjusting for relevant covariates, the regression results showed that higher LAP was associated with an increased likelihood of EAA; compared with the first quartile (Q1) of LAP, the fourth quartile (Q4) had a 77% increased risk of EAA, with an odds ratio of 1.77. There was a significant difference between the two, and the fully adjusted model had an AUC of 0.706. In terms of population attribution, the regression analysis of the adjusted model showed that the population attributable fraction was 41.6% for age stratification, 10.4% for LAP, 8.5% for gender, 4.0% for smoking, and 3.5% for marital status. These findings align with previous research, suggesting that LAP is an independent influencing factor for EAA [27–31, 41]."
+  },
+  {
+   "header": "Discussion",
+   "text": "In the subgroup analysis, we found that the correlation between LAP and EAA was stronger in people over 60 years old compared to those under 60, with an OR increase of 10% and P < 0.001. In terms of gender, females had a higher OR than males, with a 7% increased probability of EAA in females compared to males."
+  },
+  {
+   "header": "Discussion",
+   "text": "Obesity is a major global public health issue, and LAP is a reliable, simple, and effective indicator of obesity [14, 15, 27–36]. EAA represents the biological aging of the human body, with DNA methylation playing a crucial role. EAA is closely associated with tumors, endocrine metabolism, cardiovascular diseases, etc., and HorvathAge is a key indicator for evaluating EAA [6–15]. There is a close relationship between obesity and EAA, as obesity accelerates biological aging [19–22, 27–31]. This study marks the first exploration of the relationship between LAP and EAA, specifically in relation to HorvathAge."
+  },
+  {
+   "header": "Discussion",
+   "text": "However, the potential mechanisms between LAP and EAA remain to be studied, and the following explanations are possible. LAP is a reliable indicator of obesity and is closely related to visceral obesity [32–36]. In obese populations, the expansion of white adipose tissue and the resulting local hypoxia lead to abnormal secretion functions in adipose tissue. Inflammatory-related adipokines are abnormally secreted, activating immune cells (particularly monocytes and lymphocytes). The release of pro-inflammatory cytokines mediated by immune cells interferes with insulin signaling pathways, causing insulin resistance, which then affects blood glucose and the endocrine system. The abnormal secretion of adipokines causes low-grade chronic inflammation, stimulating the formation of TNF-α and IL-6, which inhibits the action of adiponectin, affecting insulin secretion, anti-inflammatory responses, and cardiac function [23–29]. Additionally, the decline in insulin receptors on hypertrophic adipocytes reduces insulin effectiveness, while the increase in peripheral free fatty acids in obese individuals can damage peripheral tissues and decrease insulin utilization. All of these factors contribute to increased production of reactive oxygen species, leading to oxidative stress [23–29, 41–43]."
+  },
+  {
+   "header": "Discussion",
+   "text": "Oxidative stress is a major pathogenic factor in obesity-related comorbidities, causing insulin resistance in peripheral tissues and is closely related to endocrine diseases such as diabetes. Prolonged oxidative stress can damage the blood–brain barrier, accelerating neurodegenerative changes in the brain. Oxidative stress impairs cardiovascular function, leading to an increased incidence of cardiovascular disease. It also damages mitochondrial function, resulting in a range of diseases, particularly tumors [28, 29]."
+  },
+  {
+   "header": "Discussion",
+   "text": "Insulin resistance, low-grade chronic inflammation, and impaired immune function are characteristics of obesity as well as aging, which is particularly evident in the elderly [25–31]. In the subgroup analysis of this study, the OR for EAA increased by 10% in elderly individuals over 60 compared to those under 60, which further supports this conclusion. Various measures to reduce the lipid accumulation product (LAP) can improve epigenetic age acceleration (EAA), studies have shown that weight loss, smoking cessation, and a healthy diet can effectively reduce EAA [2, 44]."
+  },
+  {
+   "header": "Advantages and limitations",
+   "text": "Specifically, this study has the following advantages. First, our research is based on NHANES data, which offers the advantage of a large sample size. In addition, we adjusted for relevant covariates and conducted subgroup analysis and propensity score matching, making the results of this study robust and reliable."
+  },
+  {
+   "header": "Advantages and limitations",
+   "text": "However, this study still has some limitations. Firstly, although we adjusted for covariates as thoroughly as possible, there may be uncontrolled factors; however, the model’s AUC after adjusting for all covariates was 0.706, indicating that our study still has good clinical significance. Secondly, our study population was limited to American adults over 50. Therefore, additional studies are required to assess if these findings can be extrapolated to other nations."
+  },
+  {
+   "header": "Conclusion",
+   "text": "This study provides a new clinical approach. By assessing several key risk factors—age stratification, sex, LAP stratification, smoking, and marital status—the probability of epigenetic age acceleration in American adults can be conveniently estimated, with a differentiation rate of 70.6%. This helps clinicians quickly identify epigenetic age acceleration in middle-aged and older adults, enabling targeted care and early intervention to improve patient outcomes."
+  },
+  {
+   "header": "Conclusion",
+   "text": "This study indicates that higher LAP is associated with an increased risk of EAA, he RCS analysis demonstrates that there is a nonlinear relationship between LAP and EAA risk, as well as a linear relationship with EAA risk. These findings suggest that LAP, as a concise indicator of visceral obesity, shows beneficial and positive value in clinical practice, aiding clinicians in making professional and reasonable recommendations. This study highlights that early intervention to reduce LAP levels is essential to slow the progression of EAA in American adults."
+  },
+  {
+   "header": "Author contributions",
+   "text": "All authors contributed significantly to the research and preparation of this manuscript. Specific contributions are as follows: Author QL: Conceptualization, data curation, formal analysis, writing—original draft, writing—review & editing. All authors have read and approved the final manuscript."
+  },
+  {
+   "header": "Funding",
+   "text": "The authors confirm that the research had no financial support."
+  },
+  {
+   "header": "Availability of data and materials",
+   "text": "The original data presented in this research are available within the article and its supplementary material. For further inquiries, please reach out to the corresponding author."
+  },
+  {
+   "header": "Ethics approval and consent to participate",
+   "text": "The National Center for Health Statistics (NCHS) research ethics review board (ERB) approved the NHANES study protocol, and participants provided written informed consent at enrollment. The NCHS Institutional Review Board/ethics review board (IRB/ERB) protocol numbers of 1999–2004 National Health and Nutrition Survey is ‘#98-12’ (the website is https://www.cdc.gov/nchs/nhanes/irba98.htm)."
+  },
+  {
+   "header": "Ethics approval and consent to participate",
+   "text": "We have carefully examined our study in light of the Ethical Review Methods for Life Science and Medical Research Involving Human Beings. We have found that Article 32 of this regulation specifically exempts research from requiring ethical approval under certain conditions."
+  },
+  {
+   "header": "Ethics approval and consent to participate",
+   "text": "According to Article 32: “Ethical approval is not required for research that meets the criteria of (a) using legally obtained public data, or data generated by observation and not interfering with public behavior; and (b) using anonymized informational data to conduct the research.”"
+  },
+  {
+   "header": "Ethics approval and consent to participate",
+   "text": "Since this study was based on publicly available deidentified data and informed consent was waived, ethical approval and consent were not required."
+  },
+  {
+   "header": "Ethics approval and consent to participate",
+   "text": "This research used publicly available data from the National Health and Nutrition Examination Survey (NHANES), with all details accessible on the official website https://www.cdc.gov/nchs/nhanes."
+  },
+  {
+   "header": "Competing interests",
+   "text": "The authors declare no competing interests."
+  },
+  {
+   "header": "Data Availability Statement",
+   "text": "The original data presented in this research are available within the article and its supplementary material. For further inquiries, please reach out to the corresponding author."
+  }
+ ],
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "copyright": "© The Author(s) 2024",
+ "license_statement": "© The Author(s) 2024Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other "
+}

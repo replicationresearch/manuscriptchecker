@@ -1,0 +1,112 @@
+{
+ "id": "syn06",
+ "kind": "synthetic",
+ "title": "Five Minutes Before the Cafeteria: A Pilot of a Peer-Led Midday Pause Routine in Two Urban Middle Schools",
+ "authors": [
+  {
+   "family": "Bellweather-Osei",
+   "given": "Tamsin"
+  },
+  {
+   "family": "Halloran-Vuković",
+   "given": "Desmond"
+  },
+  {
+   "family": "Sundaresan-Quigley",
+   "given": "Maud"
+  }
+ ],
+ "license": "CC0-1.0",
+ "language": "en",
+ "spelling": "american",
+ "rows": [
+  {
+   "header": "Introduction",
+   "text": "The transition from morning classes to lunch is one of the noisiest stretches of the middle school day. Hallways fill, a few hundred adolescents converge on a single room, and staff members who spent the morning managing instruction now manage lines, spills and disputes. Teachers often describe the first fifteen minutes after the lunch bell as the period when minor disagreements, such as who cut in line or who said what in a group chat, are most likely to flare into something that follows students into afternoon classes. Discipline referrals reflect this pattern, with a visible spike shortly after the midday break in many schools. Interventions that try to reduce conflict generally target the whole school year, which makes them costly and hard to sustain, so a very brief routine at the point of greatest friction is an attractive idea."
+  },
+  {
+   "header": "Introduction",
+   "text": "Brief pauses for attention to breathing or to bodily sensation have been used in classrooms for some time, and results are mixed. Evidence suggests that short routines delivered by an unfamiliar adult can feel contrived to adolescents, who are acutely sensitive to being managed (Teasdale-Mwangi & Ruiz-Hartigan, 2019). Peer leadership may change this dynamic. Students who lead a routine for classmates their own age are positioned as insiders rather than as authority figures, and the leaders themselves gain practice in a visible role. Previous peer-led work has focused mainly on bullying prevention and substance use. Applying the peer model to a calming routine at a specific moment in the day is, as far as we can tell from the reports we reviewed, a new combination that deserves a careful pilot before any large trial."
+  },
+  {
+   "header": "Introduction",
+   "text": "This study reports a pilot of the Midday Pause, a five-minute, peer-led routine delivered in homeroom just before students walk to the cafeteria. The routine combines slow breathing, a brief scan of how the body feels, and a one-sentence statement of an intention for the next hour. We designed the pilot to answer feasibility questions first: could schools deliver it as planned, would students accept it, and could peers lead it with fidelity? Secondary questions concerned preliminary signs of benefit. We looked at discipline referrals during the lunch period, at student-reported conflict with peers, and at self-reported emotional regulation. We did not expect statistical significance in so small a study, and our goal was to estimate effects precisely enough to plan a properly powered trial."
+  },
+  {
+   "header": "Participants",
+   "text": "The pilot took place in two public middle schools in a mid-sized city in the American Midwest, both serving grades 6 to 8, with enrollments of roughly 640 and 710 students. In School 1, 58% of students qualified for free or reduced-price lunch, and in School 2, 66% did. Four sixth-grade homerooms in each school took part, giving eight homerooms and 196 students who returned parental permission and gave their own assent (87% of eligible students). The students had a mean age of 11.5 years (SD = 0.4), 49% identified as girls, 51% as boys, and the group was ethnically diverse, with 36% Black, 31% Hispanic or Latino, 22% White, and 11% multiracial or another group."
+  },
+  {
+   "header": "Participants",
+   "text": "Within each school, two homerooms were assigned to deliver the Midday Pause and two to continue as usual, using a coin flip supervised by a research assistant. The design is therefore a small cluster-randomized pilot with four homerooms per arm. Intervention homerooms contained 98 students and control homerooms 98. In addition to the students, we recruited 16 peer leaders from the seventh and eighth grades, selected by counselors on the basis of social standing and willingness rather than academic performance, and eight homeroom teachers, who were asked to remain in the room but not to lead the routine. Peer leaders received a gift card and a certificate, and they were not told that the study concerned conflict reduction."
+  },
+  {
+   "header": "Procedure",
+   "text": "Peer leaders attended two training sessions of 50 minutes. The first introduced the routine and let leaders experience it as participants, and the second focused on facilitation: how to use a calm voice, what to do when classmates joke or refuse, and how to keep the time to five minutes. The leaders practiced with a script but were encouraged to put it into their own words, and they received a one-page cue card. Each pair of leaders was assigned to an intervention homeroom, and a graduate student observed the first session and gave private coaching afterward. From then on, the routine was delivered every school day for eight weeks, whenever a leader was present, with teachers instructed to lead it themselves, using the same script, when no leader could attend."
+  },
+  {
+   "header": "Procedure",
+   "text": "Baseline questionnaires were completed in the two weeks before the start, and post-intervention questionnaires in the week after the eight weeks. Observers visited each intervention homeroom unannounced on six occasions to rate fidelity using a checklist covering seven elements of the routine. At the end of the eight weeks, we conducted two short group discussions with students from intervention homerooms and a brief interview with each leader and each teacher, focusing on what had worked, what had been awkward, and what they would change. Discussions were audio-recorded and summarized, and the summaries are used here to give context to the quantitative figures."
+  },
+  {
+   "header": "Measures",
+   "text": "Feasibility outcomes were delivery rate (the percentage of school days on which the routine was run), fidelity (the proportion of checklist elements observed, averaged over visits), and acceptability. Acceptability was assessed through a six-item student questionnaire with a four-point response format, including statements such as \"the pause helped me calm down\" and \"I would keep doing it next year\", plus a leader and teacher version. Discipline referrals during the lunch period and the following hour were extracted from school records for the eight weeks before and the eight weeks of the intervention, with identifiers removed. Attendance and academic grades were collected as well, though these were considered exploratory because eight weeks was unlikely to change them."
+  },
+  {
+   "header": "Measures",
+   "text": "Student-reported peer conflict was measured with a seven-item scale asking how often in the previous two weeks the student had argued, been teased or been in a physical altercation with classmates, from 0 (never) to 4 (almost every day), with internal consistency of alpha = .81 at baseline. Emotion regulation was measured using the nine-item version of a difficulties scale adapted for early adolescents, in which higher scores indicate greater difficulty and alpha was .84. Participants also completed a single-item rating of feeling calm at the start of lunch, delivered through brief afternoon surveys on three random days per week. Demographic characteristics were drawn from school records. For the leaders, we recorded their number of sessions led and used a self-efficacy item at the start and finish of the pilot."
+  },
+  {
+   "header": "Analysis",
+   "text": "Because a pilot is not an efficacy test, we emphasize descriptive statistics and interval estimates over hypothesis testing. Feasibility and acceptability outcomes are reported as percentages and means, with exact binomial intervals where proportions are involved. For the discipline referrals, we compared the rate per 100 students per week in each arm during the intervention period, adjusting for the preceding rate through a Poisson regression with robust standard errors clustered by homeroom. Student-level survey outcomes were analyzed with linear mixed models containing a fixed effect of arm, the baseline score and school, and a random intercept for homeroom. The estimated intraclass correlations were used to project design effects for a future trial. Standardized effects were computed as the adjusted difference divided by the pooled baseline standard deviation."
+  },
+  {
+   "header": "Analysis",
+   "text": "Missing questionnaire data came mostly from absence on the day of testing, and 164 of 196 students (84%) completed both baseline and follow-up surveys. We examined attrition by arm and by baseline score, and used multiple imputation as a sensitivity analysis. The group discussions and interviews were reviewed by two team members, who identified recurring points and noted disagreement. Because several estimates concern small counts, we also present the raw numbers beside the rates. We specified in advance that a trial would be recommended if delivery exceeded 75%, fidelity exceeded 70%, student acceptability averaged above 2.5 on the four-point scale, and the confidence interval for the effect on conflict did not exclude a small beneficial effect. These criteria were stated in the study protocol before enrollment."
+  },
+  {
+   "header": "Results",
+   "text": "The routine was delivered on 87.4% of school days (95% CI [84.0, 90.4]), with peer leaders leading 71% of sessions and teachers covering the rest. Missed days were concentrated around testing weeks and a school assembly. Observers rated fidelity at an average of 78% of checklist elements (SD = 12%), and the element most often skipped was the closing statement of intention, which leaders considered awkward. Acceptability averaged 2.9 on the four-point scale (SD = 0.7), with 64% of students agreeing or strongly agreeing that the pause helped them calm down and 52% agreeing that they would keep doing it next year. Leaders rated the experience at 3.5 (SD = 0.5), and all eight teachers said they would continue the routine. Leader self-efficacy rose from 3.1 to 3.8 on a five-point scale, t(15) = 4.12, p < .001."
+  },
+  {
+   "header": "Results",
+   "text": "Lunch-period referrals fell in intervention homerooms from 1.9 to 1.2 per 100 students per week, while those in control homerooms moved from 1.8 to 1.7. The adjusted rate ratio was 0.69 (95% CI [0.45, 1.06], p = .09). In raw counts, there were 38 referrals in intervention homerooms over the intervention period against 61 in the control group, though the groups were small and the counts are subject to wide uncertainty. Attendance did not differ between arms, and grades were unaffected, as expected. Referrals in the afternoon period outside the lunch window showed no change, which suggests that the effect, if real, was local to the targeted time."
+  },
+  {
+   "header": "Results",
+   "text": "Peer conflict decreased in both arms but more in the intervention homerooms. Adjusted for baseline, the intervention mean was 0.84 (SD = 0.67) and the control mean was 1.02 (SD = 0.74), a difference of -0.18 (95% CI [-0.40, 0.04], p = .11, standardized effect = -0.25). Emotion regulation difficulties showed a smaller difference of -1.9 points on the 45-point range (95% CI [-4.6, 0.8], p = .16, standardized effect = -0.21). Students in intervention homerooms reported feeling calm at the start of lunch more often than controls (mean difference 0.31 on a five-point scale, 95% CI [0.08, 0.54]). The intraclass correlation for conflict was .04, and a future trial with 40 homerooms per arm and about 25 students each would have 80% power to detect an effect of 0.20. Multiple imputation yielded similar estimates."
+  },
+  {
+   "header": "Discussion",
+   "text": "The Midday Pause cleared every feasibility threshold we set in advance. Delivery exceeded 75%, fidelity exceeded 70%, acceptability averaged above 2.5, and the confidence interval for the conflict effect did not exclude a small benefit. The most notable aspect is that peers led more than 70% of sessions in a setting where adolescents are suspicious of adult-managed calm. In the group discussions, students said that having an eighth grader lead made the routine feel less like a lesson and more like something classmates were doing together, echoing the argument for peer delivery (Teasdale-Mwangi & Ruiz-Hartigan, 2019). Several also said they used the breathing technique outside school, for example before a basketball game. A few found the routine silly at first and said they came around, which suggests that early resistance should not be treated as failure."
+  },
+  {
+   "header": "Discussion",
+   "text": "The preliminary outcome estimates are consistent with a modest benefit but cannot support a firm conclusion. The point estimates for referrals, conflict and regulation all pointed in the favorable direction, and the finding that referrals fell only in the lunch window, not in the afternoon, matches the idea that a brief routine delivered at the right moment is suited to the problem. Yet every interval included zero or one, and eight homerooms are too few to separate the effect of the routine from the idiosyncrasies of particular rooms and teachers. Referral counts this low also mean that a handful of events could swing the rate. We therefore regard the effect estimates as the basis for planning, not as evidence of efficacy."
+  },
+  {
+   "header": "Discussion",
+   "text": "The qualitative material suggests specific refinements. Leaders found the closing statement of intention awkward and often skipped it, and students said they would prefer to choose when they voiced an intention, if at all. We plan to make that element optional and to replace it with a brief silent moment. Teachers asked for a way to cover days when leaders are absent, and leaders asked for more time to practice, which implies that a third training session and a laminated backup script would improve delivery."
+  },
+  {
+   "header": "Limitations",
+   "text": "The pilot was small, covered a single grade in two schools, and ran for eight weeks, so it cannot say whether benefits last or generalize. Randomization of only eight homerooms leaves room for imbalance despite similar baselines. Teachers and students knew which arm they were in, and the survey outcomes were self-reported, so expectation effects are possible. Observers who rated fidelity were not blind to arm. Peer leaders were chosen by counselors, and this selection would be hard to replicate at scale. Discipline records depend on staff decisions about when to write a referral, which may have been influenced by awareness of the project."
+  },
+  {
+   "header": "Conclusion",
+   "text": "A five-minute, peer-led pause before lunch was feasible to deliver, acceptable to students, teachers and leaders, and associated with favorable though statistically uncertain changes in referrals, conflict and regulation. These results justify a larger cluster-randomized trial with refinements to the closing element, extra leader practice and a plan for covering absences. If the effects hold up, a routine this short could be one practical tool for easing the most turbulent part of the middle school day."
+  },
+  {
+   "header": "Funding",
+   "text": "This pilot was funded by a small-grants program of the Riverbend Youth Wellbeing Fund (grant RYWF-P-0173). The fund had no role in the study design, data analysis, or manuscript preparation."
+  },
+  {
+   "header": "Ethics statement",
+   "text": "The study was approved by the Institutional Review Board of Cedar Hollow University (protocol CHU-22-0538) and by the research offices of both school districts. Parents gave written permission and students gave assent before data collection."
+  },
+  {
+   "header": "Data availability",
+   "text": "De-identified student-level survey data, school-level referral counts, the fidelity checklist and the facilitation script are available in an open repository under a CC0 dedication."
+  }
+ ]
+}

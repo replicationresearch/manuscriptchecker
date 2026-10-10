@@ -1,0 +1,589 @@
+{
+ "version": 2,
+ "seed": 7,
+ "built": "2026-10-10",
+ "sources_tried": {
+  "pmc": 18,
+  "oa_nonpmc": 19,
+  "psyarxiv": 18,
+  "wikipedia": 18
+ },
+ "cases": [
+  {
+   "case_id": "syn01:pmc-13",
+   "host": "syn01",
+   "passage": "pmc-13",
+   "type": "sentence_in_para",
+   "row": 16,
+   "cut": 501
+  },
+  {
+   "case_id": "syn01:oa_nonpmc-01",
+   "host": "syn01",
+   "passage": "oa_nonpmc-01",
+   "type": "paragraph",
+   "row": 2,
+   "cut": null
+  },
+  {
+   "case_id": "syn01:wikipedia-01",
+   "host": "syn01",
+   "passage": "wikipedia-01",
+   "type": "paragraph",
+   "row": 17,
+   "cut": null
+  },
+  {
+   "case_id": "syn01:oa_nonpmc-07",
+   "host": "syn01",
+   "passage": "oa_nonpmc-07",
+   "type": "sentences3_in_para",
+   "row": 11,
+   "cut": 618
+  },
+  {
+   "case_id": "syn01:pmc-07",
+   "host": "syn01",
+   "passage": "pmc-07",
+   "type": "sentences3_in_para",
+   "row": 8,
+   "cut": 214
+  },
+  {
+   "case_id": "syn01:oa_nonpmc-02",
+   "host": "syn01",
+   "passage": "oa_nonpmc-02",
+   "type": "paragraph",
+   "row": 3,
+   "cut": null
+  },
+  {
+   "case_id": "syn02:wikipedia-07",
+   "host": "syn02",
+   "passage": "wikipedia-07",
+   "type": "sentences3_in_para",
+   "row": 2,
+   "cut": 286
+  },
+  {
+   "case_id": "syn02:psyarxiv-07",
+   "host": "syn02",
+   "passage": "psyarxiv-07",
+   "type": "sentences3_in_para",
+   "row": 16,
+   "cut": 540
+  },
+  {
+   "case_id": "syn02:pmc-01",
+   "host": "syn02",
+   "passage": "pmc-01",
+   "type": "paragraph",
+   "row": 5,
+   "cut": null
+  },
+  {
+   "case_id": "syn02:psyarxiv-01",
+   "host": "syn02",
+   "passage": "psyarxiv-01",
+   "type": "paragraph",
+   "row": 11,
+   "cut": null
+  },
+  {
+   "case_id": "syn02:psyarxiv-08",
+   "host": "syn02",
+   "passage": "psyarxiv-08",
+   "type": "sentences3_in_para",
+   "row": 6,
+   "cut": 164
+  },
+  {
+   "case_id": "syn02:oa_nonpmc-08",
+   "host": "syn02",
+   "passage": "oa_nonpmc-08",
+   "type": "sentences3_in_para",
+   "row": 14,
+   "cut": 405
+  },
+  {
+   "case_id": "syn03:oa_nonpmc-13",
+   "host": "syn03",
+   "passage": "oa_nonpmc-13",
+   "type": "sentence_in_para",
+   "row": 4,
+   "cut": 41
+  },
+  {
+   "case_id": "syn03:wikipedia-13",
+   "host": "syn03",
+   "passage": "wikipedia-13",
+   "type": "sentence_in_para",
+   "row": 5,
+   "cut": 647
+  },
+  {
+   "case_id": "syn03:wikipedia-02",
+   "host": "syn03",
+   "passage": "wikipedia-02",
+   "type": "paragraph",
+   "row": 6,
+   "cut": null
+  },
+  {
+   "case_id": "syn03:oa_nonpmc-03",
+   "host": "syn03",
+   "passage": "oa_nonpmc-03",
+   "type": "paragraph",
+   "row": 14,
+   "cut": null
+  },
+  {
+   "case_id": "syn03:psyarxiv-13",
+   "host": "syn03",
+   "passage": "psyarxiv-13",
+   "type": "sentence_in_para",
+   "row": 17,
+   "cut": 436
+  },
+  {
+   "case_id": "syn03:wikipedia-08",
+   "host": "syn03",
+   "passage": "wikipedia-08",
+   "type": "sentences3_in_para",
+   "row": 3,
+   "cut": 415
+  },
+  {
+   "case_id": "syn04:psyarxiv-02",
+   "host": "syn04",
+   "passage": "psyarxiv-02",
+   "type": "paragraph",
+   "row": 15,
+   "cut": null
+  },
+  {
+   "case_id": "syn04:wikipedia-14",
+   "host": "syn04",
+   "passage": "wikipedia-14",
+   "type": "sentence_in_para",
+   "row": 3,
+   "cut": 621
+  },
+  {
+   "case_id": "syn04:psyarxiv-09",
+   "host": "syn04",
+   "passage": "psyarxiv-09",
+   "type": "sentences3_in_para",
+   "row": 10,
+   "cut": 231
+  },
+  {
+   "case_id": "syn04:psyarxiv-03",
+   "host": "syn04",
+   "passage": "psyarxiv-03",
+   "type": "paragraph",
+   "row": 9,
+   "cut": null
+  },
+  {
+   "case_id": "syn04:oa_nonpmc-14",
+   "host": "syn04",
+   "passage": "oa_nonpmc-14",
+   "type": "sentence_in_para",
+   "row": 2,
+   "cut": 433
+  },
+  {
+   "case_id": "syn04:wikipedia-15",
+   "host": "syn04",
+   "passage": "wikipedia-15",
+   "type": "sentence_in_para",
+   "row": 5,
+   "cut": 144
+  },
+  {
+   "case_id": "syn05:pmc-02",
+   "host": "syn05",
+   "passage": "pmc-02",
+   "type": "paragraph",
+   "row": 10,
+   "cut": null
+  },
+  {
+   "case_id": "syn05:pmc-08",
+   "host": "syn05",
+   "passage": "pmc-08",
+   "type": "sentences3_in_para",
+   "row": 8,
+   "cut": 242
+  },
+  {
+   "case_id": "syn05:psyarxiv-14",
+   "host": "syn05",
+   "passage": "psyarxiv-14",
+   "type": "sentence_in_para",
+   "row": 18,
+   "cut": 193
+  },
+  {
+   "case_id": "syn05:oa_nonpmc-09",
+   "host": "syn05",
+   "passage": "oa_nonpmc-09",
+   "type": "sentences3_in_para",
+   "row": 6,
+   "cut": 253
+  },
+  {
+   "case_id": "syn05:pmc-14",
+   "host": "syn05",
+   "passage": "pmc-14",
+   "type": "sentence_in_para",
+   "row": 9,
+   "cut": 338
+  },
+  {
+   "case_id": "syn05:psyarxiv-15",
+   "host": "syn05",
+   "passage": "psyarxiv-15",
+   "type": "sentence_in_para",
+   "row": 17,
+   "cut": 177
+  },
+  {
+   "case_id": "syn06:pmc-15",
+   "host": "syn06",
+   "passage": "pmc-15",
+   "type": "sentence_in_para",
+   "row": 15,
+   "cut": 108
+  },
+  {
+   "case_id": "syn06:pmc-03",
+   "host": "syn06",
+   "passage": "pmc-03",
+   "type": "paragraph",
+   "row": 13,
+   "cut": null
+  },
+  {
+   "case_id": "syn06:pmc-09",
+   "host": "syn06",
+   "passage": "pmc-09",
+   "type": "sentences3_in_para",
+   "row": 6,
+   "cut": 294
+  },
+  {
+   "case_id": "syn06:wikipedia-09",
+   "host": "syn06",
+   "passage": "wikipedia-09",
+   "type": "sentences3_in_para",
+   "row": 17,
+   "cut": 229
+  },
+  {
+   "case_id": "syn06:wikipedia-03",
+   "host": "syn06",
+   "passage": "wikipedia-03",
+   "type": "paragraph",
+   "row": 9,
+   "cut": null
+  },
+  {
+   "case_id": "syn06:oa_nonpmc-15",
+   "host": "syn06",
+   "passage": "oa_nonpmc-15",
+   "type": "sentence_in_para",
+   "row": 12,
+   "cut": 421
+  },
+  {
+   "case_id": "real01:oa_nonpmc-16",
+   "host": "real01",
+   "passage": "oa_nonpmc-16",
+   "type": "sentence_in_para",
+   "row": 2,
+   "cut": 402
+  },
+  {
+   "case_id": "real01:wikipedia-10",
+   "host": "real01",
+   "passage": "wikipedia-10",
+   "type": "sentences3_in_para",
+   "row": 9,
+   "cut": 393
+  },
+  {
+   "case_id": "real01:wikipedia-04",
+   "host": "real01",
+   "passage": "wikipedia-04",
+   "type": "paragraph",
+   "row": 18,
+   "cut": null
+  },
+  {
+   "case_id": "real01:pmc-16",
+   "host": "real01",
+   "passage": "pmc-16",
+   "type": "sentence_in_para",
+   "row": 8,
+   "cut": 340
+  },
+  {
+   "case_id": "real01:pmc-10",
+   "host": "real01",
+   "passage": "pmc-10",
+   "type": "sentences3_in_para",
+   "row": 3,
+   "cut": 280
+  },
+  {
+   "case_id": "real01:psyarxiv-04",
+   "host": "real01",
+   "passage": "psyarxiv-04",
+   "type": "paragraph",
+   "row": 10,
+   "cut": null
+  },
+  {
+   "case_id": "real02:wikipedia-05",
+   "host": "real02",
+   "passage": "wikipedia-05",
+   "type": "paragraph",
+   "row": 3,
+   "cut": null
+  },
+  {
+   "case_id": "real02:psyarxiv-10",
+   "host": "real02",
+   "passage": "psyarxiv-10",
+   "type": "sentences3_in_para",
+   "row": 8,
+   "cut": 327
+  },
+  {
+   "case_id": "real02:wikipedia-16",
+   "host": "real02",
+   "passage": "wikipedia-16",
+   "type": "sentence_in_para",
+   "row": 6,
+   "cut": 786
+  },
+  {
+   "case_id": "real02:wikipedia-06",
+   "host": "real02",
+   "passage": "wikipedia-06",
+   "type": "paragraph",
+   "row": 21,
+   "cut": null
+  },
+  {
+   "case_id": "real02:pmc-17",
+   "host": "real02",
+   "passage": "pmc-17",
+   "type": "sentence_in_para",
+   "row": 20,
+   "cut": 168
+  },
+  {
+   "case_id": "real02:pmc-04",
+   "host": "real02",
+   "passage": "pmc-04",
+   "type": "paragraph",
+   "row": 15,
+   "cut": null
+  },
+  {
+   "case_id": "real03:wikipedia-17",
+   "host": "real03",
+   "passage": "wikipedia-17",
+   "type": "sentence_in_para",
+   "row": 10,
+   "cut": 393
+  },
+  {
+   "case_id": "real03:pmc-05",
+   "host": "real03",
+   "passage": "pmc-05",
+   "type": "paragraph",
+   "row": 6,
+   "cut": null
+  },
+  {
+   "case_id": "real03:oa_nonpmc-17",
+   "host": "real03",
+   "passage": "oa_nonpmc-17",
+   "type": "sentence_in_para",
+   "row": 23,
+   "cut": 316
+  },
+  {
+   "case_id": "real03:psyarxiv-05",
+   "host": "real03",
+   "passage": "psyarxiv-05",
+   "type": "paragraph",
+   "row": 33,
+   "cut": null
+  },
+  {
+   "case_id": "real03:pmc-06",
+   "host": "real03",
+   "passage": "pmc-06",
+   "type": "paragraph",
+   "row": 37,
+   "cut": null
+  },
+  {
+   "case_id": "real03:oa_nonpmc-10",
+   "host": "real03",
+   "passage": "oa_nonpmc-10",
+   "type": "sentences3_in_para",
+   "row": 35,
+   "cut": 66
+  },
+  {
+   "case_id": "real04:psyarxiv-11",
+   "host": "real04",
+   "passage": "psyarxiv-11",
+   "type": "sentences3_in_para",
+   "row": 25,
+   "cut": 1925
+  },
+  {
+   "case_id": "real04:psyarxiv-12",
+   "host": "real04",
+   "passage": "psyarxiv-12",
+   "type": "sentences3_in_para",
+   "row": 39,
+   "cut": 635
+  },
+  {
+   "case_id": "real04:oa_nonpmc-11",
+   "host": "real04",
+   "passage": "oa_nonpmc-11",
+   "type": "sentences3_in_para",
+   "row": 14,
+   "cut": 769
+  },
+  {
+   "case_id": "real04:psyarxiv-16",
+   "host": "real04",
+   "passage": "psyarxiv-16",
+   "type": "sentence_in_para",
+   "row": 40,
+   "cut": 1185
+  },
+  {
+   "case_id": "real04:wikipedia-11",
+   "host": "real04",
+   "passage": "wikipedia-11",
+   "type": "sentences3_in_para",
+   "row": 4,
+   "cut": 107
+  },
+  {
+   "case_id": "real04:oa_nonpmc-18",
+   "host": "real04",
+   "passage": "oa_nonpmc-18",
+   "type": "sentence_in_para",
+   "row": 5,
+   "cut": 294
+  },
+  {
+   "case_id": "real05:oa_nonpmc-04",
+   "host": "real05",
+   "passage": "oa_nonpmc-04",
+   "type": "paragraph",
+   "row": 4,
+   "cut": null
+  },
+  {
+   "case_id": "real05:wikipedia-12",
+   "host": "real05",
+   "passage": "wikipedia-12",
+   "type": "sentences3_in_para",
+   "row": 9,
+   "cut": 431
+  },
+  {
+   "case_id": "real05:oa_nonpmc-12",
+   "host": "real05",
+   "passage": "oa_nonpmc-12",
+   "type": "sentences3_in_para",
+   "row": 16,
+   "cut": 62
+  },
+  {
+   "case_id": "real05:psyarxiv-17",
+   "host": "real05",
+   "passage": "psyarxiv-17",
+   "type": "sentence_in_para",
+   "row": 22,
+   "cut": 120
+  },
+  {
+   "case_id": "real05:psyarxiv-18",
+   "host": "real05",
+   "passage": "psyarxiv-18",
+   "type": "sentence_in_para",
+   "row": 23,
+   "cut": 154
+  },
+  {
+   "case_id": "real05:oa_nonpmc-05",
+   "host": "real05",
+   "passage": "oa_nonpmc-05",
+   "type": "paragraph",
+   "row": 26,
+   "cut": null
+  },
+  {
+   "case_id": "real06:oa_nonpmc-06",
+   "host": "real06",
+   "passage": "oa_nonpmc-06",
+   "type": "paragraph",
+   "row": 8,
+   "cut": null
+  },
+  {
+   "case_id": "real06:wikipedia-18",
+   "host": "real06",
+   "passage": "wikipedia-18",
+   "type": "sentence_in_para",
+   "row": 21,
+   "cut": 418
+  },
+  {
+   "case_id": "real06:pmc-18",
+   "host": "real06",
+   "passage": "pmc-18",
+   "type": "sentence_in_para",
+   "row": 3,
+   "cut": 508
+  },
+  {
+   "case_id": "real06:pmc-11",
+   "host": "real06",
+   "passage": "pmc-11",
+   "type": "sentences3_in_para",
+   "row": 26,
+   "cut": 223
+  },
+  {
+   "case_id": "real06:psyarxiv-06",
+   "host": "real06",
+   "passage": "psyarxiv-06",
+   "type": "paragraph",
+   "row": 25,
+   "cut": null
+  },
+  {
+   "case_id": "real06:pmc-12",
+   "host": "real06",
+   "passage": "pmc-12",
+   "type": "sentences3_in_para",
+   "row": 4,
+   "cut": 211
+  }
+ ]
+}

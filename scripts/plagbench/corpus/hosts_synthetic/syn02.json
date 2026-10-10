@@ -1,0 +1,108 @@
+{
+ "id": "syn02",
+ "kind": "synthetic",
+ "title": "Wrens in the Headphones: Ambient Birdsong, Mind Wandering, and Error Detection during Proofreading",
+ "authors": [
+  {
+   "family": "Kowalczewski-Rudd",
+   "given": "Marisol"
+  },
+  {
+   "family": "Abernathy-Sklar",
+   "given": "Theodric"
+  },
+  {
+   "family": "Oyelowo-Brandvold",
+   "given": "Linnea"
+  }
+ ],
+ "license": "CC0-1.0",
+ "language": "en",
+ "spelling": "american",
+ "rows": [
+  {
+   "header": "Introduction",
+   "text": "Anyone who has tried to catch typos at a kitchen table knows that the mind drifts. Eyes move across a line, the words register, and yet a doubled \"the\" slides through unnoticed. Proofreading is an odd cognitive task because it requires sustained attention to material that is easy to read and therefore easy to read superficially. Workplaces have responded with a patchwork of folk remedies, including silence rooms, instrumental playlists, and streaming soundscapes. Birdsong has become a favorite in the last few years, marketed to remote workers as a way to feel calm without losing focus. Whether it actually helps people catch errors, or whether it merely feels pleasant while quietly worsening performance, has received little controlled attention."
+  },
+  {
+   "header": "Introduction",
+   "text": "Two bodies of work suggest opposite predictions. One holds that natural sounds restore directed attention by engaging effortless interest, leaving more capacity for the task afterwards (Lindqvist & Okonkwo-Reyes, 2017). If so, a quiet stream of birdsong should reduce fatigue over a long session and keep error detection from decaying. The other holds that any irrelevant sound, even a gentle one, competes for the same verbal working memory that supports reading, and that its variability is what harms performance (Brightwater et al., 2020). Birdsong is highly variable, with trills, pauses and sudden calls, so it might be especially intrusive. A third possibility is that the effect depends on the person, with those who habitually wander mentally benefiting from a pleasant sound that gives the wandering mind somewhere harmless to rest."
+  },
+  {
+   "header": "Introduction",
+   "text": "We tested these competing accounts in a preregistered online experiment in which adults proofread passages under one of three acoustic conditions: silence, recorded birdsong, and a control sound matched to the birdsong in loudness and spectral content but lacking its natural structure. The matched control lets us ask whether any effect belongs to birdsong in particular or simply to having sound in the ears. We predicted that birdsong would improve detection relative to both other conditions, particularly in the second half of the session, and that the benefit would be larger among participants prone to mind wandering. We also asked how participants judged their own performance, because pleasant sounds might leave people feeling more accurate than they are."
+  },
+  {
+   "header": "Participants",
+   "text": "We recruited 360 adults in the United States through an online research platform, with eligibility restricted to native English speakers aged 18 to 65 who had a working pair of headphones and a desktop or laptop computer. Sample size came from a simulation-based power analysis targeting a small-to-medium condition difference (f = 0.18) with power of .80 for the condition-by-time interaction. Sixteen participants were removed before analysis for failing a headphone check or for completing the task in under half the median time, leaving 344. Ages ranged from 18 to 64 (M = 37.9, SD = 11.2), 51% identified as women, 47% as men, and 2% as nonbinary or another category. Roughly two thirds had completed some college, and 19% reported having worked in an editing or writing job."
+  },
+  {
+   "header": "Participants",
+   "text": "Participants were randomly assigned by the survey software to silence (n = 115), birdsong (n = 115), or matched control (n = 114). Preregistered checks showed no reliable differences across conditions in age, gender, education, self-rated English reading ease, or reported hours of sleep the night before (all ps > .25). Payment was 6 dollars for a session lasting about thirty-five minutes, with a bonus of up to 2 dollars tied to the number of errors found, which we introduced to ensure effort. The bonus rule was explained plainly in the instructions, and the platform confirmed that nobody had taken part in a related pilot. Median completion time was 33 minutes, and no participant reported hearing difficulties that would interfere with the task."
+  },
+  {
+   "header": "Procedure",
+   "text": "After consenting, participants adjusted the volume using a calibration tone and completed a headphone screening that required them to identify which of three tones was quietest. They then read instructions for a proofreading task in which they would see six short passages of about 350 words each, drawn from invented magazine articles on topics such as municipal composting and amateur astronomy. Each passage contained between eight and twelve inserted errors, including misspellings, repeated words, wrong homophones, and agreement mistakes. Participants clicked on any word they believed to be wrong and could not undo clicks. A timer was not displayed, but each passage closed automatically after four minutes, and a short break of thirty seconds separated passages."
+  },
+  {
+   "header": "Procedure",
+   "text": "Sound began playing during the first passage and continued throughout, with a loudness that participants had set themselves but which we capped at a moderate level. The birdsong recording blended calls from a woodland morning, with no human voices or traffic. The control sound was generated by shuffling short segments of the recording in the frequency domain, so that its loudness envelope and spectrum matched the original while its recognizable bird calls were lost. After passages two, four and six, a probe asked participants whether, in the preceding thirty seconds, their thoughts had been on the text, on something unrelated, or on the sound. A final questionnaire gathered ratings, sound preferences and the demographic block, and then a debriefing explained the three conditions."
+  },
+  {
+   "header": "Measures",
+   "text": "The primary outcome was error detection sensitivity, computed for each passage as the difference between standardized hit rate and false alarm rate, so that cautious and liberal clickers could be compared fairly. Hits were clicks on inserted errors and false alarms were clicks on correct words, scaled by the number of correct words in the passage. We also kept raw hit counts for the bonus. The secondary outcome was the proportion of thought probes that reported unrelated content, treated as an index of mind wandering during the session. Perceived accuracy was assessed by asking participants to estimate what percentage of errors they had found, and calibration was the signed difference between that estimate and their actual hit rate."
+  },
+  {
+   "header": "Measures",
+   "text": "Trait mind wandering was assessed at the start with a five-item questionnaire about spontaneous drifting in everyday reading, rated from 1 (never) to 6 (nearly always). Reliability in the present sample was acceptable (omega = .84). Participants also rated, at the end, how pleasant and how distracting they found the sound on seven-point scales, and how often they usually listened to nature sounds at work. Because the experimenters could not hear what participants heard, we added a single attention item embedded in the third passage, asking them to click the word \"pelican\" if they saw it. Passing it was not required for inclusion, but we report analyses with and without those who failed it."
+  },
+  {
+   "header": "Analysis",
+   "text": "Following the preregistration, detection sensitivity was analyzed with a linear mixed-effects model including condition, passage number (centered), and their interaction as fixed effects, with random intercepts for participants and passages and a random slope for passage number by participant. Trait mind wandering was added as a moderator in a second model that included all two- and three-way interactions. Probe responses were analyzed with a logistic mixed model. Tests of fixed effects used Satterthwaite approximations, and we report standardized coefficients along with 95% confidence intervals. Pairwise contrasts among conditions were corrected using the Holm procedure. Because we hypothesized a benefit specific to birdsong, we ran a planned contrast comparing birdsong against the average of the other two conditions."
+  },
+  {
+   "header": "Analysis",
+   "text": "Deviations from the plan were limited. We had intended to exclude anyone who ignored the pelican item, but the failure rate (6.4%) was low and evenly spread, so we kept them in the main models and show the exclusion as a sensitivity analysis. We also added an equivalence test, with bounds of plus or minus 0.15 standard deviations, to interpret any null effects, since the theoretical question would be well served by learning that birdsong is neutral. Exploratory analyses of calibration and sound ratings are labeled as such. Data were processed in R, and all code and materials were archived before we examined the outcomes, with the exception of the calibration variable, whose preparation script was finalized afterwards."
+  },
+  {
+   "header": "Results",
+   "text": "Overall, participants found a mean of 62.4% of inserted errors (SD = 14.8) and clicked on 3.1% of correct words (SD = 2.7), giving a mean sensitivity of d' = 1.92 (SD = 0.61). Sensitivity declined across passages in every condition, B = -0.07 per passage, 95% CI [-0.09, -0.05], p < .001. The condition main effect was small and not reliable, F(2, 341) = 1.38, p = .25, with means of 1.99 (SD = 0.59) for silence, 1.94 (SD = 0.62) for birdsong, and 1.84 (SD = 0.63) for the matched control. The planned birdsong contrast was null, B = 0.02, 95% CI [-0.11, 0.15], p = .74, and the equivalence test confirmed that the difference lay inside our bounds (p = .03). The condition-by-passage interaction was also negligible, F(2, 342) = 0.52, p = .60, so birdsong did not slow the decline."
+  },
+  {
+   "header": "Results",
+   "text": "Mind wandering, however, did differ by condition. Silence produced unrelated thoughts on 27.1% of probes (SD = 24.6), birdsong on 22.3% (SD = 23.5), and the matched control on 31.9% (SD = 26.1), and the logistic model showed that birdsong participants were less likely to report off-task thoughts than control participants (odds ratio = 0.62, 95% CI [0.47, 0.82], p = .001). The difference between birdsong and silence was in the same direction but not reliable (odds ratio = 0.81, 95% CI [0.61, 1.07], p = .14). Participants in the control condition also reported that sound as more distracting (M = 4.6 versus 3.1 for birdsong, p < .001) and less pleasant (M = 2.9 versus 5.2, p < .001), confirming that the manipulation differed in experienced quality as intended."
+  },
+  {
+   "header": "Results",
+   "text": "The moderation analysis supported part of the individual-differences prediction. Trait mind wandering interacted with condition for sensitivity, F(2, 338) = 4.07, p = .018. Among participants one standard deviation above the mean on the trait, birdsong was associated with higher sensitivity than the control (B = 0.24, 95% CI [0.05, 0.43], p = .013) and did not differ from silence, whereas among low scorers the three conditions were indistinguishable. In the exploratory calibration analysis, participants overestimated their hit rate by 14.2 points on average (SD = 18.9), and the overestimate did not vary by condition (p = .71). Excluding the 22 who failed the pelican item, or restricting analysis to those who reported rarely using nature sounds at work, left all conclusions unchanged."
+  },
+  {
+   "header": "Discussion",
+   "text": "Birdsong did not improve proofreading for the typical participant. On sensitivity, it was statistically equivalent to silence and to an acoustically matched control, and it did not protect against the decline that comes with time on task. This outcome is awkward for restorative accounts that predict a benefit from natural sound (Lindqvist & Okonkwo-Reyes, 2017), at least in a session of thirty minutes. It is equally awkward for accounts predicting harm, since birdsong did no worse than silence, despite its variability. The most economical reading is that, for reading-intensive tasks in a short session, gentle natural sound is simply neutral for accuracy, and that the choice between silence and birdsong can be made on the basis of comfort."
+  },
+  {
+   "header": "Discussion",
+   "text": "The secondary results are more interesting. Birdsong cut off-task thoughts relative to the control sound, yet that drop did not translate into better detection on average. One explanation is that a wandering mind in a proofreading task is not always an error-prone one, because skilled readers can skim in a state that still catches the odd mistake. Another is that the control sound was irritating, so the contrast mostly reflects the harm of an unpleasant noise, not a benefit of birdsong. The moderation by trait mind wandering hints at something real, since habitual drifters gained from birdsong relative to the control, consistent with the idea that a pleasant sound gives the wandering mind a harmless place to rest (Brightwater et al., 2020). Because this was a single moderator test, we regard it as a lead rather than a conclusion."
+  },
+  {
+   "header": "Limitations",
+   "text": "Participants worked at home in unmonitored environments, so we cannot rule out background noise, interruptions or use of noise-cancelling headphones that differ from what we assumed. The passages were short and artificial, and the errors were inserted at known positions, which differs from reviewing one's own writing. Sessions lasted about half an hour, which may be too brief for restorative effects to emerge. The sample was recruited from a paid research platform, whose members may be unusually practiced at sustained attention tasks. Birdsong was represented by one recording, and other soundscapes might behave differently. Lastly, the calibration analysis was exploratory and its script was finalized after outcome inspection, so it should be treated with caution."
+  },
+  {
+   "header": "Conclusion",
+   "text": "In this preregistered experiment, ambient birdsong neither helped nor harmed average error detection in proofreading, although it reduced self-reported mind wandering relative to a matched artificial sound and may have offered a small advantage to people who habitually drift. Workers who like birdsong need not fear that it will cost them accuracy, but they also should not expect it to catch more typos. Longer sessions, real working environments and multiple soundscapes would be useful next steps in clarifying when natural sound earns a place at the desk."
+  },
+  {
+   "header": "Funding",
+   "text": "This research was funded by a seed award from the Great Lakes Applied Cognition Initiative (award GLACI-S-0286). The funder had no input into the study design, analysis, or decision to publish."
+  },
+  {
+   "header": "Ethics statement",
+   "text": "The protocol was reviewed and approved by the Institutional Review Board of Marrowfield State University (protocol 23-0719-X). Participants provided electronic informed consent and were debriefed at the end of the session."
+  },
+  {
+   "header": "Data availability",
+   "text": "The preregistration, stimulus passages, audio files, de-identified data, and analysis scripts are available in an open repository released under a CC0 dedication."
+  }
+ ]
+}

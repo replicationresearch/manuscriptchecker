@@ -1,0 +1,108 @@
+{
+ "id": "syn03",
+ "kind": "synthetic",
+ "title": "Becoming a Tradesperson: Three Waves of Professional Identity among First-Year Construction Apprentices in Scotland and the North of England",
+ "authors": [
+  {
+   "family": "Delacroix-Munthe",
+   "given": "Ottoline"
+  },
+  {
+   "family": "Abiodun-Haverkamp",
+   "given": "Cormac"
+  },
+  {
+   "family": "Strzelecki-Nwosu",
+   "given": "Wilhelmina"
+  }
+ ],
+ "license": "CC0-1.0",
+ "language": "en",
+ "spelling": "british",
+ "rows": [
+  {
+   "header": "Introduction",
+   "text": "The first year of an apprenticeship is a strange stretch of life. A seventeen-year-old who was recently a school pupil arrives on a building site, is handed a hard hat that does not yet feel like his or hers, and is expected within months to behave like a member of a trade. Completion rates in construction apprenticeships are persistently lower than employers and training bodies would like, and attention has tended to fall on pay, travel distance, and the quality of college provision. Those factors matter, but they sit alongside a less visible process, in which a young person gradually decides whether to count themselves a joiner, a bricklayer or an electrician. We follow that process across the first year, asking how it unfolds and which early experiences speed it along."
+  },
+  {
+   "header": "Introduction",
+   "text": "Professional identity is commonly understood as the extent to which people see their occupation as part of who they are (Vandermeer & Oyewole, 2015). It tends to be built through repeated acts of recognition: a foreman asks for a trainee's opinion, a customer addresses them as \"the plasterer\", a mentor trusts them with a tool that is not cheap. Researchers working in clinical training have shown that such moments predict persistence, but the evidence from manual trades is thin and mostly retrospective, relying on accounts from people who already finished or left. Retrospective accounts blur the sequence of events. Following apprentices forward in time lets us see whether identity rises steadily, stalls, or takes shape in sudden steps, and whether it precedes or follows doubts about staying."
+  },
+  {
+   "header": "Introduction",
+   "text": "We focused on three candidate drivers. The first was mentoring quality, meaning the extent to which a named senior colleague explains why a task is done in a particular way. The second was task authenticity, or the share of working time spent on real tasks rather than on sweeping, fetching and watching. The third was peer belonging, referring to the sense of being accepted by the other trainees at college and on site. We expected all three to predict growth in professional identity, with mentoring the strongest, and we expected identity growth in turn to predict lower intention to quit. The study also explored whether the trajectories differed between trades and between the two regions, given differences in how apprenticeships are structured."
+  },
+  {
+   "header": "Participants",
+   "text": "The sample comprised 212 apprentices who began a construction trade in September of the same year. They were recruited through eleven training providers, six in central Scotland and five in the north of England, covering carpentry and joinery, bricklaying, plumbing, electrical installation, and plastering. Providers distributed an information sheet in the first week, and 61% of those invited agreed to take part. At the first wave, ages ranged from 16 to 29 (M = 18.9, SD = 2.7), and 91 percent of the sample were male, which mirrors the sector but restricts conclusions about women, of whom there were nineteen. Roughly a third (34%) had a parent or close relative in construction, and 27% had left school without any formal qualification in mathematics."
+  },
+  {
+   "header": "Participants",
+   "text": "Retention across the year was reasonable. Of the original 212, 187 completed the second wave, and 168 completed the third, giving 79% retention overall. Those who left the study were disproportionately those who had left their apprenticeship; of the 44 participants lost by wave three, 29 had withdrawn from their placement, 9 had moved employer without leaving the programme, and 6 could not be contacted. Dropouts did not differ from continuers at baseline in age, prior qualifications, or family connection to the trade, but they did report lower baseline peer belonging (M = 3.4 versus 3.9, p = .02). We handled this attrition with full-information estimation, which uses all available data and assumes that missingness depends on observed values."
+  },
+  {
+   "header": "Procedure",
+   "text": "Three measurement waves were scheduled at the end of the first month, the end of the fifth month, and the end of the tenth month of the apprenticeship. Each wave was run in person at the training centre during a scheduled college block, so that participants completed a tablet questionnaire in groups of six to twelve with a researcher present. This arrangement kept response rates high and allowed a researcher to explain items that had unfamiliar wording. Apprentices who were on site rather than at college during the window were offered a short video call or a postal questionnaire, and 23 responses across the study came through those routes. Each session took roughly twenty-five minutes, after which participants received a voucher worth fifteen pounds at wave one and twenty pounds at later waves."
+  },
+  {
+   "header": "Procedure",
+   "text": "Employers were not told which of their apprentices took part, and no individual responses were shared with providers. This was an important design choice, as apprentices are in a dependent position, and several said at wave one that they would not have answered honestly about mentors if the boss could read the replies. A short card explained the confidentiality arrangements and was handed out again at each wave. At the final wave, researchers also asked an open question about the moment during the year when participants had felt most like a real tradesperson. We do not analyse these answers here, but reading them informed the interpretation of the quantitative patterns presented later."
+  },
+  {
+   "header": "Measures",
+   "text": "Professional identity was measured at all three waves with a six-item scale adapted for manual trades, including items about feeling proud to tell people what trade one is learning and thinking of oneself as a member of that trade rather than a trainee. Responses used a seven-point agreement scale. Reliability was good at each wave (alpha = .83, .86 and .88), and longitudinal measurement invariance was supported, with the change in comparative fit index between configural and scalar models below .01. Intention to quit was a single item asking how likely the participant was to leave the apprenticeship before completing it, rated from 1 (very unlikely) to 5 (very likely), and it was collected at waves two and three only."
+  },
+  {
+   "header": "Measures",
+   "text": "Mentoring quality, task authenticity and peer belonging were each assessed at waves one and two as predictors of later identity change. Mentoring was a four-item scale, with a stem such as \"my mentor explains the reasons behind how we do things\". Task authenticity was captured by asking participants to estimate the percentage of working time in the past fortnight spent on genuine trade tasks, as opposed to errands and observation, and the figure was divided by ten to place coefficients on a convenient scale. Peer belonging used five items about feeling accepted by fellow trainees. Covariates were age, gender, prior qualifications, family connection to the trade, region, and trade group. Trade group was entered as a set of dummy variables because group sizes were small."
+  },
+  {
+   "header": "Analysis",
+   "text": "Change in professional identity was modelled with a latent growth curve, with intercept and linear slope factors, and the three waves were spaced to reflect the unequal intervals by fixing loadings at 0, 4 and 9 months. We tested a quadratic term but it did not improve fit. Time-invariant predictors from wave one were regressed on the intercept and slope. To study the lagged role of mentoring, authenticity and belonging at wave two, we fitted a cross-lagged panel model in which each of these variables, together with identity, was regressed on its own previous value and on the previous values of the others. Models were estimated by maximum likelihood with robust standard errors, using all available data from each participant, and fit was judged by the comparative fit index, root mean square error of approximation, and standardised residuals."
+  },
+  {
+   "header": "Analysis",
+   "text": "For intention to quit, we regressed the wave three score on identity growth and on wave two identity, controlling for wave two intention. Regional and trade differences in slope were evaluated by multi-group comparison, and invariance constraints were relaxed only when a chi-square difference test and a change in fit indices agreed. Because trainees are nested in providers, we reran key models with cluster-robust errors by training provider, which changed standard errors only slightly. Missing data for covariates were under 2%. Effect sizes are reported as standardised coefficients, and 95% confidence intervals accompany all principal estimates. As the study was observational and the sample modest, we avoided correcting for multiple comparisons in the exploratory moderator tests, but flag them as such."
+  },
+  {
+   "header": "Results",
+   "text": "Professional identity rose across the year. Mean scores were 4.12 (SD = 1.14) at wave one, 4.89 (SD = 1.08) at wave two, and 5.37 (SD = 1.01) at wave three. The growth model fitted well (CFI = .98, RMSEA = .045, 90% CI [.00, .09]), with a mean slope of 0.14 scale points per month (95% CI [0.11, 0.17]) and significant variance in both intercept and slope, indicating that apprentices began at different levels and moved at different speeds. Growth was faster early than late when considered in raw scores, but the quadratic term was not significant (p = .21), so we retained the linear form. The slope did not differ between Scotland and England, with a chi-square difference of 2.1 on 2 degrees of freedom (p = .35), and trade groups showed only small differences, with plasterers growing a little more slowly than electricians."
+  },
+  {
+   "header": "Results",
+   "text": "In the conditional growth model, mentoring quality at wave one was the strongest predictor of the slope (standardised beta = .29, 95% CI [.14, .44], p < .001), followed by task authenticity (beta = .18, 95% CI [.03, .33], p = .02). Peer belonging predicted the intercept (beta = .31, p < .001) but not the slope (beta = .06, p = .46). Apprentices with a relative in the trade started higher on identity (beta = .17, p = .01) yet did not grow faster. The cross-lagged model, which fitted adequately (CFI = .96, RMSEA = .06), showed that wave two mentoring predicted wave three identity after accounting for wave two identity (beta = .21, 95% CI [.07, .35]), whereas wave two identity did not predict wave three mentoring (beta = .07, 95% CI [-.07, .21]). Reverse paths from identity to authenticity were also weak."
+  },
+  {
+   "header": "Results",
+   "text": "Intention to quit was low on average but varied (M = 2.11, SD = 1.17 at wave two; M = 1.95, SD = 1.20 at wave three). Greater identity growth predicted a lower wave three intention to quit, beta = -.34 (95% CI [-.48, -.20], p < .001), after taking wave two intention into account. Among the 29 participants who left the programme before wave three, the average wave two identity score was 3.96 (SD = 1.21), compared with 4.98 (SD = 1.04) for those who stayed, a difference of about one scale point, t(185) = 4.49, p < .001. Cluster-robust standard errors changed no conclusion, and the pattern held when we excluded apprentices with relatives in the trade."
+  },
+  {
+   "header": "Discussion",
+   "text": "Apprentices came to see themselves as tradespeople over the first year, and most of this change occurred by the middle of the year. The finding that mentoring quality, rather than peer belonging, predicted how quickly identity grew is practically important. Belonging to the cohort made apprentices feel at home from the start, as shown by its link to the starting level, but it did little to move them forward. Mentors who explain the reasons behind tasks seem to supply a different thing: they treat the apprentice as someone who will need to understand the craft and so to carry it, which is consistent with the idea of recognition as the engine of identity (Vandermeer & Oyewole, 2015). The cross-lagged result, in which mentoring led identity but not the reverse, strengthens that reading, though it cannot establish cause."
+  },
+  {
+   "header": "Discussion",
+   "text": "Task authenticity also mattered, but less. This fits the common complaint among apprentices that the first months involve a lot of waiting and carrying. Even so, the advantage associated with more real work was modest, and some apprentices spoke in their open answers of being proud after a single properly executed task, which suggests that quality of experience may count for more than quantity. The link between identity growth and the intention to leave deserves particular note, since it implies that identity is a plausible mechanism by which good mentoring reduces drop-out. Providers might therefore consider training mentors specifically in explaining rationale, and they might ask employers to give each apprentice at least one task per week that is genuinely theirs. Both steps are inexpensive compared with the cost of replacing an apprentice who has left."
+  },
+  {
+   "header": "Limitations",
+   "text": "The sample was drawn from eleven providers that agreed to host the study, and these may be more engaged than the average provider. Attrition, though handled with full-information estimation, was related to the very constructs studied, so growth estimates could be optimistic if apprentices who left would have grown more slowly. Only three waves were collected, which limits the complexity of the trajectories that can be fitted, and the lag between waves was long compared with the pace at which a good or bad week on site can change how someone feels. All constructs were self-reported, including task authenticity, which may be remembered inaccurately. The sample was overwhelmingly male, and the small group of female apprentices, who may face a different recognition environment, could not be analysed separately."
+  },
+  {
+   "header": "Conclusion",
+   "text": "Over their first year, construction apprentices in Scotland and northern England gradually came to think of themselves as members of a trade, and those who had mentors who explained the reasons behind the work did so faster. Faster identity growth went with a lower wish to leave. The findings suggest that investment in mentor skills, not only in pay or college quality, may be an effective route to keeping new entrants in the trades. Studies with denser measurement, larger numbers of women, and employer-side data would show how these early processes accumulate into lasting commitment."
+  },
+  {
+   "header": "Funding",
+   "text": "The project was supported by the Skills and Vocational Futures Fund of the Caledon Learning Foundation (grant CLF-SVF-2291). The funder did not influence the study design, analysis, or reporting."
+  },
+  {
+   "header": "Ethics statement",
+   "text": "Ethical approval was granted by the Research Ethics Committee of the Faculty of Social Sciences at Strathnorrow University (reference FSS/2022/088). Written informed consent was obtained from all participants, and parental assent was not required for those aged sixteen and over."
+  },
+  {
+   "header": "Data availability",
+   "text": "De-identified data, questionnaire items, model syntax and a codebook are deposited in an open repository under a CC0 licence. Variables that could identify individual training providers have been recoded into broad categories."
+  }
+ ]
+}
