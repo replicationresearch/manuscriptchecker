@@ -10,7 +10,7 @@ engines:
 |--------|--------------|
 | **metacheck (R)** | The original set of manuscript checks, via the R `metacheck` package. |
 | **ChetaMeck (Python)** | An independent reimplementation of the metacheck checks, plus forensic metascience (GRIM/GRIMMER/DEBIT…), effect-size & CI consistency (EffectCheck port) and R2 editorial checks. |
-| **Plagiarism Check** | Licence-free *verbatim* text-overlap detection: one exact phrase per paragraph is searched in open full texts (Europe PMC, OpenAlex, Wikipedia), then the best candidates' full texts and any local files are compared with the whole manuscript (shingles, after normalising formatting and UK/US spelling). |
+| **Plagiarism Check** | Licence-free *verbatim* text-overlap detection: one exact phrase per paragraph is searched in open full texts (Europe PMC, OpenAlex, Wikipedia), then the best candidates' full texts and any local files are compared with the whole manuscript (shingles, after normalising formatting and UK/US spelling). Benchmarks in `scripts/plagbench/`. |
 
 You can select several engines at once — each one produces its own report.
 
@@ -57,10 +57,17 @@ Releases are built and published automatically by the
 3. The release notes are generated from the commit history — edit them on the
    release page if you want custom notes.
 
-## Tests
+## Plagiarism benchmarks
 
-`tests/test_plagcheck.py` holds offline unit tests of the Plagiarism Check
-engine: `python -m pytest tests`.
+`tests/test_plagcheck.py` holds offline unit tests (`python -m pytest tests`).
+`scripts/plagbench/` measures detection rates:
+
+* `pan.py` - text-alignment quality on the PAN13 corpus (verbatim subset).
+* `run_online.py` - the whole engine against the live search services on a
+  fixed corpus (`scripts/plagbench/corpus/`): passages from openly licensed
+  sources (PMC, open access outside PMC, PsyArXiv, Wikipedia) inserted into
+  six purpose-written and six real CC BY manuscripts. Needs OpenAlex API
+  keys; see `scripts/plagbench/README.md`.
 
 ## Building yourself
 
