@@ -311,7 +311,7 @@ def parse_text(xml):
     df = df.reset_index(drop=True)
 
     sentences = []
-    for _, r in df.iterrows():
+    for p_idx, (_, r) in enumerate(df.iterrows()):
         fmt = _clean_formatted(str(r["formatted"]))
         cleaned, refs = _pull_refs(fmt)
         for s in _split_sentences(cleaned):
@@ -320,7 +320,7 @@ def parse_text(xml):
             plain = _strip_tags(s)
             sentences.append({
                 "header": r["header"], "formatted": s, "section": r["section"],
-                "div": r["div"], "text": plain})
+                "div": r["div"], "text": plain, "tei_paragraph": p_idx})
 
     st = pd.DataFrame(sentences)
     if st.empty:
@@ -382,7 +382,9 @@ def parse_text(xml):
     st["section_id"] = [div_map.get((d, h), 0)
                         for d, h in zip(st["div"], st["header"])]
 
-    text_df = st[["text", "text_id", "paragraph_id", "section_id",
+    # tei_paragraph: index of the TEI paragraph a sentence came from
+    # (paragraph_id numbers the sentences themselves)
+    text_df = st[["text", "text_id", "paragraph_id", "tei_paragraph", "section_id",
                   "page_number", "header", "section_type", "formatted"]].copy()
 
     section_df = pd.DataFrame({

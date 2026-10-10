@@ -5,8 +5,10 @@ from datetime import datetime
 
 from chetameck.report import _CSS, LOGO_MUCOS, sticker_uri
 
-LABEL = {"green": "Low overlap", "yellow": "Check", "red": "High overlap",
-         "na": "Not run"}
+from .core import BENCHMARK_NOTE
+
+LABEL = {"green": "No substantial verbatim overlap found in the searched sources",
+         "yellow": "Check", "red": "High overlap", "na": "Not run"}
 COLORS = ["#ffd54f", "#81d4fa", "#a5d6a7", "#f48fb1", "#ce93d8", "#ffab91",
           "#b0bec5", "#c5e1a5"]
 
@@ -41,11 +43,10 @@ def _e(x):
 def _src_card(i, s):
     tl = ("green" if s["coverage"] < 0.05 else
           "yellow" if s["coverage"] < 0.15 else "red")
-    if s["same_work"]:
-        tl = "na"
     tags = f'<span class="tag">{_e(s.get("source", ""))}</span>'
-    if s["same_work"]:
-        tags += '<span class="tag">same work / earlier version - not counted</span>'
+    if s.get("own_work"):
+        tags += ('<span class="tag">own prior work? shared author(s): '
+                 f'{_e(", ".join(n.title() for n in s["own_work"]))}</span>')
     if s["cited"]:
         tags += '<span class="tag">cited in reference list</span>'
     title = _e(s["title"] or s["name"])
@@ -125,8 +126,6 @@ def _render_doc(doc, token_style):
 def _manuscript_html(doc, sources):
     owner = [None] * len(doc.words)
     for si, s in enumerate(sources, 1):
-        if s["same_work"]:
-            continue
         for t, c in enumerate(s["covered"]):
             if c and owner[t] is None:
                 owner[t] = si
@@ -154,34 +153,55 @@ def _phrases_html(doc, info):
 
 
 def _coverage_html(info):
-    tot = max(info["total"], 1)
     words = max(info["words_total"], 1)
-    cur_w, old_w = len(info["current_idx"]), len(info["earlier_idx"])
+    cur_w = len(info["current_idx"])
     all_w = len(info["current_idx"] | info["earlier_idx"])
+    para = max(info["paragraphs"], 1)
     rows = [
-        ("Searchable phrases in this manuscript", f'{info["total"]}'),
-        ("Searched in this run", f'{info["searched"]} ({info["searched"] / tot:.0%} '
-                                  f'of all; seed {info["seed"]})'),
-        ("Used in earlier runs", f'{info["earlier"]}'),
-        ("Cumulative over all runs",
-         f'{info["cumulative"]} of {info["total"]} ({info["cumulative"] / tot:.0%}), '
-         f'{info["runs"]} run(s) logged'),
-        ("Words covered by searched phrases (this run)",
+        ("Paragraphs (12+ words)", f'{info["paragraphs"]}'),
+        ("Paragraphs probed online in this run",
+         f'{info["paragraphs_probed"]} ({info["paragraphs_probed"] / para:.0%}; '
+         f'seed {info["seed"]})'),
+        ("Paragraphs without a searchable phrase",
+         f'{info["paragraphs"] - info["paragraphs_probeable"]} (mostly numbers, '
+         'quotes or citations)'),
+        ("Searched in", ", ".join(info["backends"])),
+        ("Phrases searched: this run / all runs / available",
+         f'{info["searched"]} / {info["cumulative"]} / {info["total"]} '
+         f'({info["runs"]} run(s) logged)'),
+        ("Words inside searched phrases (this run)",
          f"{cur_w} of {words} ({cur_w / words:.0%})"),
-        ("Words covered cumulatively", f"{all_w} of {words} ({all_w / words:.0%})"),
-        ("Skip phrases from earlier runs", "yes" if info["skip_used"] else "no"),
+        ("Words inside searched phrases (all runs)",
+         f"{all_w} of {words} ({all_w / words:.0%})"),
     ]
     tr = "".join(f"<tr><td class='k'>{_e(k)}</td><td>{_e(v)}</td></tr>"
                  for k, v in rows)
     return (
         "<div class='module info'><h3>Search coverage</h3>"
-        "<p>Only the searched phrases can find <b>online</b> sources; the "
-        "literature folder and local files are always compared with the whole "
-        "text. A phrase is a 9-word excerpt (one per sentence at most three "
-        "per sentence), searched as an exact word sequence. Re-run with "
-        "<i>skip phrases from earlier runs</i> to check different passages; "
-        "every run is logged (phrase_log.json).</p>"
-        f"<table class='meta'>{tr}</table></div>")
+        "<p>Online sources can only be found through the searched phrases: one "
+        "9-word excerpt per ~60 words, searched as an exact word sequence. "
+        "Every paragraph with a searchable phrase gets at least one (see the "
+        "table for paragraphs that have none, and the notes for searches a "
+        "service left unanswered). A copied passage is only found if a phrase "
+        "falls into it, so a single copied sentence inside an otherwise "
+        "original paragraph is often missed. Re-run with <i>skip phrases from earlier runs</i> to "
+        "probe other parts of every paragraph (each run is logged in "
+        "phrase_log.json). Once a source is found, its full text is compared "
+        "with the <b>whole</b> manuscript; the literature folder and local "
+        "files are always compared in full.</p>"
+        + (f"<p>{_e(BENCHMARK_NOTE)}</p>" if BENCHMARK_NOTE else "")
+        + f"<table class='meta'>{tr}</table></div>")
+
+
+def _work_li(w):
+    ph = w.get("phrases") or []
+    if ph:
+        hit = f'{len(ph)} phrase hit(s), e.g. "{_e(ph[0]["phrase"])}"'
+    else:
+        hit = "phrase hit reported by OpenAlex (the phrase could not be identified)"
+    return (f'<li><a href="{_e(w.get("url", ""))}" target="_blank">'
+            f'{_e(w.get("title") or w.get("name"))}</a> '
+            f'({_e(w.get("year") or "")}; {_e(w.get("source"))}) - {hit}</li>')
 
 
 def build_report(r):
@@ -189,34 +209,46 @@ def build_report(r):
     tl = r["traffic_light"]
     doc = r["doc"]
     sources = r["sources"]
-    counted = [s for s in sources if not s["same_work"]]
+    info = r["phrase_info"]
+    own = (f'<div class="card"><div class="big">{r["score_own"]:.1%}</div>'
+           '<div class="lbl">from the authors\' own prior work</div></div>'
+           if r["score_own"] else "")
     cards = (
         f'<div class="card"><div class="big">{r["score"]:.1%}</div>'
-        '<div class="lbl">text overlap (all sources)</div></div>'
+        '<div class="lbl">verbatim overlap (all sources)</div></div>'
         f'<div class="card"><div class="big">{r["score_uncited"]:.1%}</div>'
         '<div class="lbl">overlap with sources not in reference list</div></div>'
-        f'<div class="card"><div class="big">{len(counted)}</div>'
-        '<div class="lbl">sources compared in full</div></div>'
-        f'<div class="card"><div class="big">{r["n_phrases"]} / {r["phrase_info"]["total"]}</div>'
-        '<div class="lbl">phrases searched online / available</div></div>'
+        f'{own}'
+        f'<div class="card"><div class="big">{info["paragraphs_probed"]} / '
+        f'{info["paragraphs"]}</div>'
+        '<div class="lbl">paragraphs probed online</div></div>'
+        f'<div class="card"><div class="big">{len(sources)}</div>'
+        '<div class="lbl">sources with verified overlap</div></div>'
         f'<div class="card"><div class="big">{doc.quote_words}</div>'
         '<div class="lbl">quoted words excluded</div></div>')
 
     src_html = "".join(_src_card(i, s) for i, s in enumerate(sources, 1)) or \
-        "<p>No source with a verifiable full text was found.</p>"
+        "<p>No passage of 8+ identical words was found in any compared source.</p>"
 
     unv = ""
-    if r["unverified"]:
-        items = "".join(
-            f'<li><a href="{_e(w.get("url", ""))}" target="_blank">{_e(w["title"])}</a> '
-            f'({_e(w.get("year") or "")}; {_e(w.get("source"))}) - '
-            f'{len(w["phrases"])} phrase hit(s), e.g. "{_e(w["phrases"][0]["phrase"])}"</li>'
-            for w in r["unverified"][:40])
-        unv = ("<h2 class='cat'>Unverified candidates</h2>"
-               "<p class='note'>These works contain at least one searched phrase, "
-               "but their open full text could not be downloaded (or the "
-               "per-run limit was reached). Open them and look manually.</p>"
-               f"<ul>{items}</ul>")
+    if r["phrase_only"]:
+        unv = ("<h2 class='cat'>Phrase matches only (not verified)</h2>"
+               "<p class='note'>The search engines report that these works contain "
+               "at least one searched phrase, but their full text could not be "
+               "downloaded (paywall, blocked download or the per-run limit), so "
+               "the overlap is not verified and not counted in the score. Search "
+               "engines may also match loosely (stemming, stop words). Open them "
+               "and look manually, or add the PDF via the literature folder.</p>"
+               f"<ul>{''.join(_work_li(w) for w in r['phrase_only'][:40])}</ul>")
+    if r["compared_no_match"]:
+        unv += ("<details><summary>"
+                f"{len(r['compared_no_match'])} candidate(s) compared in full "
+                "without a match of 8+ identical words</summary>"
+                "<p class='note'>A search engine reported a phrase hit, but the "
+                "full text does not share a verbatim run with the manuscript "
+                "(loose search matching or a different version of the text).</p>"
+                f"<ul>{''.join(_work_li(w) for w in r['compared_no_match'])}</ul>"
+                "</details>")
 
     ls = r.get("lib_stats")
     if ls:
@@ -227,23 +259,34 @@ def build_report(r):
     notes = "".join(f"<p class='note'>{_e(n)}</p>" for n in r["notes"])
     method = (
         "<div class='module info'><h3>How this check works</h3>"
-        "<p>No commercial database or licence is used. (1) Distinctive 9-word "
-        "phrases from the manuscript were searched as exact phrases in the full "
-        "text of open scholarly sources (Europe PMC open access, OpenAlex). "
-        "(2) The open full text of the best candidates, plus any local files you "
-        "added, was compared with the whole manuscript using 6-word shingles; "
-        "matches of 8+ consecutive words are reported. Quoted passages and "
-        "(Author, year) citations are excluded; the reference list is not "
-        "scored.</p>"
-        "<p><b>Limits:</b> paywalled publisher content, theses, books and "
-        "most websites are not searched, and paraphrase without shared word "
-        "runs is not detected. High overlap with a source that is properly "
-        "cited or with the authors' own earlier version is often legitimate "
-        "(methods text of a direct replication, for instance). The score is a "
-        "pointer for a human to inspect, not a verdict.</p></div>")
+        "<p>No commercial database or licence is used. (1) Distinctive "
+        "9-word phrases (one per ~60 words, at least one per paragraph) were "
+        "searched as exact phrases in open "
+        "full texts (Europe PMC open-access articles and preprints, OpenAlex, "
+        "Wikipedia). (2) The open full text of the best candidates, plus any "
+        "local files you added, was compared with the whole manuscript using "
+        "6-word shingles; matches of 8+ consecutive words are reported. Before "
+        "comparing, formatting differences are removed (ligatures, line-end "
+        "hyphenation, hyphens, accents, British/American spelling). Quoted "
+        "passages and (Author, year) citations are excluded; the reference "
+        "list is not scored. Versions of this manuscript (same DOI, same "
+        "title, or shared authors with a similar title) are ignored; sources "
+        "sharing an author are labelled as possible own prior work.</p>"
+        + ("<p><b>Privacy:</b> the searched 9-word excerpts of the manuscript "
+           "were sent to the search services named above; nothing else left "
+           "this computer.</p>" if r["n_phrases"] else
+           "<p><b>Privacy:</b> no online search was run; nothing left this "
+           "computer.</p>") +
+        "<p><b>Limits:</b> only <b>verbatim</b> overlap is detected - reworded "
+        "or AI-paraphrased text is out of scope. Paywalled publisher content, "
+        "theses, books and most websites are not searched. A green result "
+        "therefore means no overlap was found in the searched sources, not "
+        "that the text is original. High overlap with a cited source or with "
+        "the authors' own earlier work is often legitimate (methods text of a "
+        "direct replication, for instance). The score is a pointer for a "
+        "human to inspect, not a verdict.</p></div>")
 
     ms = _manuscript_html(doc, sources)
-    info = r["phrase_info"]
     coverage = _coverage_html(info)
     phr = _phrases_html(doc, info)
     return f"""<!doctype html>
@@ -260,7 +303,7 @@ def build_report(r):
 service. Overall: <b>{LABEL.get(tl, tl)}</b> &mdash; {_e(r['summary_text'])}</div>
 <div class="cards">{cards}</div>
 {method}{coverage}{notes}
-<h2 class="cat">Sources</h2>{src_html}{unv}
+<h2 class="cat">Sources with verified overlap</h2>{src_html}{unv}
 <h2 class="cat">Manuscript with matches highlighted</h2>
 <div class="ms">{ms}</div>
 <h2 class="cat">Manuscript with all searched phrases highlighted</h2>
