@@ -1,0 +1,168 @@
+{
+ "id": "real05",
+ "kind": "real",
+ "title": "The Translation and Adaptation of the Labour Force Survey Disability Module (LFS-DM) Into Hindi",
+ "doi": "10.7759/cureus.76475",
+ "pmcid": "PMC11768677",
+ "authors": [
+  {
+   "family": "Kumar",
+   "given": "Deepak"
+  },
+  {
+   "family": "Richa",
+   "given": "Richa"
+  },
+  {
+   "family": "Kumar",
+   "given": "Rajan"
+  },
+  {
+   "family": "Mondal",
+   "given": "Himel"
+  },
+  {
+   "family": "Kumar",
+   "given": "Khageshwar"
+  },
+  {
+   "family": "Singh",
+   "given": "Sanyogita"
+  },
+  {
+   "family": "Gupta",
+   "given": "Pratima"
+  },
+  {
+   "family": "Varshney",
+   "given": "Saurabh"
+  }
+ ],
+ "language": "en",
+ "source_url": "https://europepmc.org/article/PMC/11768677",
+ "creators": "Deepak Kumar, Richa Richa, Rajan Kumar, Himel Mondal, Khageshwar Kumar, Sanyogita Singh et al.",
+ "retrieved": "2026-10-10",
+ "change_notice": "Body paragraphs unchanged; tables, figures and the reference list removed.",
+ "rows": [
+  {
+   "header": "Introduction",
+   "text": "Assessing disability among individuals is vital to understanding their functional limitations, participation restrictions, and the impact of disabilities on their social and economic lives [1]. For persons with disabilities (PWDs), this process is essential for recognizing their needs and fostering societal inclusion in areas like employment, education, and healthcare [2]. Assessing disability in a structured, reliable manner enables the identification of systemic barriers and enhances efforts to ensure compliance with international commitments [3]. In multilingual and diverse societies like India, the reliance on English-language questionnaires for disability assessment poses significant challenges [4]. For patients, especially those from rural or non-English-speaking backgrounds, understanding and accurately responding to English survey questions can be daunting [5]. Many respondents may have limited proficiency in English, leading to confusion, misinterpretation, or even non-responses."
+  },
+  {
+   "header": "Introduction",
+   "text": "Local surveyors, particularly those not fluent in English, may also face hurdles. They may struggle with accurately translating technical terms or questions on the spot during data collection [6]. This can result in inconsistencies in responses, reduced data quality, and an overall lack of reliability in the findings. Additionally, surveyors may find it challenging to build rapport with respondents when using a language that feels foreign or inaccessible to both parties, further limiting the effectiveness of the data collection process [7]."
+  },
+  {
+   "header": "Introduction",
+   "text": "The Labour Force Survey Disability Module (LFS-DM) was developed to be included in labor force surveys, but it may also be used in population-based surveys that collect data on employment [8]. This questionnaire is available in English. However, in India, the majority (about 43.63%) of the population speaks Hindi [9]. Hence, for using this questionnaire in an Indian context, it was necessary to translate and adapt it into Hindi. We believe it would enable better understanding and participation among respondents. It would also empower local surveyors to administer the survey with confidence and precision, thereby improving data collection efforts."
+  },
+  {
+   "header": "Materials and methods",
+   "text": "Study design and setting"
+  },
+  {
+   "header": "Materials and methods",
+   "text": "This was a cross-sectional, descriptive study conducted at the All India Institute of Medical Sciences, Deoghar, Jharkhand, India. The study was approved by the Institutional Ethics Committee (approval number: 2023-93-EMP-03). The study involved the translation of the questionnaire and pilot testing the questionnaire. The participants for the pilot testing were recruited from the outpatient department of the hospital, ensuring a diverse representation of individuals with different types and levels of disabilities. The study was conducted from June 1, 2024, to November 30, 2024."
+  },
+  {
+   "header": "Materials and methods",
+   "text": "The questionnaire"
+  },
+  {
+   "header": "Materials and methods",
+   "text": "The LFS-DM comprises five sections designed to address various aspects of disability. The first section focuses on disability identification (eight questions regarding vision, hearing, mobility, cognition, self-care, communication, anxiety, and depression). The second section assesses the barriers to employment and targets working-age individuals with disabilities who are not employed, exploring challenges preventing them from working (two questions). The third section applies to employed individuals with disabilities, identifying workplace adjustments needed for their roles (two questions). The fourth section examines attitudes related to employability and colleagues' willingness to work with persons with disabilities (two questions). The fifth section assesses access to social benefits among working-age individuals with disabilities, regardless of their employment status (three questions). Hence, this questionnaire has a total of 17 questions or statements with closed-ended response options. The questionnaire is available in Appendices."
+  },
+  {
+   "header": "Materials and methods",
+   "text": "Translation"
+  },
+  {
+   "header": "Materials and methods",
+   "text": "This study employed a structured process to translate LFS-MD into Hindi, ensuring linguistic and cultural equivalence while maintaining the integrity of the original questionnaire [10]. The study process is illustrated in Figure 1."
+  },
+  {
+   "header": "Materials and methods",
+   "text": "The questionnaire was initially translated from English to Hindi by three bilingual experts proficient in both languages and familiar with disability-related terminology. Their translations were reconciled by one of the authors to produce a unified version. Then, the Hindi version of the questionnaire was back-translated into English by three additional bilingual experts who were not involved in the initial translation process. The back-translated versions were reconciled by another author."
+  },
+  {
+   "header": "Materials and methods",
+   "text": "The reconciled Hindi version was then reviewed by three expert doctors in physical medicine and rehabilitation to assess its conceptual equivalence between the back-translated English version and the original English version. This step ensured that the Hindi questionnaire accurately captured the meaning and intent of the original questions, particularly in the context of disability-related constructs. The expert rated each of the questions (i.e., item) on a 10-point visual analog scale to rate the equivalence to the original English version."
+  },
+  {
+   "header": "Materials and methods",
+   "text": "Pilot testing and cognitive interview"
+  },
+  {
+   "header": "Materials and methods",
+   "text": "The finalized Hindi questionnaire underwent pilot testing with 51 patients representing diverse backgrounds and disabilities. We included any patients aged 18 years or older who self-identified as having a disability, could understand and communicate in Hindi, and gave informed consent. The exclusion criteria included individuals with severe cognitive impairments or communication barriers that prevent them from comprehending the questions, those unwilling or unable to provide consent, and individuals whose disabilities do not align with the scope of the questionnaire (e.g., temporary disabilities). Each participant completed the questionnaire and participated in a cognitive interview to evaluate their understanding of the questions. During the interviews, they were asked to elaborate on their interpretation of the questions and highlight any difficulties faced in comprehension or responding [11]. They were again called for consultation after two weeks, and the same questionnaire was applied to get re-test responses."
+  },
+  {
+   "header": "Materials and methods",
+   "text": "The pilot testing revealed that all questions in the Hindi version were easily understood by the participants. The cognitive interviews confirmed that the Hindi questionnaire was clear, culturally relevant, and linguistically accessible, with no major issues reported."
+  },
+  {
+   "header": "Materials and methods",
+   "text": "Statistical analysis"
+  },
+  {
+   "header": "Materials and methods",
+   "text": "Descriptive statistics were used to analyze the data collected during pilot testing. The demographic characteristics of the participants were summarized using numbers and percentages, means, and standard deviations (SD), as appropriate. For test and re-test comparison, the responses were coded with numerical values (e.g., very supportive = 1, somewhat supportive = 2, and not supportive = 3). The numbers were not based on positivity (e.g., very supportive = 3) as we aimed to compare the final rating only, which does not require any direction. Test-retest reliability was evaluated by the intraclass correlation coefficient (ICC). We used Microsoft Excel 2010 (Microsoft Corporation, Redmond, WA) for descriptive and IBM SPSS Statistics version 20 (IBM Corp., Armonk, NY) for inferential statistical tests. A p-value <0.05 was considered statistically significant."
+  },
+  {
+   "header": "Results",
+   "text": "A total of three experts forward-translated the questionnaire. One author (DK) compiled the Hindi translation into one final version. Another three experts back-translated it to English, and another author (HM) compiled it to make a final English version. This version was checked for conceptual equivalence by three doctors practicing PMR, and their conceptual equivalence score is shown in Table 1."
+  },
+  {
+   "header": "Results",
+   "text": "Inter-rater agreement was satisfactory, and the score was high enough to conclude that the back-translated and original English versions were conceptually equivalent."
+  },
+  {
+   "header": "Results",
+   "text": "A total of 51 participants (27 males, 24 females, mean age: 45.6 ± 7.8 years) completed the pilot testing of the Hindi-translated LFS-DM. The demographic characteristics of the participants are shown in Table 2."
+  },
+  {
+   "header": "Results",
+   "text": "Most participants were married, and there were no widows, widowers, or divorced individuals in the cohort. A significant portion of the participants were illiterate, while others had varying levels of education, including a small number with secondary and higher education qualifications. Socioeconomically, the participants were primarily from the lower and upper lower classes. Regarding literacy, most participants could read and write in Hindi, with a few able to do so in English."
+  },
+  {
+   "header": "Results",
+   "text": "During pilot testing, all participants easily understood the questionnaire, and the cognitive interviews confirmed clarity and comprehension. Test and re-test scores are shown in Table 3."
+  },
+  {
+   "header": "Results",
+   "text": "Test-retest reliability showed good (0.7 - 0.9) to excellent (>0.9) reliability, with ICC ranging from 0.843 (minimum) to 0.999 (maximum), indicating strong consistency over time."
+  },
+  {
+   "header": "Discussion",
+   "text": "This study translated and adapted the LFS-DM into Hindi, ensuring its reliability for use in Hindi-speaking populations. The process involved careful linguistic validation, including forward and backward translation, followed by expert review to ensure conceptual equivalence. The results from the pilot testing, which involved 51 participants with diverse disabilities, showed that the Hindi version of the questionnaire was well understood by respondents, and no significant issues related to comprehension or clarity were identified."
+  },
+  {
+   "header": "Discussion",
+   "text": "The employment rates for people with disabilities in India are very low, according to the National Centre for Promotion of Employment for Disabled People. Employment is only 0.54% in the public sector, 0.28% in the private sector, and 0.05% in multinational corporations. The economic prosperity of India is seriously hampered by this poor representation [12]. Many people with disabilities want to work but face significant barriers, leading to low employment rates [13]. Job placement and inclusion of persons with disabilities in India remain a major challenge. Despite laws and policies to protect their rights, many barriers still prevent their full participation in the workforce [14]. Many areas of India are not surveyed due to multiple hurdles. In addition, disability questions answered by household heads often lead to misreporting, especially among wealthier households, due to stigma, societal negativity, and fears of losing power [15]. Hence, it is high time to survey with local surveyors without any language barrier."
+  },
+  {
+   "header": "Discussion",
+   "text": "The Hindi adaptation of the questionnaire can play a crucial role in assessing the labor force participation of persons with disabilities in India. It can help identify employment rates, barriers to workforce entry, and the impact of workplace accessibility and accommodations [16]. The data generated can guide policymakers in evaluating existing initiatives and implementing targeted interventions to enhance job opportunities for PWDs. If any researcher would like to use the questionnaire for research purposes, they can get a printable version of the questionnaire from the first author of this article via email (deepak.pmr@aiimsdeoghar.edu.in)."
+  },
+  {
+   "header": "Discussion",
+   "text": "Strengths and limitations"
+  },
+  {
+   "header": "Discussion",
+   "text": "One of the key strengths of this study is its attention to cultural relevance. Disability in India is often accompanied by diverse cultural perceptions and stigma [17], and the translation process considered these aspects to ensure the questionnaire’s items were not only linguistically accurate but also culturally appropriate. This is particularly important in a country like India, where disability is perceived differently across regions, communities, and social strata [18]."
+  },
+  {
+   "header": "Discussion",
+   "text": "The study has some limitations. The sample for the cognitive interview was a convenience sample from a tertiary care hospital in a particular state in India, and it may not fully represent the diversity of the Indian population, particularly in terms of socioeconomic status or geographic variation. Future research with a larger, more diverse sample will be necessary to further validate the questionnaire's applicability across different populations."
+  },
+  {
+   "header": "Conclusions",
+   "text": "The translation and adaptation of the LFS-DM into Hindi is a step toward improving the accessibility and cultural relevance of disability data collection in India. By ensuring linguistic clarity and conceptual equivalence, the adapted module provides a reliable tool for capturing the experiences of Hindi-speaking individuals with disabilities. The Hindi version of the questionnaire demonstrated good to excellent test-retest reliability, making it a reliable tool for assessing disability-related issues in Hindi-speaking populations. Pilot testing and cognitive interviews confirmed that the questionnaire was easily understood by participants, and the cultural adaptation process ensured that the tool was both contextually and linguistically appropriate for the target population. The adapted Hindi module will help stakeholders in disability data collection, supporting inclusive labor policies, and evidence-based decision-making."
+  }
+ ],
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "copyright": "Copyright © 2024, Kumar et al.",
+ "license_statement": "Copyright © 2024, Kumar et al.2024Kumar et al.https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited."
+}

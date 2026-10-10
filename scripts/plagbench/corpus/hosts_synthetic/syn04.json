@@ -1,0 +1,112 @@
+{
+ "id": "syn04",
+ "kind": "synthetic",
+ "title": "Hearing the Teacher's Voice: Recorded Voice Messages and Family Engagement in Rural Elementary Schools, a Mixed-Methods Study",
+ "authors": [
+  {
+   "family": "Fitzgibbon-Achterberg",
+   "given": "Delphine"
+  },
+  {
+   "family": "Okonjo-Brandtstetter",
+   "given": "Lucian"
+  },
+  {
+   "family": "Vasquez-Pellowe",
+   "given": "Anneliese"
+  }
+ ],
+ "license": "CC0-1.0",
+ "language": "en",
+ "spelling": "american",
+ "rows": [
+  {
+   "header": "Introduction",
+   "text": "When a teacher in a small rural school wants to tell a parent that a child had a good day, the options are not abundant. Written notes get lost at the bottom of backpacks, phone calls happen during the one hour when the parent is driving a grain truck, and email assumes reliable broadband that many families lack. Over the past few years some districts have experimented with brief recorded voice messages sent through a simple app, which families can play on any phone without typing or reading. The appeal is intuitive. A voice carries warmth and tone that a printed note does not, and it is accessible to caregivers who read with difficulty or prefer another language. Yet whether such messages change how families engage with school, and how teachers experience the extra work, remains largely untested."
+  },
+  {
+   "header": "Introduction",
+   "text": "Family engagement is usually studied as a stable disposition of parents, but the interaction between home and school is also shaped by the channels available to them (Aldertree & Mbeki-Larsen, 2018). Channels that make positive contact easy may shift the emotional balance of communication, which in many schools is dominated by messages about problems. A parent who only ever hears from the school when something has gone wrong learns to dread the phone. If voice messages let teachers share small successes at low cost, families may come to see contact as welcome and may be more willing to reply, attend events or read with their child. From the teacher's side, speaking for thirty seconds may be quicker than writing a careful note, or it may feel exposing and intrusive after hours."
+  },
+  {
+   "header": "Introduction",
+   "text": "We therefore combined a quasi-experimental comparison of family engagement across schools with interviews and open-ended diaries from teachers. The quantitative strand asked whether engagement indicators rose more in schools using the voice-message system than in comparable schools using their usual channels. The qualitative strand asked how teachers decided what to say, how families responded, and what kinds of friction emerged. We designed the strands to run in parallel and to be integrated at the interpretation stage, so that interview material could help explain why the numbers moved in some classrooms but not in others. Our expectation was that positive messages, rather than any message, would carry the benefit, and that rapport would be easier to build with families who had been slow to engage."
+  },
+  {
+   "header": "Participants",
+   "text": "Eight elementary schools in three rural counties took part, four assigned to use the voice-message app for one semester and four continuing as usual. Assignment was not random: districts volunteered schools for the app, and we then matched each with a comparison school from the same county on enrollment, share of students eligible for free lunch, and the previous year's attendance. The 94 teachers in the eight schools were invited, and 71 consented to take part in the surveys. Of these, 36 worked in app schools and 35 in comparison schools. Teachers averaged 11.6 years of experience (SD = 8.4), and 87% were women. Family records were available for 1,184 students, of whom 54% were eligible for free lunch and 23% came from households speaking a language other than English at home."
+  },
+  {
+   "header": "Participants",
+   "text": "For the qualitative strand we purposively selected 18 of the 36 app-school teachers to maximize variation in grade level, years of experience, and message frequency, as logged by the app. Fourteen agreed to be interviewed, and eleven of them also completed weekly diaries. We also interviewed six parents recommended by the teachers and four recommended by the school secretaries, because the teachers might have suggested families who were already positive. Parent interviewees included two grandmothers who were primary caregivers, a father who worked nights at a poultry plant, and a mother who spoke mainly Spanish. Interviews were conducted at times and in languages the family preferred, and a bilingual staff member from outside the schools interpreted where necessary."
+  },
+  {
+   "header": "Procedure",
+   "text": "The semester began with a ninety-minute training for app-school teachers covering the mechanics of the app and a short guide to message content. The guide suggested aiming for at least one positive message per child every two weeks, but did not require it, and teachers could decide when and what to send. Messages were capped at forty-five seconds. Families received an invitation by text message in their preferred language and could reply with a voice message of their own. Comparison schools received no training and continued with existing practices, which included paper folders, a phone tree, and in two schools, a text-message service. Baseline engagement data were pulled from the preceding semester, and outcome data were pulled at the end of the study period, fourteen weeks later."
+  },
+  {
+   "header": "Procedure",
+   "text": "Teacher surveys were given online at baseline and at the end of the semester. Interviews took place during the last four weeks, lasted between thirty-five and sixty minutes, and were audio-recorded with permission. Diaries took the form of a brief prompt sent each Friday, asking teachers to note one message sent that week, why they sent it, and anything surprising about the response. Researchers also had access to anonymized app logs showing the number, length and timing of messages, though not their content, which the research team never heard. The decision to leave content unheard was made at the request of district staff, and it constrained the analysis, so we depended on the teachers' own descriptions for any characterization of what was said."
+  },
+  {
+   "header": "Measures",
+   "text": "Family engagement was assessed with three school-record indicators: the proportion of families attending at least one scheduled conference or event, the proportion of families who replied to a school message, and the average number of home-reading logs returned per child. Records were maintained by each school's front office and extracted by the research team. In addition, teachers completed an eight-item scale on their perceived rapport with families, rated on a five-point scale, with higher values meaning closer relationships (omega = .86). A measure of workload was a single item asking how many additional minutes per week were devoted to family communication, relative to the previous semester."
+  },
+  {
+   "header": "Measures",
+   "text": "The qualitative materials were interview transcripts, diary entries, and field notes. Interview guides for teachers asked about decisions on what to share, memorable reactions, and moments when a message felt difficult to record. Parent guides asked how the messages arrived in daily life, whether they replayed them, and whether they had shared them with others. Because the same research team conducted interviews and analysis, we kept an analytic memo log in which we recorded assumptions and reactions, to support reflexivity. Two team members independently coded the first six interviews, compared codes, and merged them into a codebook that was applied to the remaining transcripts."
+  },
+  {
+   "header": "Analysis",
+   "text": "For the quantitative strand we used a difference-in-differences framework, regressing each end-of-semester engagement outcome on a treatment indicator, the baseline value, and school-level covariates (enrollment, poverty share, and county), with standard errors clustered by school. With only eight clusters, we supplemented conventional errors with a wild cluster bootstrap and report both. The rapport and workload variables were analyzed with mixed models including random intercepts for school, and we examined baseline equivalence using standardized differences. Because the small number of schools limits power, we emphasize effect sizes and intervals rather than significance, and we treat the quantitative findings as suggestive."
+  },
+  {
+   "header": "Analysis",
+   "text": "The qualitative strand used reflexive thematic analysis. After the initial codebook was developed, transcripts and diaries were coded in software, and codes were organized into candidate themes through several rounds of discussion. We checked these against the data, especially against cases that did not fit, and named the themes with phrases close to the participants' own. Integration followed a joint display approach in which each quantitative result was placed beside the themes that bore on it, allowing us to see where the strands agreed, diverged or left gaps. We offered parent participants the chance to review a summary of their quotations before publication, and nine of the ten chose to do so, with two requesting minor changes to the wording of translated passages."
+  },
+  {
+   "header": "Results",
+   "text": "At baseline the two groups of schools were similar, with standardized differences below 0.15 on all engagement indicators. By the end of the semester, event attendance had risen in app schools from 41.2% of families to 49.8% (an increase of 8.6 points), and in comparison schools from 40.5% to 43.0% (2.5 points). The adjusted difference-in-differences estimate was 5.9 percentage points (95% CI [0.6, 11.2], conventional p = .04; wild-bootstrap p = .09). Reply rates showed a stronger effect, rising from 27.3% to 44.6% in app schools against 26.8% to 31.5% in comparison schools, an adjusted difference of 12.4 points (95% CI [5.1, 19.7], p = .006). Home-reading logs returned per child rose by 1.8 in app schools and 0.7 in comparison schools, an adjusted difference of 0.9 (95% CI [-0.3, 2.1], p = .12)."
+  },
+  {
+   "header": "Results",
+   "text": "Teachers in app schools reported higher rapport with families at the end of the semester (M = 3.94, SD = 0.58) than teachers in comparison schools (M = 3.47, SD = 0.66), and the adjusted difference was 0.41 (95% CI [0.14, 0.68], p = .004). Workload told a mixed story. App-school teachers reported spending 22 more minutes per week on family communication than before (SD = 31), compared with 9 more minutes among comparison teachers (SD = 27), a difference of 13 minutes (95% CI [-1, 27], p = .06). Message logs revealed large differences among teachers: the median app teacher sent 2.3 messages per week, but the top quartile sent more than eight. Teachers who sent more messages per child showed greater increases in rapport (r = .44, p = .008), though this association could reflect pre-existing enthusiasm."
+  },
+  {
+   "header": "Results",
+   "text": "Four themes emerged from the qualitative data. The first, \"a face behind the words,\" captured how families described the voice as proof that the teacher knew their child, with one grandmother explaining that she replayed a message about her grandson's kindness to a neighbor. The second, \"good news travels slowly otherwise,\" described teachers' sense that the app removed barriers to sharing small successes. The third, \"recording is not like talking,\" described anxiety and self-consciousness, as several teachers re-recorded messages repeatedly and some felt unable to be spontaneous. The fourth, \"the after-hours problem,\" described blurred boundaries, as parents sometimes responded in the evening with questions or voice replies that teachers felt obliged to answer. Teachers who had set explicit reply hours described fewer of these tensions."
+  },
+  {
+   "header": "Discussion",
+   "text": "The two strands pointed in the same direction. Families in schools using the voice-message system replied more often to the school and, with less certainty, attended more events, and teachers in those schools felt closer to families. The reply-rate effect is the clearest, and the interviews suggest why. Parents described messages as an invitation to respond in kind, and a voice reply requires far less effort than writing a note, particularly for caregivers with limited literacy or little time. This accords with the idea that channel design shapes engagement as much as parental disposition does (Aldertree & Mbeki-Larsen, 2018). The workload data, meanwhile, argue against assuming that the tool is cost-free, since the extra minutes were real even though they were modest on average."
+  },
+  {
+   "header": "Discussion",
+   "text": "The themes help explain variation that the numbers alone would obscure. Teachers who sent many messages tended to be those who described the voice as a way of being known, but the same intimacy created the after-hours problem, and the teachers who coped best were those who told families when they would listen and respond. This points toward a practical recommendation: districts that introduce voice messaging should pair it with explicit norms on reply windows and with a modest amount of coaching on message content, including advice on sounding natural. The data also suggest that schools should monitor the distribution of messages, since a few enthusiastic teachers may send most of them, leaving some families unheard."
+  },
+  {
+   "header": "Discussion",
+   "text": "One further matter concerns equity. Spanish-speaking families in our sample valued the opportunity to hear and reply in their own language, but teachers who did not speak Spanish could only send messages in English or rely on a colleague. Several bilingual aides ended up recording on behalf of others, an unplanned duty that went unpaid. It would therefore be a mistake to describe the voice channel as automatically inclusive. Its inclusiveness depends on who is available to speak and who is asked to listen, and these arrangements were left to individual schools. Future implementations might build interpretation and translation into the plan from the beginning, and fund it, rather than discovering the need during the first semester."
+  },
+  {
+   "header": "Limitations",
+   "text": "Assignment of schools was not random, and districts may have chosen app schools because their leaders were already attentive to family engagement. With eight schools, the clustered analyses had little power, and the wild bootstrap yielded a less favorable result for event attendance. The follow-up was one semester, so we cannot say whether engagement persisted or whether enthusiasm faded as novelty wore off. Teachers rather than researchers described message content, and interviewed parents were selected partly by school staff, which may have favored positive voices. Finally, the first author trained the teachers and later led interviews, which may have encouraged socially desirable answers despite our reflexive practices."
+  },
+  {
+   "header": "Conclusion",
+   "text": "Short recorded voice messages were associated with more frequent family replies, a probable rise in event attendance, and closer perceived teacher-family relationships in small rural elementary schools, at the price of some extra teacher time and some blurred boundaries. Interviews showed that the benefit came from hearing a person rather than reading a note, and that the main hazards were self-consciousness and unbounded availability. Schools adopting such tools should set reply norms and plan for language access. Larger trials with random assignment and longer follow-up are needed to confirm these preliminary results."
+  },
+  {
+   "header": "Funding",
+   "text": "Funding came from the Prairie Rim Education Research Collaborative (award PREC-2022-45). The collaborative played no part in the design, analysis, interpretation or writing of the study."
+  },
+  {
+   "header": "Ethics statement",
+   "text": "The Institutional Review Board of Hollowbrook College approved all procedures (protocol HC-IRB-2022-316). Teachers and parents gave written or recorded verbal consent, and school districts provided separate permission to access anonymized engagement records."
+  },
+  {
+   "header": "Data availability",
+   "text": "Quantitative school-level data, the app log summaries, the codebook and the analysis code are available in an open repository under a CC0 dedication. Interview transcripts cannot be shared because of the risk of identifying participants in small communities."
+  }
+ ]
+}

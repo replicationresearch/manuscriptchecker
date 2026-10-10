@@ -1,0 +1,112 @@
+{
+ "id": "syn01",
+ "kind": "synthetic",
+ "title": "Soil Under the Fingernails: Allotment Gardening and Neighbourhood Belonging among Adults in Mid-Sized English Towns",
+ "authors": [
+  {
+   "family": "Pennywhistle-Orrow",
+   "given": "Ysolde"
+  },
+  {
+   "family": "Tchaikovich",
+   "given": "Bram"
+  },
+  {
+   "family": "Ngarimu-Falkenrath",
+   "given": "Odette"
+  }
+ ],
+ "license": "CC0-1.0",
+ "language": "en",
+ "spelling": "british",
+ "rows": [
+  {
+   "header": "Introduction",
+   "text": "Plots of rented land on the edge of town, divided into narrow strips and tended by people who otherwise rarely meet, are an unusual kind of public infrastructure. In England the allotment tradition dates back more than a century, yet research on what these sites do for the people who use them has leaned heavily toward diet and physical activity. Less is known about whether the plots work as a social anchor. A gardener who trades surplus courgettes over a hedge, lends a spade, or stays after dark to wait for a delivery of manure is taking part in a small economy of favours. Whether that economy translates into a wider sense of belonging to the surrounding neighbourhood is the question we pursue here."
+  },
+  {
+   "header": "Introduction",
+   "text": "Belonging is usually described as having both an emotional side, the feeling of being at home among familiar people and places, and a practical side, the confidence that someone nearby would help in a pinch (Halvorsen & Quill, 2016). Informal contact is thought to feed both. Casual encounters give residents a store of faces they can recognise, and recognition lowers the cost of asking for help. Allotments are well placed to generate such encounters because the work is seasonal, repetitive, and visible. Neighbours on adjacent plots see each other weeding in the same drizzle, which supplies conversation without requiring anyone to host or to be hosted. Garden sites also draw people across lines of age and occupation who would not otherwise share a pavement."
+  },
+  {
+   "header": "Introduction",
+   "text": "There are reasons for caution, however. People who take on a plot may already be the sort of people who feel rooted, so any association with belonging could simply reflect who signs up. Waiting lists in many towns are long, and those who persevere may be more settled and better resourced than average (Marchetti-Oyelaran et al., 2018). Moreover, some sites are guarded, locked, and socially closed, and a plot holder may know the people along the same path while remaining a stranger to the street where they live. We therefore compared plot holders with demographically similar non-gardeners, examined how much time on site mattered, and asked whether the number of named acquaintances on the allotment explained any difference in neighbourhood belonging. Our expectation was a modest positive association, mediated by acquaintance count."
+  },
+  {
+   "header": "Participants",
+   "text": "We recruited adults living in six English towns with populations between 40,000 and 90,000, chosen to span the north, midlands and south-west and to include both well-supplied and under-supplied allotment provision. Plot holders were invited through nine site associations, whose secretaries forwarded a link to members. Comparison participants were recruited through a market-research panel, restricted to the same postcode districts and screened to exclude anyone who currently held, or had held in the previous three years, a plot. Of 934 people who opened the survey, 861 completed it, and 842 passed attention checks and are analysed here. The final sample comprised 398 plot holders and 444 comparison respondents."
+  },
+  {
+   "header": "Participants",
+   "text": "Respondents ranged in age from 19 to 91 (M = 54.8, SD = 15.9), and 53.1% described themselves as women, 46.2% as men, and 0.7% in another way. Plot holders were older on average than the comparison group (M = 58.3 versus 51.7), more often retired, and more often owned their home, so these variables were retained as covariates. Median length of residence in the current neighbourhood was eleven years. A majority (88.4%) identified as White British or White other, which mirrors the towns sampled but limits what we can say about minoritised gardeners. Plot holders had held their current plot for a median of six years, and 17.3% shared it with another person. Participants received no payment, though panel members earned the usual points credit."
+  },
+  {
+   "header": "Procedure",
+   "text": "The questionnaire was hosted online and could be completed on a phone, tablet or computer in about fourteen minutes. It opened with a short consent screen, after which respondents saw the demographic block, followed by the belonging items and then, for plot holders only, a section about their allotment site. To limit priming, comparison respondents saw an equivalent block asking about a different regular activity of their choosing, such as a sports club, choir or place of worship, so that all participants reflected on a recurring group pastime before answering the neighbourhood items. Items within each scale appeared in random order. Data collection ran from late April to the end of July, covering the busiest part of the growing year."
+  },
+  {
+   "header": "Procedure",
+   "text": "Because belonging may fluctuate with the weather and with seasonal events, we recorded the date of completion and later checked it against local rainfall totals for the preceding week, taken from public weather station records. No participant was told the hypotheses. A debriefing page thanked everyone, explained that the study concerned how leisure activities relate to local ties, and gave contact details for the research team along with information about finding a plot in each of the six towns."
+  },
+  {
+   "header": "Measures",
+   "text": "Neighbourhood belonging was measured with eight items written for this project, because existing instruments either mixed belonging with satisfaction with services or were tied to a single cultural setting. Items, such as feeling that one would be missed if one moved away or that people on the street would notice if something were wrong, were rated on a seven-point agreement scale. Internal consistency was good (Cronbach's alpha = .88 in plot holders and .90 in the comparison group), and a single factor accounted for 57% of the variance in a preliminary exploration. Scores were averaged, with higher values indicating stronger belonging. A short pilot with 31 volunteers had earlier led us to reword two items that people found ambiguous."
+  },
+  {
+   "header": "Measures",
+   "text": "Acquaintance count on the site was assessed by asking plot holders to type the first names or nicknames of other gardeners they could greet by name, up to a limit of forty, and the count of unique entries was used. Weekly hours on site, self-reported for a typical summer week, were recoded into four bands to reduce rounding noise. General sociability was captured with a three-item screening measure about the frequency of chatting to people in shops, on buses and in queues, since gregarious people may both seek plots and feel at home locally. Perceived neighbourhood safety, household income band, tenure, health status and the length of residence completed the covariate set. Where respondents skipped a covariate we replaced the value using chained equations with twenty imputations, although missingness never exceeded 3% on any variable."
+  },
+  {
+   "header": "Analysis",
+   "text": "Our first step was to compare plot holders with non-gardeners on belonging using an independent-samples test, followed by a regression that added the covariates listed above. To address the selection worry, we used propensity score weighting, estimating each respondent's probability of being a plot holder from age, gender, tenure, retirement status, income band, sociability, and length of residence, then weighting comparison respondents to resemble the gardeners. Balance was judged acceptable when standardised differences fell below 0.10. Among plot holders, we fitted a linear model relating weekly hours and acquaintance count to belonging. For the mediation question, we estimated the indirect path from hours to belonging through acquaintance count with 5,000 bootstrap resamples and report percentile intervals."
+  },
+  {
+   "header": "Analysis",
+   "text": "Assumptions were checked with residual plots and variance inflation factors, none of which raised concern. Because the six towns differ in provision, we allowed intercepts to vary by town in a mixed-effects specification and report the intraclass correlation. We also calculated an E-value for the main weighted estimate, to express how strongly an unmeasured trait would have to relate to both gardening and belonging in order to erase the observed difference. Two-sided tests with alpha set at .05 were used throughout, and we treat the interval estimates, rather than the p-values, as the main summary of what the data support."
+  },
+  {
+   "header": "Results",
+   "text": "Plot holders reported stronger neighbourhood belonging (M = 5.41, SD = 1.02) than comparison respondents (M = 4.87, SD = 1.19), a raw difference of 0.54 scale points, t(840) = 6.99, p < .001, d = 0.48. After the propensity weighting, standardised differences on all matching variables were below 0.07, and the weighted difference shrank but remained clear at 0.36 points (95% CI [0.20, 0.52], p < .001). In the covariate-adjusted regression, length of residence (b = 0.02 per year, p < .001) and perceived safety (b = 0.31, p < .001) were the strongest correlates of belonging, while age and income contributed little. The town-level intraclass correlation was .03, so differences among the six places were small, and the plot holder effect looked similar in each."
+  },
+  {
+   "header": "Results",
+   "text": "Within the group of gardeners, belonging rose with time on site. Those spending under two hours a week scored M = 5.02 (SD = 1.10), whereas those spending more than eight hours scored M = 5.78 (SD = 0.87), and the trend across the four bands was significant, F(3, 394) = 7.84, p < .001, partial eta squared = .06. Acquaintance count was highly skewed, with a median of nine named gardeners and an interquartile range of four to sixteen. It correlated positively with weekly hours (r = .41, p < .001) and with belonging (r = .37, p < .001). Respondents who gardened with a partner or friend did not differ from solo gardeners on belonging, t(396) = 0.63, p = .53."
+  },
+  {
+   "header": "Results",
+   "text": "In the mediation model, the indirect path from weekly hours to belonging through acquaintance count was small but reliably positive (ab = 0.06, bootstrap 95% CI [0.03, 0.10]). The direct effect of hours remained significant after accounting for acquaintances (c' = 0.10, 95% CI [0.04, 0.16]), and the proportion mediated was about 38%. In other words, knowing more fellow gardeners accounted for part, but not all, of the extra belonging seen among the most committed plot holders. Adding the three-item sociability measure to the model reduced the total effect by roughly a fifth and left the indirect path essentially unchanged. Excluding the fastest responders (under five minutes) altered no coefficient by more than 0.02, and the E-value for the weighted main estimate was 1.9, indicating that a confounder would need to be moderately strong to explain the difference away."
+  },
+  {
+   "header": "Discussion",
+   "text": "The central finding is that people who hold allotment plots feel more attached to their neighbourhood than similar people who do not, and that the gap survives adjustment for the usual suspects. The size, roughly a third of a scale point after weighting, is not dramatic, but it is comparable to the difference associated with living in a place for about eighteen years. That comparison matters because belonging normally accrues slowly. A leisure activity that yields a similar boost is therefore doing something worth noticing. The dose pattern points the same way: the more hours a gardener spent on site, the stronger the sense of belonging, which is what one would expect if contact is the active ingredient rather than a trait that happens to precede gardening."
+  },
+  {
+   "header": "Discussion",
+   "text": "The mediation result adds nuance. Acquaintances on the site carried roughly four-tenths of the association between hours and belonging, which supports the idea that recognisable faces matter (Halvorsen & Quill, 2016). The remainder is unexplained by our measure and may reflect other mechanisms. Gardening is a form of stewardship, and tending a patch of ground for years may foster a sense of investment in the place itself, quite apart from the people around it. Seasonal rhythm may also matter: gardeners are outside on a schedule that keeps them attuned to the town's weather, light and smells. Qualitative work could separate these strands, and a design that tracked new plot holders from the day they received their keys would show whether the effects build gradually or arrive early."
+  },
+  {
+   "header": "Discussion",
+   "text": "For local authorities and housing providers, the findings offer a modest argument for treating allotments as part of social infrastructure rather than as a recreational extra. Waiting lists in several of our towns exceeded two years, and the people who wait are the ones who might benefit from an early foothold in a new neighbourhood. Site design can help or hinder: associations that kept a shared shed, a kettle and a noticeboard reported livelier exchanges than those with locked individual units. Splitting oversized plots, so that more households can take part, may be a more equitable response than expanding the area devoted to any single holding (Marchetti-Oyelaran et al., 2018)."
+  },
+  {
+   "header": "Limitations",
+   "text": "The study is cross-sectional, so we cannot demonstrate that gardening produces belonging rather than the reverse, and weighting can only balance the variables we measured. The E-value suggests moderate robustness, not immunity. The belonging scale was new, validated only through internal consistency and a single-factor solution, and it relied on self-report, which may be inflated among people who enjoy a hobby and want to speak well of their surroundings. Plot holders were recruited via site secretaries, who may have forwarded the link mainly to active members, and the comparison panel may under-represent people without regular internet access. Ethnic diversity in the sample was limited. Finally, the data were gathered in a single summer, and a wet or dry season might shift sociability on the plots."
+  },
+  {
+   "header": "Conclusion",
+   "text": "Adults who rent allotment plots in mid-sized English towns feel more at home in their neighbourhoods than comparable adults without plots, and they feel more at home the longer they spend there. Part of this advantage runs through the people they come to know on site, while part appears to run through something else, perhaps the care invested in the land itself. These patterns support continued public investment in allotment provision and in the small amenities that encourage gardeners to linger and talk. Longitudinal and mixed-methods studies of new plot holders would be the natural next step in establishing how quickly, and for whom, a patch of borrowed soil becomes a place to belong."
+  },
+  {
+   "header": "Funding",
+   "text": "This work was supported by a small grant from the Northern Fenland Community Research Trust (grant reference NFCRT-2023-117). The funder had no role in the design, data collection, analysis or writing of the report."
+  },
+  {
+   "header": "Ethics statement",
+   "text": "The study was approved by the Humanities and Social Sciences Research Ethics Panel at the University of Lower Aldermoor (approval HSS-2023-0412). All participants gave informed consent online before beginning the questionnaire and could withdraw at any point before submission."
+  },
+  {
+   "header": "Data availability",
+   "text": "Anonymised survey responses, the analysis code and the full wording of the items are available in a public repository under a CC0 licence. Free-text acquaintance names were deleted before sharing, and only the counts were retained."
+  }
+ ]
+}

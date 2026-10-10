@@ -46,8 +46,19 @@ MIN_SOURCE_CHARS = 500
 HTTP_TIMEOUT = 25
 UA = "MuCOS-PlagiarismCheck/1.0 (https://github.com/replicationresearch/manuscriptchecker; non-commercial research tool)"
 
-# Measured detection rates, shown in every report (filled in from a benchmark run).
-BENCHMARK_NOTE = ""
+# Shown in every report; update after running scripts/plagbench/run_online.py.
+BENCHMARK_NOTE = (
+    "Measured detection (10 Oct 2026, scripts/plagbench, corpus v2: 72 passages "
+    "copied verbatim from openly licensed sources into 12 manuscripts, one run "
+    "each; a small pilot, so treat as rough). A passage counts as detected when "
+    "at least half of its words are covered by verified overlap with any "
+    "source. Detected: 19 of 24 copied paragraphs, 16 of 24 copied "
+    "three-sentence blocks and 4 of 24 single copied sentences inside an "
+    "otherwise original paragraph. By source: PubMed Central 13/18, Wikipedia "
+    "12/18, open-access articles outside PubMed Central 9/18, PsyArXiv "
+    "preprints 5/18. In 22 of the 33 misses no searched phrase fell into the "
+    "passage. Only sources with a downloadable, openly licensed full text were "
+    "tested, so coverage of the literature at large is lower.")
 
 TOKEN_RE = re.compile(r"[^\W_]+(?:['’\-‐][^\W_]+)*", re.U)
 _CITE_RE = re.compile(r"\([^()]*\b(?:1[89]|20)\d{2}[a-z]?\b[^()]*\)")
