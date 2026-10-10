@@ -194,10 +194,11 @@ class App(tk.Tk):
         self.selected_modules = list(self.all_chetameck_modules)
         self.plag_files = []
         self.plag_lib = tk.StringVar(value=self._load_setting("library_dir"))
-        self.plag_passages = tk.IntVar(value=120)
+        self.plag_passages = tk.IntVar(value=0)
         self.plag_seed = tk.StringVar(value="")
         self.plag_skip_used = tk.BooleanVar(value=False)
         self.plag_mailto = tk.StringVar(value=self._load_setting("mailto"))
+        self.plag_oa_key = tk.StringVar(value=self._load_secret("openalex_key"))
 
         self._style()
         self._icon()
@@ -510,16 +511,20 @@ class App(tk.Tk):
                   style="Title.TLabel").pack(anchor="w")
         ttk.Label(self._plag_frame, style="Muted.TLabel", wraplength=560,
                   justify="left", text=(
-                      "Licence-free: phrases are searched in open full texts "
-                      "(Europe PMC, OpenAlex); best candidates, local files and "
+                      "Licence-free, verbatim overlap only: one phrase per ~60 "
+                      "words is searched in open full texts (Europe PMC, "
+                      "OpenAlex, Wikipedia); best candidates, local files and "
                       "your literature folder are compared with the whole "
                       "manuscript (6-word shingles, matches of 8+ words; "
-                      "quotes and citations excluded).")).pack(
+                      "quotes and citations excluded). Privacy: the searched "
+                      "9-word excerpts of the manuscript are sent to these "
+                      "three services; untick 'online checks' to compare with "
+                      "local files only.")).pack(
                           anchor="w", pady=(2, 6))
         prow = ttk.Frame(self._plag_frame)
         prow.pack(fill="x", pady=(0, 2))
-        ttk.Label(prow, text="Phrases to search", width=18).pack(side="left")
-        tk.Spinbox(prow, from_=20, to=400, increment=20, width=6,
+        ttk.Label(prow, text="Max. phrases", width=18).pack(side="left")
+        tk.Spinbox(prow, from_=0, to=1000, increment=20, width=6,
                    textvariable=self.plag_passages, bg=PANEL2, fg=TEXT,
                    insertbackground=TEXT, relief="flat", buttonbackground=PANEL2,
                    highlightthickness=1, highlightbackground=BORDER,
@@ -532,12 +537,12 @@ class App(tk.Tk):
                   text="blank = random (shown in the report)").pack(side="left")
         ttk.Label(self._plag_frame, style="Muted.TLabel", wraplength=640,
                   justify="left", text=(
-                      "A phrase = a 9-word excerpt searched online as an exact "
-                      "word sequence. Only searched phrases can find online "
-                      "sources; a typical manuscript has ~300, so 120 covers "
-                      "it only partly. Exact totals, searched and unchecked "
-                      "passages are shown in the log and report. Literature "
-                      "folder and local files are always compared in full.")
+                      "Every paragraph is probed online with one 9-word phrase "
+                      "per ~60 words, searched as an exact word sequence (0 = "
+                      "no cap; a lower number samples them evenly). Re-run "
+                      "with new phrases to probe other parts of each paragraph. "
+                      "Literature folder and local files are always compared "
+                      "in full.")
                   ).pack(anchor="w", pady=(2, 2))
         self._plag_last_lbl = ttk.Label(self._plag_frame, style="Muted.TLabel",
                                         wraplength=640, justify="left", text="")
@@ -553,9 +558,22 @@ class App(tk.Tk):
             side="left", fill="x", expand=True, padx=6)
         ttk.Label(self._plag_frame, style="Muted.TLabel", wraplength=640,
                   justify="left", text=(
-                      "Optional. Sent to OpenAlex (faster 'polite pool') and in "
-                      "the request header; stored only on this PC, never "
-                      "written into reports.")).pack(anchor="w", pady=(0, 4))
+                      "Optional. Sent in the request header; stored only on "
+                      "this PC, never written into reports.")).pack(
+                          anchor="w", pady=(0, 4))
+        krow = ttk.Frame(self._plag_frame)
+        krow.pack(fill="x", pady=(0, 2))
+        ttk.Label(krow, text="OpenAlex API key", width=18).pack(side="left")
+        ttk.Entry(krow, textvariable=self.plag_oa_key, show="*").pack(
+            side="left", fill="x", expand=True, padx=6)
+        ttk.Label(self._plag_frame, style="Muted.TLabel", wraplength=640,
+                  justify="left", text=(
+                      "Recommended. A manuscript needs about 5-10 OpenAlex "
+                      "searches; without a key about 100 per day are answered, "
+                      "with a free key (openalex.org) about 1,000. The report "
+                      "warns when searches were refused. Stored in your user "
+                      "profile on this PC, not with the reports.")
+                  ).pack(anchor="w", pady=(0, 4))
         frow = ttk.Frame(self._plag_frame)
         frow.pack(fill="x", pady=(0, 4))
         ttk.Label(frow, text="Compare with files", width=18).pack(side="left")
@@ -674,6 +692,39 @@ class App(tk.Tk):
     @staticmethod
     def _settings_file():
         return config.default_output_dir() / "settings.json"
+
+    def _secrets_file(self):
+        """Credentials live in the user profile, never next to the reports
+        (the reports folder gets shared and backed up)."""
+        base = os.environ.get("LOCALAPPDATA") or str(Path.home() / ".config")
+        d = Path(base) / "MuCOS_PlagCheck"
+        d.mkdir(parents=True, exist_ok=True)
+        return d / "credentials.json"
+
+    def _load_secret(self, key):
+        import json
+        try:
+            return str(json.loads(self._secrets_file().read_text(
+                encoding="utf-8")).get(key) or "")
+        except Exception:  # noqa: BLE001
+            return ""
+
+    def _save_secret(self, key, value):
+        import json
+        try:
+            f = self._secrets_file()
+            try:
+                d = json.loads(f.read_text(encoding="utf-8"))
+            except Exception:  # noqa: BLE001
+                d = {}
+            d[key] = value
+            f.write_text(json.dumps(d, indent=2), encoding="utf-8")
+            try:
+                f.chmod(0o600)
+            except OSError:
+                pass
+        except Exception:  # noqa: BLE001
+            pass
 
     def _load_setting(self, key):
         import json
@@ -963,8 +1014,10 @@ class App(tk.Tk):
                 if "plagiarism" in engines:
                     self._save_setting("library_dir", self.plag_lib.get().strip())
                     self._save_setting("mailto", self.plag_mailto.get().strip())
+                    self._save_secret("openalex_key",
+                                      self.plag_oa_key.get().strip())
                 plag_options = {
-                    "max_passages": int(self.plag_passages.get() or 120),
+                    "max_passages": int(self.plag_passages.get() or 0),
                     "extra_files": list(self.plag_files),
                     "online": bool(self.online_var.get()),
                     "library_dir": self.plag_lib.get().strip() or None,
@@ -972,6 +1025,7 @@ class App(tk.Tk):
                              if self.plag_seed.get().strip().isdigit() else None),
                     "skip_used": bool(self.plag_skip_used.get()),
                     "mailto": self.plag_mailto.get().strip() or None,
+                    "openalex_key": self.plag_oa_key.get().strip() or None,
                 } if "plagiarism" in engines else None
                 result = pipeline.run_pipeline(
                     self.manuscript,
@@ -1006,8 +1060,9 @@ class App(tk.Tk):
                          if r.get("engine") == "plagiarism"), None)
             ph = (plag.get("report_json") or {}).get("phrases") if plag else None
             if ph:
-                msg = (f"Phrases: {ph['searched']} searched this run (seed "
-                       f"{ph['seed']}); {ph['cumulative']} of {ph['total']} "
+                msg = (f"Paragraphs probed: {ph.get('paragraphs_probed', '?')} "
+                       f"of {ph.get('paragraphs', '?')} (seed {ph['seed']}); "
+                       f"phrases {ph['cumulative']} of {ph['total']} "
                        f"({ph['cumulative'] / max(ph['total'], 1):.0%}) searched "
                        f"over {ph['runs']} run(s).")
                 self._append(msg)

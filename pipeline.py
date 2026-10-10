@@ -464,8 +464,13 @@ def run_pipeline(manuscript, grobid_url=None, modules=None, outdir=None,
             step("metacheck", "running", f"Running {label}...")
             try:
                 if eng == "plagiarism":
+                    # "no online checks" also stops the phrase searches, which
+                    # send excerpts of the manuscript to third-party services
+                    opts = dict(plag_options or {})
+                    if not include_online:
+                        opts["online"] = False
                     meta = run_plagiarism_engine(xml_path, outdir, stem,
-                                                 options=plag_options,
+                                                 options=opts,
                                                  on_log=on_log, pdf_path=pdf_path)
                 else:
                     base = modules if modules is not None else module_list(include_online)
